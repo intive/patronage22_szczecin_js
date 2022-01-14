@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render Home page 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <main>
+      <h1>
+        PATRONAGE22 SZCZECIN JS
+      </h1>
+    </main>
+  </div>
+</div>
+`;

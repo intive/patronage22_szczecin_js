@@ -1,11 +1,11 @@
 import Head from 'next/head'
 
-export default function Home() {
+export default function Home () {
   return (
-    <div className="container">
+    <div className='container'>
       <Head>
         <title>Retro Board - Szczecin JS</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <main>
