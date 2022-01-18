@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout from '../components/Layout/Layout'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import BoardTile from '../components/BoardTile/BoardTile'
 
 export async function getStaticProps ({ locale }) {
   return {
@@ -27,7 +28,9 @@ export default function Home () {
           rel='stylesheet'
         />
       </Head>
-      <Layout />
+      <Layout>
+        <BoardTile name='Board name 1' date='1 Jan 2022' cardCount={0} hasPassword />
+      </Layout>
     </div>
   )
 }

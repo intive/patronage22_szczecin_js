@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BoardTile renders correctly with password 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL fbCQOU"
+  >
+    <div
+      class="sc-gsDKAQ bkuMRF"
+    >
+      <span
+        class="material-icons"
+      >
+        lock_outlined
+      </span>
+    </div>
+    <h4
+      class="sc-dkPtRN kUDuei"
+    >
+      Board name 1
+    </h4>
+    <p
+      class="sc-hKwDye sc-eCImPb eRcqw gGNFTw"
+    >
+      1 Jan 2022
+    </p>
+    <p
+      class="sc-hKwDye eRcqw"
+    >
+      0
+       cards
+    </p>
+  </div>
+</div>
+`;
+
+exports[`BoardTile renders correctly without password 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL fbCQOU"
+  >
+    <h4
+      class="sc-dkPtRN kUDuei"
+    >
+      Board name 1
+    </h4>
+    <p
+      class="sc-hKwDye sc-eCImPb eRcqw gGNFTw"
+    >
+      1 Jan 2022
+    </p>
+    <p
+      class="sc-hKwDye eRcqw"
+    >
+      0
+       cards
+    </p>
+  </div>
+</div>
+`;

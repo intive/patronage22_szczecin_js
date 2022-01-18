@@ -29,7 +29,37 @@ exports[`Home should render Home page 1`] = `
     </header>
     <main
       class="sc-bdvvtL iQOlZf"
-    />
+    >
+      <div
+        class="sc-jRQBWg ctTUaR"
+      >
+        <div
+          class="sc-gKclnd bhZFuz"
+        >
+          <span
+            class="material-icons"
+          >
+            lock_outlined
+          </span>
+        </div>
+        <h4
+          class="sc-iCfMLu iYsejJ"
+        >
+          Board name 1
+        </h4>
+        <p
+          class="sc-furwcr sc-pVTFL jzezhb bOqEUQ"
+        >
+          1 Jan 2022
+        </p>
+        <p
+          class="sc-furwcr jzezhb"
+        >
+          0
+           cards
+        </p>
+      </div>
+    </main>
   </div>
 </div>
 `;
