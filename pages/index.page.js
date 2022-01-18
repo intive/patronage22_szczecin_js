@@ -16,7 +16,7 @@ export default function Home() {
         <h1>PATRONAGE22 SZCZECIN JS</h1>
         <div>
           <p style={{ width: "100%", textAlign: "center" }}>
-            Material Icons <span class="material-icons">tag_faces</span>
+            Material Icons <span className="material-icons">tag_faces</span>
           </p>
         </div>
       </main>
