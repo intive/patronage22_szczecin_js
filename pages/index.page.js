@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Layout from '../components/layout/layout'
 
 export default function Home () {
   return (
@@ -7,12 +8,14 @@ export default function Home () {
         <title>Retro Board - Szczecin JS</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
-      <main>
+      <Layout>
         <h1>
           PATRONAGE22 SZCZECIN JS
         </h1>
-      </main>
+      </Layout>
+      {/* <main>
+        <Header />
+      </main> */}
     </div>
   )
 }
