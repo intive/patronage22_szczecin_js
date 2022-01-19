@@ -27,11 +27,13 @@ const HeaderContainer = styled.div`
 `
 const HeaderTitle = styled.div`
   display: flex;
+  align-items: center;
   font-weight: bold;
   font-size: 20px;
-  color: #222222;
-`
+  line-height: 24px;
+  `
 
 const HeaderTitleText = styled.p`
-  margin-left: 11px;
+  margin: 0 0 0 11px;
+  color: #222222;
 `
