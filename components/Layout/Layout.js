@@ -1,8 +1,10 @@
 import styled from 'styled-components'
+import Header from './Header'
 
 export default function Layout (props) {
   return (
     <>
+      <Header />
       <Wrapper>{props.children}</Wrapper>
     </>
   )

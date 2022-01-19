@@ -13,9 +13,6 @@ export default function Home () {
           PATRONAGE22 SZCZECIN JS
         </h1>
       </Layout>
-      {/* <main>
-        <Header />
-      </main> */}
     </div>
   )
 }
