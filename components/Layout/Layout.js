@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import Header from './Header'
+import Header from './header'
 
 export default function Layout (props) {
   return (
-    <>
+    <div className='container'>
       <Header />
       <Wrapper>{props.children}</Wrapper>
-    </>
+    </div>
   )
 }
 
