@@ -3,10 +3,10 @@ import Header from './header'
 
 export default function Layout (props) {
   return (
-    <div className='container'>
+    <>
       <Header />
       <Wrapper>{props.children}</Wrapper>
-    </div>
+    </>
   )
 }
 
