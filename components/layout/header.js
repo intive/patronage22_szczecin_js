@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import { HeaderContainer, HeaderTitle, HeaderTitleText } from './Header.style'
 
 export default function Header () {
   return (
@@ -12,28 +12,3 @@ export default function Header () {
     </HeaderContainer>
   )
 }
-
-const HeaderContainer = styled.div`
-  position: sticky;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  height: 72px;
-  padding: 12px 40px;
-  background: #FFFFFF;
-`
-const HeaderTitle = styled.div`
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  `
-
-const HeaderTitleText = styled.p`
-  margin: 0 0 0 11px;
-  color: #222222;
-`

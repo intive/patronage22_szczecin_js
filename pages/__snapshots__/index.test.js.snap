@@ -5,11 +5,11 @@ exports[`Home should render Home page 1`] = `
   <div
     class="container"
   >
-    <div
-      class="sc-bdvvtL bJUixO"
+    <header
+      class="sc-gsDKAQ jgoxkZ"
     >
       <div
-        class="sc-gsDKAQ jfTcXB"
+        class="sc-dkPtRN bPtuwn"
       >
         <svg
           fill="none"
@@ -24,14 +24,14 @@ exports[`Home should render Home page 1`] = `
           />
         </svg>
         <p
-          class="sc-dkPtRN gowXMq"
+          class="sc-hKwDye kuBdgx"
         >
           My Retro Board
         </p>
       </div>
-    </div>
+    </header>
     <main
-      class="sc-hKwDye kFoxIu"
+      class="sc-bdvvtL IJvgw"
     >
       <h1>
         PATRONAGE22 SZCZECIN JS

@@ -5,7 +5,7 @@ import Layout from './Layout'
 
 describe('Header', () => {
   it('should render Layout', () => {
-    const layout = render(<Layout />)
-    expect(layout).toMatchSnapshot()
+    const { container } = render(<Layout />)
+    expect(container).toMatchSnapshot()
   })
 })

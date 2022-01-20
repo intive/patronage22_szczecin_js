@@ -5,7 +5,7 @@ import Header from './Header'
 
 describe('Header', () => {
   it('should render Header', () => {
-    const header = render(<Header />)
-    expect(header).toMatchSnapshot()
+    const { container } = render(<Header />)
+    expect(container).toMatchSnapshot()
   })
 })

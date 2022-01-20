@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import { Wrapper } from './Layout.style'
 import Header from './Header'
 
 export default function Layout (props) {
@@ -9,9 +9,3 @@ export default function Layout (props) {
     </>
   )
 }
-
-const Wrapper = styled.main`
-  max-width: 1400px;
-  width: 95%;
-  margin: 0 auto;
-`
