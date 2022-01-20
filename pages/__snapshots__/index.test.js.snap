@@ -17,6 +17,9 @@ exports[`Home should render Home page 1`] = `
           tag_faces
         </span>
       </p>
+      <p>
+        next-i18next-example-key
+      </p>
     </main>
   </div>
 </div>
