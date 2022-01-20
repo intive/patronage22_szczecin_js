@@ -1,7 +1,7 @@
 /* globals describe, it, expect  */
 
 import { render } from '@testing-library/react'
-import Layout from './layout'
+import Layout from './Layout'
 
 describe('Header', () => {
   it('should render Layout', () => {
