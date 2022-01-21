@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import Icon from '../components/Icon'
+import Layout from '../components/Layout/Layout'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useTranslation } from 'next-i18next'
 
 export async function getStaticProps ({ locale }) {
   return {
@@ -12,30 +11,23 @@ export async function getStaticProps ({ locale }) {
 }
 
 export default function Home () {
-  const { t } = useTranslation('common')
-
   return (
     <div className='container'>
       <Head>
         <title>Retro Board - Szczecin JS</title>
         <link rel='icon' href='/favicon.ico' />
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
         <link
           href='https://fonts.googleapis.com/icon?family=Material+Icons'
           rel='stylesheet'
         />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'
+          rel='stylesheet'
+        />
       </Head>
-
-      <main>
-        <h1>
-          PATRONAGE22 SZCZECIN JS
-        </h1>
-        <p>
-          Material Icons <Icon name='tag_faces' styleClass='' />
-        </p>
-        <p>
-          {t('next-i18next-example-key')}
-        </p>
-      </main>
+      <Layout />
     </div>
   )
 }
