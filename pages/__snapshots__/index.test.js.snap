@@ -5,22 +5,31 @@ exports[`Home should render Home page 1`] = `
   <div
     class="container"
   >
-    <main>
-      <h1>
-        PATRONAGE22 SZCZECIN JS
-      </h1>
-      <p>
-        Material Icons 
-        <span
-          class="material-icons"
+    <header
+      class="sc-gsDKAQ klZIKV"
+    >
+      <div
+        class="sc-dkPtRN fmryAs"
+      >
+        <div
+          class="sc-hKwDye dUNXdK"
         >
-          tag_faces
-        </span>
-      </p>
-      <p>
-        next-i18next-example-key
-      </p>
-    </main>
+          <span
+            class="material-icons"
+          >
+            crop_original
+          </span>
+          <p
+            class="sc-eCImPb khQFgy"
+          >
+            headerTitle
+          </p>
+        </div>
+      </div>
+    </header>
+    <main
+      class="sc-bdvvtL iQOlZf"
+    />
   </div>
 </div>
 `;

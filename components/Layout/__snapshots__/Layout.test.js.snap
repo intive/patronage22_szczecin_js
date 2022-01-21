@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout should render Layout 1`] = `
+<div>
+  <header
+    class="sc-gsDKAQ klZIKV"
+  >
+    <div
+      class="sc-dkPtRN fmryAs"
+    >
+      <div
+        class="sc-hKwDye dUNXdK"
+      >
+        <span
+          class="material-icons"
+        >
+          crop_original
+        </span>
+        <p
+          class="sc-eCImPb khQFgy"
+        >
+          headerTitle
+        </p>
+      </div>
+    </div>
+  </header>
+  <main
+    class="sc-bdvvtL iQOlZf"
+  />
+</div>
+`;
