@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContextMenuItem should renders correctly 1`] = `
+<div>
+  <li
+    class="sc-bdvvtL jZIOSJ"
+  >
+    <button
+      class="sc-gsDKAQ khpYYA"
+    >
+      <span
+        class="material-icons sc-dkPtRN eCIlby"
+      >
+        lock
+      </span>
+      Testname
+    </button>
+  </li>
+</div>
+`;

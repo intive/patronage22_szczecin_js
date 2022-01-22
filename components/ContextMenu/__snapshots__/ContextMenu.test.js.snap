@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContextMenu should renders correctly ContextMenu 1`] = `
+<div>
+  <div
+    class="sc-gsDKAQ brkEZq"
+  >
+    <button
+      aria-controls="1"
+      aria-expanded="false"
+      aria-haspopup="menu"
+      class="sc-dkPtRN kZvNxO"
+    >
+      <span
+        class="material-icons"
+      >
+        more_horiz
+      </span>
+    </button>
+    <nav
+      class="sc-hKwDye bzAwPp"
+      id="1"
+    >
+      <ul
+        class="sc-bdvvtL hMPcrs"
+      >
+        <li
+          class="sc-eCImPb ihRWfz"
+        >
+          <button
+            class="sc-jRQBWg kbEDqI"
+          >
+            <span
+              class="material-icons sc-gKclnd bZLfhM"
+            >
+              lock
+            </span>
+            setPassword
+          </button>
+        </li>
+        <li
+          class="sc-eCImPb ihRWfz"
+        >
+          <button
+            class="sc-jRQBWg kbEDqI"
+          >
+            <span
+              class="material-icons sc-gKclnd bZLfhM"
+            >
+              delete
+            </span>
+            deleteBoard
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;

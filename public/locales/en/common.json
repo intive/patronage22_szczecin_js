@@ -2,5 +2,7 @@
   "headerTitle": "My Retro Board",
   "cardCount_zero": "{{count}} cards",
   "cardCount_one": "{{count}} card",
-  "cardCount_other": "{{count}} cards"
+  "cardCount_other": "{{count}} cards",
+  "setPassword": "Set Password",
+  "deleteBoard": "Delete board"
 }

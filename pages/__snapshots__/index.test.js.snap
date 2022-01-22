@@ -48,10 +48,10 @@ exports[`Home should render Home page 1`] = `
         </button>
       </div>
       <div
-        class="sc-furwcr cGXmQV"
+        class="sc-bqiRlB iclrs"
       >
         <div
-          class="sc-pVTFL jeqYEW"
+          class="sc-ksdxgE jfObEo"
         >
           <span
             class="material-icons"
@@ -60,26 +60,26 @@ exports[`Home should render Home page 1`] = `
           </span>
         </div>
         <h4
-          class="sc-jrQzAO fKSzgk"
+          class="sc-hBUSln lhYwYz"
         >
           Board name 1
         </h4>
         <p
-          class="sc-kDTinF sc-iqseJM etjriW cKNRkB"
+          class="sc-fotOHu sc-fFeiMQ kvUwmf iDiNmk"
         >
           1 Jan 2022
         </p>
         <p
-          class="sc-kDTinF etjriW"
+          class="sc-fotOHu kvUwmf"
         >
           cardCount
         </p>
       </div>
       <div
-        class="sc-jRQBWg ctTUaR"
+        class="sc-bqiRlB iclrs"
       >
         <div
-          class="sc-gKclnd bhZFuz"
+          class="sc-ksdxgE jfObEo"
         >
           <span
             class="material-icons"
@@ -88,26 +88,26 @@ exports[`Home should render Home page 1`] = `
           </span>
         </div>
         <h4
-          class="sc-iCfMLu iYsejJ"
+          class="sc-hBUSln lhYwYz"
         >
           Board name 1
         </h4>
         <p
-          class="sc-furwcr sc-pVTFL jzezhb bOqEUQ"
+          class="sc-fotOHu sc-fFeiMQ kvUwmf iDiNmk"
         >
           1 Jan 2022
         </p>
         <p
-          class="sc-furwcr jzezhb"
+          class="sc-fotOHu kvUwmf"
         >
           cardCount
         </p>
       </div>
       <div
-        class="sc-jRQBWg ctTUaR"
+        class="sc-bqiRlB iclrs"
       >
         <div
-          class="sc-gKclnd bhZFuz"
+          class="sc-ksdxgE jfObEo"
         >
           <span
             class="material-icons"
@@ -116,20 +116,73 @@ exports[`Home should render Home page 1`] = `
           </span>
         </div>
         <h4
-          class="sc-iCfMLu iYsejJ"
+          class="sc-hBUSln lhYwYz"
         >
           Board name 1
         </h4>
         <p
-          class="sc-furwcr sc-pVTFL jzezhb bOqEUQ"
+          class="sc-fotOHu sc-fFeiMQ kvUwmf iDiNmk"
         >
           1 Jan 2022
         </p>
         <p
-          class="sc-furwcr jzezhb"
+          class="sc-fotOHu kvUwmf"
         >
           cardCount
         </p>
+      </div>
+      <div
+        class="sc-pVTFL dVhlnl"
+      >
+        <button
+          aria-controls="5"
+          aria-expanded="false"
+          aria-haspopup="menu"
+          class="sc-jrQzAO eQSTlc"
+        >
+          <span
+            class="material-icons"
+          >
+            more_horiz
+          </span>
+        </button>
+        <nav
+          class="sc-kDTinF kXsHtP"
+          id="5"
+        >
+          <ul
+            class="sc-furwcr bgEzXB"
+          >
+            <li
+              class="sc-iqseJM ezIeti"
+            >
+              <button
+                class="sc-crHmcD csmCQY"
+              >
+                <span
+                  class="material-icons sc-egiyK diXkgA"
+                >
+                  lock
+                </span>
+                setPassword
+              </button>
+            </li>
+            <li
+              class="sc-iqseJM ezIeti"
+            >
+              <button
+                class="sc-crHmcD csmCQY"
+              >
+                <span
+                  class="material-icons sc-egiyK diXkgA"
+                >
+                  delete
+                </span>
+                deleteBoard
+              </button>
+            </li>
+          </ul>
+        </nav>
       </div>
     </main>
     <br />
