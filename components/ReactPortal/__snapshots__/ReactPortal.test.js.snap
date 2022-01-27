@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReactPortal should render ReactPortal correctly 1`] = `
+<body>
+  <div />
+  <div
+    id="testId"
+  />
+</body>
+`;

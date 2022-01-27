@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal should render Modal correctly 1`] = `
+<body
+  style="overflow: hidden;"
+>
+  <div />
+  <div
+    id="modal-portal"
+  >
+    <div
+      class="sc-dkPtRN hBZupT"
+      data-testid="backdrop"
+    />
+    <div
+      aria-hidden="false"
+      class="sc-hKwDye hkhOSC"
+      role="dialog"
+    >
+      <div
+        class="sc-eCImPb jdRPcx"
+      >
+        <p
+          class="sc-gKclnd eVXqrc"
+          id="modalTitle"
+        >
+          title
+        </p>
+        <p
+          class="sc-iCfMLu hKohOx"
+          id="modalSubtitle"
+        >
+          subtitle
+        </p>
+      </div>
+      <div
+        class="sc-furwcr faehoW"
+      />
+      <div
+        class="sc-pVTFL bkJkxS"
+      >
+        <button
+          class="sc-bdvvtL jVCSJw sc-jrQzAO bsfgRs"
+        >
+          buttons.cancel
+        </button>
+        <button
+          class="sc-bdvvtL dRBcfm sc-kDTinF gcMRAr"
+        >
+          buttons.continue
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+`;

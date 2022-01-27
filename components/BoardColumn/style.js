@@ -36,7 +36,7 @@ export const ColumnCardText = styled.div`
   padding: 0.75rem 1rem;
   border: 1px solid #E1E1E1;
   border-radius: 8px;
-  background: ##FFFFFF;
+  background: #FFFFFF;
   overflow-wrap: break-word;
 `
 

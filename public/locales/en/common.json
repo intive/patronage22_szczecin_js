@@ -5,8 +5,11 @@
   "cardCount_other": "{{count}} cards",
   "boardColumn": {
     "title": "Column name",
-    "addCard": "Add card",
+    "addCard": "Add card"
+  },
+  "buttons": {
     "save": "Save",
+    "continue": "Continue",
     "cancel": "Cancel"
   },
   "boardHeader": {
