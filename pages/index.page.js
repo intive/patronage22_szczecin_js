@@ -1,3 +1,4 @@
+import CreateBoardTile from '../components/CreateBoardTile/CreateBoardTile'
 import Head from 'next/head'
 import Layout from '../components/Layout/Layout'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -12,6 +13,7 @@ export default function Home () {
       </Head>
 
       <Layout>
+        <CreateBoardTile />
         <BoardTile name='Board name 1' date='1 Jan 2022' cardCount={0} hasPassword />
       </Layout>
 

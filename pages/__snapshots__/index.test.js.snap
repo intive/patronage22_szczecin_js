@@ -6,13 +6,13 @@ exports[`Home should render Home page 1`] = `
     class="container"
   >
     <header
-      class="sc-gsDKAQ iAvKGC"
+      class="sc-eCImPb jEdnXJ"
     >
       <div
-        class="sc-dkPtRN fmryAs"
+        class="sc-jRQBWg dquuTs"
       >
         <a
-          class="sc-hKwDye eoFuTM"
+          class="sc-gKclnd dkHLmp"
           href="/"
         >
           <span
@@ -21,7 +21,7 @@ exports[`Home should render Home page 1`] = `
             crop_original
           </span>
           <p
-            class="sc-eCImPb khQFgy"
+            class="sc-iCfMLu igRBkW"
           >
             headerTitle
           </p>
@@ -29,13 +29,29 @@ exports[`Home should render Home page 1`] = `
       </div>
     </header>
     <main
-      class="sc-bdvvtL iQOlZf"
+      class="sc-hKwDye gmyMrp"
     >
       <div
-        class="sc-jRQBWg ctTUaR"
+        class="sc-dkPtRN hzCcxk"
+        role="button"
+        tabindex="0"
+      >
+        <button
+          class="sc-bdvvtL jESiNr"
+        >
+          <span
+            class="material-icons sc-gsDKAQ jUyrhl"
+          >
+            crop_original
+          </span>
+          New board
+        </button>
+      </div>
+      <div
+        class="sc-furwcr cGXmQV"
       >
         <div
-          class="sc-gKclnd bhZFuz"
+          class="sc-pVTFL jeqYEW"
         >
           <span
             class="material-icons"
@@ -44,17 +60,17 @@ exports[`Home should render Home page 1`] = `
           </span>
         </div>
         <h4
-          class="sc-iCfMLu iYsejJ"
+          class="sc-jrQzAO fKSzgk"
         >
           Board name 1
         </h4>
         <p
-          class="sc-furwcr sc-pVTFL jzezhb bOqEUQ"
+          class="sc-kDTinF sc-iqseJM etjriW cKNRkB"
         >
           1 Jan 2022
         </p>
         <p
-          class="sc-furwcr jzezhb"
+          class="sc-kDTinF etjriW"
         >
           0
            cards
@@ -63,23 +79,23 @@ exports[`Home should render Home page 1`] = `
     </main>
     <br />
     <button
-      class="sc-jrQzAO gYIMsw"
+      class="sc-bdvvtL jESiNr"
     >
       Continue
     </button>
     <br />
     <button
-      class="sc-jrQzAO gYIMsw"
+      class="sc-bdvvtL jESiNr"
       disabled=""
     >
       Continue
     </button>
     <br />
     <button
-      class="sc-jrQzAO gYIMsw"
+      class="sc-bdvvtL jESiNr"
     >
       <span
-        class="material-icons sc-kDTinF UMPJk"
+        class="material-icons sc-gsDKAQ jUyrhl"
       >
         crop_original
       </span>
@@ -87,11 +103,11 @@ exports[`Home should render Home page 1`] = `
     </button>
     <br />
     <button
-      class="sc-jrQzAO gYIMsw"
+      class="sc-bdvvtL jESiNr"
       disabled=""
     >
       <span
-        class="material-icons sc-kDTinF UMPJk"
+        class="material-icons sc-gsDKAQ jUyrhl"
       >
         crop_original
       </span>
@@ -99,23 +115,23 @@ exports[`Home should render Home page 1`] = `
     </button>
     <br />
     <button
-      class="sc-jrQzAO gRlSla"
+      class="sc-bdvvtL dzUoKp"
     >
       Continue
     </button>
     <br />
     <button
-      class="sc-jrQzAO gRlSla"
+      class="sc-bdvvtL dzUoKp"
       disabled=""
     >
       Continue
     </button>
     <br />
     <button
-      class="sc-jrQzAO gRlSla"
+      class="sc-bdvvtL dzUoKp"
     >
       <span
-        class="material-icons sc-kDTinF UMPJk"
+        class="material-icons sc-gsDKAQ jUyrhl"
       >
         crop_original
       </span>
@@ -123,11 +139,11 @@ exports[`Home should render Home page 1`] = `
     </button>
     <br />
     <button
-      class="sc-jrQzAO gRlSla"
+      class="sc-bdvvtL dzUoKp"
       disabled=""
     >
       <span
-        class="material-icons sc-kDTinF UMPJk"
+        class="material-icons sc-gsDKAQ jUyrhl"
       >
         crop_original
       </span>
