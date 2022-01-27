@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateBoardTile renders correctly 1`] = `
+<div>
+  <div
+    class="sc-dkPtRN hzCcxk"
+    role="button"
+    tabindex="0"
+  >
+    <button
+      class="sc-bdvvtL jESiNr"
+    >
+      <span
+        class="material-icons sc-gsDKAQ jUyrhl"
+      >
+        crop_original
+      </span>
+      New board
+    </button>
+  </div>
+</div>
+`;
