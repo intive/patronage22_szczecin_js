@@ -79,8 +79,8 @@ const BoardColumn = () => {
             <>
               <TextArea value={cardTextValue} name='cardTextValue' onChange={handleOnChange} ref={textAreaRef} />
               <ColumnAddCardWrapper right>
-                <StyledButton text onClick={handleCancelCard}>{t('boardColumn.cancel')}</StyledButton>
-                <StyledButton text onClick={handleSaveCard}>{t('boardColumn.save')}</StyledButton>
+                <StyledButton text onClick={handleCancelCard}>{t('buttons.cancel')}</StyledButton>
+                <StyledButton text onClick={handleSaveCard}>{t('buttons.save')}</StyledButton>
               </ColumnAddCardWrapper>
             </>
             )

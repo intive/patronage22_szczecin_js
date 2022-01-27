@@ -16,7 +16,7 @@ describe('BoardColumn', () => {
     const button = screen.getByText('boardColumn.addCard')
     userEvent.click(button)
 
-    expect(screen.queryByText(/boardColumn.cancel/i)).toBeVisible()
+    expect(screen.queryByText(/buttons.cancel/i)).toBeVisible()
     expect(button).not.toBeVisible()
   })
 
@@ -25,14 +25,14 @@ describe('BoardColumn', () => {
     const button = screen.getByText('boardColumn.addCard')
     userEvent.click(button)
 
-    expect(screen.queryByText(/boardColumn.save/i)).toBeVisible()
+    expect(screen.queryByText(/buttons.save/i)).toBeVisible()
     expect(button).not.toBeInTheDocument()
   })
 
   it('should hide save button and show add card button after click on save button', () => {
     render(<BoardColumn />)
     userEvent.click(screen.getByText('boardColumn.addCard'))
-    userEvent.click(screen.getByText('boardColumn.save'))
+    userEvent.click(screen.getByText('buttons.save'))
 
     expect(screen.queryByText(/boardColumn.save/i)).not.toBeInTheDocument()
     expect(screen.getByText('boardColumn.addCard')).toBeVisible()
@@ -41,7 +41,7 @@ describe('BoardColumn', () => {
   it('should hide cancel button and show add card button after click on cancel button', () => {
     render(<BoardColumn />)
     userEvent.click(screen.getByText('boardColumn.addCard'))
-    userEvent.click(screen.getByText('boardColumn.cancel'))
+    userEvent.click(screen.getByText('buttons.cancel'))
 
     expect(screen.queryByText(/boardColumn.cancel/i)).not.toBeInTheDocument()
     expect(screen.getByText('boardColumn.addCard')).toBeVisible()

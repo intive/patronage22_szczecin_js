@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should render Input correctly 1`] = `
+<div>
+  <input
+    class="sc-bdvvtL sMrCm"
+  />
+</div>
+`;
+
+exports[`Input should render Input with type correctly 1`] = `
+<div>
+  <input
+    class="sc-bdvvtL sMrCm"
+    type="password"
+  />
+</div>
+`;
