@@ -21,12 +21,13 @@ export const HeaderWrapper = styled.div`
   }
 `
 
-export const HeaderTitle = styled.div`
+export const HeaderTitle = styled.a`
   display: flex;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.5rem;
-  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
   `
 
 export const HeaderTitleText = styled.p`
