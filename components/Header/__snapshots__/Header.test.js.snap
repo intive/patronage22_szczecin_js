@@ -8,8 +8,9 @@ exports[`Header should render Header 1`] = `
     <div
       class="sc-gsDKAQ fjfUlk"
     >
-      <div
-        class="sc-dkPtRN DFFod"
+      <a
+        class="sc-dkPtRN ijCfmr"
+        href="/"
       >
         <span
           class="material-icons"
@@ -19,7 +20,7 @@ exports[`Header should render Header 1`] = `
         <p
           class="sc-hKwDye bcymKS"
         />
-      </div>
+      </a>
     </div>
   </header>
 </div>

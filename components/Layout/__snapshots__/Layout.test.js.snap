@@ -8,8 +8,9 @@ exports[`Layout should render Layout 1`] = `
     <div
       class="sc-dkPtRN fmryAs"
     >
-      <div
-        class="sc-hKwDye dUNXdK"
+      <a
+        class="sc-hKwDye eoFuTM"
+        href="/"
       >
         <span
           class="material-icons"
@@ -21,7 +22,7 @@ exports[`Layout should render Layout 1`] = `
         >
           headerTitle
         </p>
-      </div>
+      </a>
     </div>
   </header>
   <main

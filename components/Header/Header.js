@@ -6,7 +6,7 @@ export default function Header (props) {
   return (
     <HeaderContainer>
       <HeaderWrapper>
-        <Link href='/'>
+        <Link href='/' passHref>
           <HeaderTitle>
             <Icon name='crop_original' />
             <HeaderTitleText>{props.title}</HeaderTitleText>

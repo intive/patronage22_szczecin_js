@@ -11,8 +11,9 @@ exports[`Home should render Home page 1`] = `
       <div
         class="sc-dkPtRN fmryAs"
       >
-        <div
-          class="sc-hKwDye dUNXdK"
+        <a
+          class="sc-hKwDye eoFuTM"
+          href="/"
         >
           <span
             class="material-icons"
@@ -24,7 +25,7 @@ exports[`Home should render Home page 1`] = `
           >
             headerTitle
           </p>
-        </div>
+        </a>
       </div>
     </header>
     <main
