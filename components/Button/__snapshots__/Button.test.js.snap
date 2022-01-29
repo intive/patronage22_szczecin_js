@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders button with icon 1`] = `
+<div>
+  <button
+    class="sc-bdvvtL dzUoKp"
+  >
+    <span
+      class="material-icons sc-gsDKAQ jUyrhl"
+    >
+      crop_original
+    </span>
+    Continue
+  </button>
+</div>
+`;
+
+exports[`Button renders button without icon 1`] = `
+<div>
+  <button
+    class="sc-bdvvtL dzUoKp"
+  >
+    Continue
+  </button>
+</div>
+`;
+
+exports[`Button renders contained button with icon 1`] = `
+<div>
+  <button
+    class="sc-bdvvtL jESiNr"
+  >
+    <span
+      class="material-icons sc-gsDKAQ jUyrhl"
+    >
+      crop_original
+    </span>
+    New board
+  </button>
+</div>
+`;
+
+exports[`Button renders contained button without icon 1`] = `
+<div>
+  <button
+    class="sc-bdvvtL jESiNr"
+  >
+    New board
+  </button>
+</div>
+`;
+
+exports[`Button renders contained disabled button with icon 1`] = `
+<div>
+  <button
+    class="sc-bdvvtL jESiNr"
+    disabled=""
+  >
+    <span
+      class="material-icons sc-gsDKAQ jUyrhl"
+    >
+      crop_original
+    </span>
+    New board
+  </button>
+</div>
+`;
+
+exports[`Button renders contained disabled button without icon 1`] = `
+<div>
+  <button
+    class="sc-bdvvtL jESiNr"
+    disabled=""
+  >
+    New board
+  </button>
+</div>
+`;
+
+exports[`Button renders disabled button with icon 1`] = `
+<div>
+  <button
+    class="sc-bdvvtL dzUoKp"
+    disabled=""
+  >
+    <span
+      class="material-icons sc-gsDKAQ jUyrhl"
+    >
+      crop_original
+    </span>
+    Continue
+  </button>
+</div>
+`;
+
+exports[`Button renders disabled button without icon 1`] = `
+<div>
+  <button
+    class="sc-bdvvtL dzUoKp"
+    disabled=""
+  >
+    Continue
+  </button>
+</div>
+`;

@@ -61,6 +61,79 @@ exports[`Home should render Home page 1`] = `
         </p>
       </div>
     </main>
+    <br />
+    <button
+      class="sc-jrQzAO gYIMsw"
+    >
+      Continue
+    </button>
+    <br />
+    <button
+      class="sc-jrQzAO gYIMsw"
+      disabled=""
+    >
+      Continue
+    </button>
+    <br />
+    <button
+      class="sc-jrQzAO gYIMsw"
+    >
+      <span
+        class="material-icons sc-kDTinF UMPJk"
+      >
+        crop_original
+      </span>
+      Continue
+    </button>
+    <br />
+    <button
+      class="sc-jrQzAO gYIMsw"
+      disabled=""
+    >
+      <span
+        class="material-icons sc-kDTinF UMPJk"
+      >
+        crop_original
+      </span>
+      Continue
+    </button>
+    <br />
+    <button
+      class="sc-jrQzAO gRlSla"
+    >
+      Continue
+    </button>
+    <br />
+    <button
+      class="sc-jrQzAO gRlSla"
+      disabled=""
+    >
+      Continue
+    </button>
+    <br />
+    <button
+      class="sc-jrQzAO gRlSla"
+    >
+      <span
+        class="material-icons sc-kDTinF UMPJk"
+      >
+        crop_original
+      </span>
+      Continue
+    </button>
+    <br />
+    <button
+      class="sc-jrQzAO gRlSla"
+      disabled=""
+    >
+      <span
+        class="material-icons sc-kDTinF UMPJk"
+      >
+        crop_original
+      </span>
+      Continue
+    </button>
+    <br />
   </div>
 </div>
 `;
