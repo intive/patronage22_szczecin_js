@@ -172,6 +172,17 @@ exports[`Home should render Home page 1`] = `
       >
         Click to Open Modal
       </button>
+      <br />
+      <button
+        class="sc-crHmcD lefaQv"
+      >
+        <span
+          class="material-icons sc-egiyK jjEWZz"
+        >
+          crop_original
+        </span>
+        New Board
+      </button>
     </main>
   </div>
 </div>

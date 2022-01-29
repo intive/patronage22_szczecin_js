@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BoardCreator renders modal BoardCreator 1`] = `
+<body>
+  <div />
+  <div
+    id="modal-portal"
+  >
+    <div
+      aria-hidden="false"
+      class="sc-dkPtRN jzSsRw"
+      role="dialog"
+    >
+      <button
+        class="sc-bdvvtL dRBcfm sc-hKwDye kMksWp"
+      >
+        <span
+          class="material-icons sc-gsDKAQ jUyrhl"
+        >
+          close
+        </span>
+      </button>
+      <div
+        class="sc-eCImPb brrNer"
+      >
+        <div
+          class="sc-jRQBWg tHMPR"
+        >
+          createNewBoard.createNewBoardTitle
+        </div>
+        <div
+          class="sc-iCfMLu ftPdqH"
+        >
+          createNewBoard.createNewBoardSubtitle
+        </div>
+        <input
+          class="sc-furwcr jnaAwp"
+          type="text"
+        />
+        <button
+          class="sc-bdvvtL dRBcfm sc-gKclnd eWCgBz"
+        >
+          buttons.continue
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`BoardCreator should close modal after click on continue button 1`] = `
+<body>
+  <div />
+  <div
+    id="modal-portal"
+  >
+    <div
+      aria-hidden="false"
+      class="sc-dkPtRN jzSsRw"
+      role="dialog"
+    >
+      <button
+        class="sc-bdvvtL dRBcfm sc-hKwDye kMksWp"
+      >
+        <span
+          class="material-icons sc-gsDKAQ jUyrhl"
+        >
+          close
+        </span>
+      </button>
+      <div
+        class="sc-eCImPb brrNer"
+      >
+        <div
+          class="sc-jRQBWg tHMPR"
+        >
+          createNewBoard.createNewBoardTitle
+        </div>
+        <div
+          class="sc-iCfMLu ftPdqH"
+        >
+          createNewBoard.createNewBoardSubtitle
+        </div>
+        <input
+          class="sc-furwcr jnaAwp"
+          type="text"
+        />
+        <button
+          class="sc-bdvvtL dRBcfm sc-gKclnd eWCgBz"
+        >
+          buttons.continue
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`BoardCreator should close modal after click on cross button 1`] = `
+<body>
+  <div />
+  <div
+    id="modal-portal"
+  >
+    <div
+      aria-hidden="false"
+      class="sc-dkPtRN jzSsRw"
+      role="dialog"
+    >
+      <button
+        class="sc-bdvvtL dRBcfm sc-hKwDye kMksWp"
+      >
+        <span
+          class="material-icons sc-gsDKAQ jUyrhl"
+        >
+          close
+        </span>
+      </button>
+      <div
+        class="sc-eCImPb brrNer"
+      >
+        <div
+          class="sc-jRQBWg tHMPR"
+        >
+          createNewBoard.createNewBoardTitle
+        </div>
+        <div
+          class="sc-iCfMLu ftPdqH"
+        >
+          createNewBoard.createNewBoardSubtitle
+        </div>
+        <input
+          class="sc-furwcr jnaAwp"
+          type="text"
+        />
+        <button
+          class="sc-bdvvtL dRBcfm sc-gKclnd eWCgBz"
+        >
+          buttons.continue
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`BoardCreator should filled input field correctly 1`] = `
+<body>
+  <div />
+  <div
+    id="modal-portal"
+  >
+    <div
+      aria-hidden="false"
+      class="sc-dkPtRN jzSsRw"
+      role="dialog"
+    >
+      <button
+        class="sc-bdvvtL dRBcfm sc-hKwDye kMksWp"
+      >
+        <span
+          class="material-icons sc-gsDKAQ jUyrhl"
+        >
+          close
+        </span>
+      </button>
+      <div
+        class="sc-eCImPb brrNer"
+      >
+        <div
+          class="sc-jRQBWg tHMPR"
+        >
+          createNewBoard.createNewBoardTitle
+        </div>
+        <div
+          class="sc-iCfMLu ftPdqH"
+        >
+          createNewBoard.createNewBoardSubtitle
+        </div>
+        <input
+          class="sc-furwcr jnaAwp"
+          type="text"
+        />
+        <button
+          class="sc-bdvvtL dRBcfm sc-gKclnd eWCgBz"
+        >
+          buttons.continue
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+`;

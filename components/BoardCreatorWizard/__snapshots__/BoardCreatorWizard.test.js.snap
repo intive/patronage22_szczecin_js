@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BoardCreatorWizard renders boardCreatorWizard 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL lgusKh"
+  >
+    createNewBoard.createNewBoardSubtitle
+  </div>
+  <input
+    class="sc-gsDKAQ eZwtwJ"
+    type="text"
+  />
+</div>
+`;
+
+exports[`BoardCreatorWizard should filled input field correctly 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL lgusKh"
+  >
+    createNewBoard.createNewBoardSubtitle
+  </div>
+  <input
+    class="sc-gsDKAQ eZwtwJ"
+    type="text"
+  />
+</div>
+`;

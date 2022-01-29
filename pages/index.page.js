@@ -7,6 +7,7 @@ import BoardColumn from '../components/BoardColumn/BoardColumn'
 import dynamic from 'next/dynamic'
 import { useState } from 'react'
 import Button from '../components/Button/Button'
+import BoardCreator from '../components/BoardCreator/BoardCreator'
 
 const SetPasswordModal = dynamic(() => import('../components/SetPasswordModal/SetPasswordModal'))
 
@@ -21,6 +22,12 @@ export default function Home ({ tilesList }) {
     setIsOpen(false)
   }
 
+  const [showFirstModal, setShowFirstModal] = useState(false)
+
+  const showOrCloseFirstModalHandler = () => {
+    setShowFirstModal(!showFirstModal)
+  }
+
   return (
     <div className='container'>
       <Head>
@@ -32,6 +39,15 @@ export default function Home ({ tilesList }) {
         <br />
         <Button onClick={handleOpen}>Click to Open Modal</Button>
         <SetPasswordModal handleClose={handleClose} isOpen={isOpen} />
+
+        <br />
+        <Button icon='crop_original' onClick={showOrCloseFirstModalHandler}>New Board</Button>
+        {showFirstModal && (
+          <BoardCreator
+            onClose={showOrCloseFirstModalHandler}
+            handleOnClickContinue={showOrCloseFirstModalHandler}
+          />)}
+
       </Layout>
     </div>
   )

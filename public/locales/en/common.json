@@ -20,5 +20,11 @@
     "setPassword": "Set password",
     "removePassword": "Remove password",
     "deleteBoard": "Delete board"
-  }
+  },
+  "createNewBoard": {
+    "createNewBoardTitle": "Create new board",
+    "createNewBoardSubtitle": "Board name",
+    "createNewBoardVotes": "Assign maximum number of votes",
+    "createNewBoardTemplates": "Select template"
+    }
 }
