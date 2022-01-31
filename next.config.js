@@ -5,5 +5,8 @@ module.exports = {
   pageExtensions: ['page.js'],
   experimental: {
     styledComponents: true
+  },
+  publicRuntimeConfig: {
+    branchName: process.env.VERCEL_GIT_COMMIT_REF
   }
 }
