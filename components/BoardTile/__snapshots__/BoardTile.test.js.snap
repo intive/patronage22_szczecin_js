@@ -27,8 +27,7 @@ exports[`BoardTile renders correctly with password 1`] = `
     <p
       class="sc-hKwDye eRcqw"
     >
-      0
-       cards
+      cardCount
     </p>
   </div>
 </div>
@@ -52,8 +51,7 @@ exports[`BoardTile renders correctly without password 1`] = `
     <p
       class="sc-hKwDye eRcqw"
     >
-      0
-       cards
+      cardCount
     </p>
   </div>
 </div>

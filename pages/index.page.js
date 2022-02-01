@@ -1,9 +1,9 @@
 import CreateBoardTile from '../components/CreateBoardTile/CreateBoardTile'
 import Head from 'next/head'
 import Layout from '../components/Layout/Layout'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import BoardTile from '../components/BoardTile/BoardTile'
 import Button from '../components/Button/Button'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Home () {
   return (
@@ -15,6 +15,8 @@ export default function Home () {
       <Layout>
         <CreateBoardTile />
         <BoardTile name='Board name 1' date='1 Jan 2022' cardCount={0} hasPassword />
+        <BoardTile name='Board name 1' date='1 Jan 2022' cardCount={1} hasPassword />
+        <BoardTile name='Board name 1' date='1 Jan 2022' cardCount={2} hasPassword />
       </Layout>
 
       <br />
