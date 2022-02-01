@@ -1,3 +1,6 @@
 {
-  "headerTitle": "My Retro Board"
+  "headerTitle": "My Retro Board",
+  "cardCount_zero": "{{count}} cards",
+  "cardCount_one": "{{count}} card",
+  "cardCount_other": "{{count}} cards"
 }
