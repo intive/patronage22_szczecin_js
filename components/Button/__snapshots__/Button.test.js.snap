@@ -3,7 +3,7 @@
 exports[`Button renders button with icon 1`] = `
 <div>
   <button
-    class="sc-bdvvtL dzUoKp"
+    class="sc-bdvvtL jVCSJw"
   >
     <span
       class="material-icons sc-gsDKAQ jUyrhl"
@@ -18,7 +18,7 @@ exports[`Button renders button with icon 1`] = `
 exports[`Button renders button without icon 1`] = `
 <div>
   <button
-    class="sc-bdvvtL dzUoKp"
+    class="sc-bdvvtL jVCSJw"
   >
     Continue
   </button>
@@ -28,7 +28,7 @@ exports[`Button renders button without icon 1`] = `
 exports[`Button renders contained button with icon 1`] = `
 <div>
   <button
-    class="sc-bdvvtL jESiNr"
+    class="sc-bdvvtL dRBcfm"
   >
     <span
       class="material-icons sc-gsDKAQ jUyrhl"
@@ -43,7 +43,7 @@ exports[`Button renders contained button with icon 1`] = `
 exports[`Button renders contained button without icon 1`] = `
 <div>
   <button
-    class="sc-bdvvtL jESiNr"
+    class="sc-bdvvtL dRBcfm"
   >
     New board
   </button>
@@ -53,7 +53,7 @@ exports[`Button renders contained button without icon 1`] = `
 exports[`Button renders contained disabled button with icon 1`] = `
 <div>
   <button
-    class="sc-bdvvtL jESiNr"
+    class="sc-bdvvtL dRBcfm"
     disabled=""
   >
     <span
@@ -69,7 +69,7 @@ exports[`Button renders contained disabled button with icon 1`] = `
 exports[`Button renders contained disabled button without icon 1`] = `
 <div>
   <button
-    class="sc-bdvvtL jESiNr"
+    class="sc-bdvvtL dRBcfm"
     disabled=""
   >
     New board
@@ -80,7 +80,7 @@ exports[`Button renders contained disabled button without icon 1`] = `
 exports[`Button renders disabled button with icon 1`] = `
 <div>
   <button
-    class="sc-bdvvtL dzUoKp"
+    class="sc-bdvvtL jVCSJw"
     disabled=""
   >
     <span
@@ -96,7 +96,7 @@ exports[`Button renders disabled button with icon 1`] = `
 exports[`Button renders disabled button without icon 1`] = `
 <div>
   <button
-    class="sc-bdvvtL dzUoKp"
+    class="sc-bdvvtL jVCSJw"
     disabled=""
   >
     Continue

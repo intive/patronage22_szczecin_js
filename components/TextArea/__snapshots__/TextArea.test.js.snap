@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextArea should render TextArea component 1`] = `
+<div>
+  <textarea
+    class="sc-bdvvtL cVuBuF"
+  />
+</div>
+`;

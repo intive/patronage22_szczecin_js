@@ -7,6 +7,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import BoardTile from '../components/BoardTile/BoardTile'
 import Button from '../components/Button/Button'
 import { useTranslation } from 'next-i18next'
+import BoardColumn from '../components/BoardColumn/BoardColumn'
 
 export default function Home () {
   const { t } = useTranslation('common')
@@ -27,6 +28,7 @@ export default function Home () {
           <ContextMenuItem name={t('setPassword')} icon='lock' />
           <ContextMenuItem name={t('deleteBoard')} icon='delete' />
         </ContextMenu>
+        <BoardColumn />
       </Layout>
 
       <br />

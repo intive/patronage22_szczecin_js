@@ -4,5 +4,11 @@
   "cardCount_one": "{{count}} card",
   "cardCount_other": "{{count}} cards",
   "setPassword": "Set Password",
-  "deleteBoard": "Delete board"
+  "deleteBoard": "Delete board",
+  "boardColumn": {
+    "title": "Column name",
+    "addCard": "Add card",
+    "save": "Save",
+    "cancel": "Cancel"
+  }
 }

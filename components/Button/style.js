@@ -4,6 +4,7 @@ import Icon from '../Icon/Icon'
 export const StyledButton = styled.button`
   display: flex;
   align-items: center;
+  justify-content: center;
   box-shadow: 0px 4px 4px rgba(81, 81, 81, 0.16);
   border: none;
   border-radius: 8px;
@@ -48,6 +49,13 @@ export const StyledButton = styled.button`
       background: #bababa9e;
       cursor: default;
       color: #515151;
+    }
+  `}
+
+  ${props => props.outline && css`
+    border: 1px solid #515151;
+    &:hover {
+      border: 1px solid #000000;
     }
   `}
 `
