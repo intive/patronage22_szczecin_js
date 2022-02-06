@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BoardTilesList should render name, date, no icon when password is not provided or render render icon when password is provided 1`] = `
+<div>
+  <div
+    class="sc-ksdxgE kzNNSP"
+  >
+    <div
+      class="sc-bqiRlB bKrmmx"
+      role="button"
+      tabindex="0"
+    >
+      <button
+        class="sc-crHmcD lefaQv"
+      >
+        <span
+          class="material-icons sc-egiyK jjEWZz"
+        >
+          crop_original
+        </span>
+        New board
+      </button>
+    </div>
+    <div
+      class="sc-bdvvtL ONcpC"
+    >
+      <h4
+        class="sc-dkPtRN kUDuei"
+      >
+        mockedName
+      </h4>
+      <p
+        class="sc-eCImPb sc-jRQBWg gtDioY cTZnQP"
+      />
+      <div
+        class="sc-hKwDye dodXuz"
+      >
+        <p
+          class="sc-eCImPb gtDioY"
+        >
+          cardCount
+        </p>
+        <div
+          class="sc-iCfMLu dbydVW"
+        >
+          <button
+            aria-expanded="false"
+            aria-haspopup="menu"
+            class="sc-furwcr cTVyte"
+          >
+            <span
+              class="material-icons"
+            >
+              more_horiz
+            </span>
+          </button>
+          <nav
+            class="sc-pVTFL fGRbIZ"
+          >
+            <ul
+              class="sc-gKclnd ePohWH"
+            >
+              <li
+                class="sc-jrQzAO iMapqG"
+              >
+                <button
+                  class="sc-kDTinF lgLknF"
+                >
+                  <span
+                    class="material-icons sc-iqseJM dPyznh"
+                  >
+                    lock_outlined
+                  </span>
+                  contextMenu.setPassword
+                </button>
+              </li>
+              <li
+                class="sc-jrQzAO iMapqG"
+              >
+                <button
+                  class="sc-kDTinF lgLknF"
+                >
+                  <span
+                    class="material-icons sc-iqseJM dPyznh"
+                  >
+                    delete_outlined
+                  </span>
+                  contextMenu.deleteBoard
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-bdvvtL ONcpC"
+    >
+      <div
+        class="sc-gsDKAQ bkuMRF"
+      >
+        <span
+          class="material-icons"
+        >
+          lock_outlined
+        </span>
+      </div>
+      <h4
+        class="sc-dkPtRN kUDuei"
+      >
+        mockedName
+      </h4>
+      <p
+        class="sc-eCImPb sc-jRQBWg gtDioY cTZnQP"
+      />
+      <div
+        class="sc-hKwDye dodXuz"
+      >
+        <p
+          class="sc-eCImPb gtDioY"
+        >
+          cardCount
+        </p>
+        <div
+          class="sc-iCfMLu dbydVW"
+        >
+          <button
+            aria-expanded="false"
+            aria-haspopup="menu"
+            class="sc-furwcr cTVyte"
+          >
+            <span
+              class="material-icons"
+            >
+              more_horiz
+            </span>
+          </button>
+          <nav
+            class="sc-pVTFL fGRbIZ"
+          >
+            <ul
+              class="sc-gKclnd ePohWH"
+            >
+              <li
+                class="sc-jrQzAO iMapqG"
+              >
+                <button
+                  class="sc-kDTinF lgLknF"
+                >
+                  <span
+                    class="material-icons sc-iqseJM dPyznh"
+                  >
+                    lock_outlined
+                  </span>
+                  contextMenu.removePassword
+                </button>
+              </li>
+              <li
+                class="sc-jrQzAO iMapqG"
+              >
+                <button
+                  class="sc-kDTinF lgLknF"
+                >
+                  <span
+                    class="material-icons sc-iqseJM dPyznh"
+                  >
+                    delete_outlined
+                  </span>
+                  contextMenu.deleteBoard
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
