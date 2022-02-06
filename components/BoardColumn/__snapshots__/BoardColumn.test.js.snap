@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BoardColumn should render BoardColumn component 1`] = `
+<div>
+  <div
+    class="sc-dkPtRN dEbUgK"
+  >
+    <div
+      class="sc-hKwDye kjxWCv"
+    >
+      <h4
+        class="sc-eCImPb ljTXAf"
+      >
+        boardColumn.title
+      </h4>
+      <button
+        class="sc-bdvvtL boJPqq sc-jRQBWg ishcL"
+      >
+        boardColumn.addCard
+      </button>
+    </div>
+    <div />
+  </div>
+</div>
+`;

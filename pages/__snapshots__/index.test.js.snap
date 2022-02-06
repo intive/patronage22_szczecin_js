@@ -37,7 +37,7 @@ exports[`Home should render Home page 1`] = `
         tabindex="0"
       >
         <button
-          class="sc-bdvvtL jESiNr"
+          class="sc-bdvvtL dRBcfm"
         >
           <span
             class="material-icons sc-gsDKAQ jUyrhl"
@@ -184,23 +184,42 @@ exports[`Home should render Home page 1`] = `
           </ul>
         </nav>
       </div>
+      <div
+        class="sc-bkkeKt jXczvF"
+      >
+        <div
+          class="sc-ieecCq iIzSlv"
+        >
+          <h4
+            class="sc-dJjYzT VbBOo"
+          >
+            boardColumn.title
+          </h4>
+          <button
+            class="sc-bdvvtL boJPqq sc-hGPBjI dYmKQW"
+          >
+            boardColumn.addCard
+          </button>
+        </div>
+        <div />
+      </div>
     </main>
     <br />
     <button
-      class="sc-bdvvtL jESiNr"
+      class="sc-bdvvtL dRBcfm"
     >
       Continue
     </button>
     <br />
     <button
-      class="sc-bdvvtL jESiNr"
+      class="sc-bdvvtL dRBcfm"
       disabled=""
     >
       Continue
     </button>
     <br />
     <button
-      class="sc-bdvvtL jESiNr"
+      class="sc-bdvvtL dRBcfm"
     >
       <span
         class="material-icons sc-gsDKAQ jUyrhl"
@@ -211,7 +230,7 @@ exports[`Home should render Home page 1`] = `
     </button>
     <br />
     <button
-      class="sc-bdvvtL jESiNr"
+      class="sc-bdvvtL dRBcfm"
       disabled=""
     >
       <span
@@ -223,20 +242,20 @@ exports[`Home should render Home page 1`] = `
     </button>
     <br />
     <button
-      class="sc-bdvvtL dzUoKp"
+      class="sc-bdvvtL jVCSJw"
     >
       Continue
     </button>
     <br />
     <button
-      class="sc-bdvvtL dzUoKp"
+      class="sc-bdvvtL jVCSJw"
       disabled=""
     >
       Continue
     </button>
     <br />
     <button
-      class="sc-bdvvtL dzUoKp"
+      class="sc-bdvvtL jVCSJw"
     >
       <span
         class="material-icons sc-gsDKAQ jUyrhl"
@@ -247,7 +266,7 @@ exports[`Home should render Home page 1`] = `
     </button>
     <br />
     <button
-      class="sc-bdvvtL dzUoKp"
+      class="sc-bdvvtL jVCSJw"
       disabled=""
     >
       <span
