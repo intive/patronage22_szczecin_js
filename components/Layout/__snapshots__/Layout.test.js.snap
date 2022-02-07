@@ -25,6 +25,30 @@ exports[`Layout should render Layout 1`] = `
       </a>
     </div>
   </header>
+  <section
+    class="sc-iCfMLu bufwYK"
+  >
+    <a
+      class="sc-jrQzAO dXGhEw"
+      href="/"
+    >
+      boardHeader.returnLinkText
+    </a>
+    <div
+      class="sc-furwcr ARNEI"
+    >
+      <h1
+        class="sc-pVTFL jlLGXi"
+      >
+        Board name 1
+      </h1>
+      <button
+        class="sc-jRQBWg cXlHWf"
+      >
+        boardHeader.buttonText
+      </button>
+    </div>
+  </section>
   <main
     class="sc-bdvvtL iQOlZf"
   />

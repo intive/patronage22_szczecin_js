@@ -10,5 +10,9 @@
     "addCard": "Add card",
     "save": "Save",
     "cancel": "Cancel"
+  },
+  "boardHeader": {
+    "returnLinkText": "Return to main board",
+    "buttonText": "New Column"
   }
 }

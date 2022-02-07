@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BoardHeader should render BoardHeader 1`] = `
+<div>
+  <section
+    class="sc-dkPtRN eiEPuJ"
+  >
+    <a
+      class="sc-jRQBWg jfsFve"
+      href="/"
+    >
+      Return to main board
+    </a>
+    <div
+      class="sc-hKwDye AeogP"
+    >
+      <h1
+        class="sc-eCImPb cIClSu"
+      >
+        Board name 1
+      </h1>
+      <button
+        class="sc-bdvvtL dRBcfm"
+      >
+        New Column
+      </button>
+    </div>
+  </section>
+</div>
+`;

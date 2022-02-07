@@ -28,6 +28,30 @@ exports[`Home should render Home page 1`] = `
         </a>
       </div>
     </header>
+    <section
+      class="sc-furwcr heTTgl"
+    >
+      <a
+        class="sc-kDTinF aAGsX"
+        href="/"
+      >
+        boardHeader.returnLinkText
+      </a>
+      <div
+        class="sc-pVTFL kNzaUD"
+      >
+        <h1
+          class="sc-jrQzAO lmkYbL"
+        >
+          Board name 1
+        </h1>
+        <button
+          class="sc-bdvvtL dRBcfm"
+        >
+          boardHeader.buttonText
+        </button>
+      </div>
+    </section>
     <main
       class="sc-hKwDye gmyMrp"
     >
@@ -48,10 +72,10 @@ exports[`Home should render Home page 1`] = `
         </button>
       </div>
       <div
-        class="sc-bqiRlB iclrs"
+        class="sc-fFeiMQ dNia-de"
       >
         <div
-          class="sc-ksdxgE jfObEo"
+          class="sc-bkkeKt LBrMG"
         >
           <span
             class="material-icons"
@@ -60,26 +84,26 @@ exports[`Home should render Home page 1`] = `
           </span>
         </div>
         <h4
-          class="sc-hBUSln lhYwYz"
+          class="sc-ieecCq cUeaeN"
         >
           Board name 1
         </h4>
         <p
-          class="sc-fotOHu sc-fFeiMQ kvUwmf iDiNmk"
+          class="sc-dJjYzT sc-hGPBjI hrFqvL jdqmmu"
         >
           1 Jan 2022
         </p>
         <p
-          class="sc-fotOHu kvUwmf"
+          class="sc-dJjYzT hrFqvL"
         >
           cardCount
         </p>
       </div>
       <div
-        class="sc-bqiRlB iclrs"
+        class="sc-fFeiMQ dNia-de"
       >
         <div
-          class="sc-ksdxgE jfObEo"
+          class="sc-bkkeKt LBrMG"
         >
           <span
             class="material-icons"
@@ -88,26 +112,26 @@ exports[`Home should render Home page 1`] = `
           </span>
         </div>
         <h4
-          class="sc-hBUSln lhYwYz"
+          class="sc-ieecCq cUeaeN"
         >
           Board name 1
         </h4>
         <p
-          class="sc-fotOHu sc-fFeiMQ kvUwmf iDiNmk"
+          class="sc-dJjYzT sc-hGPBjI hrFqvL jdqmmu"
         >
           1 Jan 2022
         </p>
         <p
-          class="sc-fotOHu kvUwmf"
+          class="sc-dJjYzT hrFqvL"
         >
           cardCount
         </p>
       </div>
       <div
-        class="sc-bqiRlB iclrs"
+        class="sc-fFeiMQ dNia-de"
       >
         <div
-          class="sc-ksdxgE jfObEo"
+          class="sc-bkkeKt LBrMG"
         >
           <span
             class="material-icons"
@@ -116,29 +140,29 @@ exports[`Home should render Home page 1`] = `
           </span>
         </div>
         <h4
-          class="sc-hBUSln lhYwYz"
+          class="sc-ieecCq cUeaeN"
         >
           Board name 1
         </h4>
         <p
-          class="sc-fotOHu sc-fFeiMQ kvUwmf iDiNmk"
+          class="sc-dJjYzT sc-hGPBjI hrFqvL jdqmmu"
         >
           1 Jan 2022
         </p>
         <p
-          class="sc-fotOHu kvUwmf"
+          class="sc-dJjYzT hrFqvL"
         >
           cardCount
         </p>
       </div>
       <div
-        class="sc-pVTFL dVhlnl"
+        class="sc-crHmcD dVAprW"
       >
         <button
           aria-controls="5"
           aria-expanded="false"
           aria-haspopup="menu"
-          class="sc-jrQzAO eQSTlc"
+          class="sc-egiyK jLvaxE"
         >
           <span
             class="material-icons"
@@ -147,20 +171,20 @@ exports[`Home should render Home page 1`] = `
           </span>
         </button>
         <nav
-          class="sc-kDTinF kXsHtP"
+          class="sc-bqiRlB jpbSMX"
           id="5"
         >
           <ul
-            class="sc-furwcr bgEzXB"
+            class="sc-iqseJM gZgkLn"
           >
             <li
-              class="sc-iqseJM ezIeti"
+              class="sc-ksdxgE eJwAGR"
             >
               <button
-                class="sc-crHmcD csmCQY"
+                class="sc-hBUSln gjSsDd"
               >
                 <span
-                  class="material-icons sc-egiyK diXkgA"
+                  class="material-icons sc-fotOHu bVYBwC"
                 >
                   lock
                 </span>
@@ -168,13 +192,13 @@ exports[`Home should render Home page 1`] = `
               </button>
             </li>
             <li
-              class="sc-iqseJM ezIeti"
+              class="sc-ksdxgE eJwAGR"
             >
               <button
-                class="sc-crHmcD csmCQY"
+                class="sc-hBUSln gjSsDd"
               >
                 <span
-                  class="material-icons sc-egiyK diXkgA"
+                  class="material-icons sc-fotOHu bVYBwC"
                 >
                   delete
                 </span>
@@ -185,18 +209,18 @@ exports[`Home should render Home page 1`] = `
         </nav>
       </div>
       <div
-        class="sc-bkkeKt jXczvF"
+        class="sc-dlVxhl bTgdtD"
       >
         <div
-          class="sc-ieecCq iIzSlv"
+          class="sc-kfPuZi inXLbU"
         >
           <h4
-            class="sc-dJjYzT VbBOo"
+            class="sc-fKVqWL fhrrNG"
           >
             boardColumn.title
           </h4>
           <button
-            class="sc-bdvvtL boJPqq sc-hGPBjI dYmKQW"
+            class="sc-bdvvtL boJPqq sc-bBHxTw kxqQUD"
           >
             boardColumn.addCard
           </button>
