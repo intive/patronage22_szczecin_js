@@ -9,11 +9,14 @@ import { useState } from 'react'
 import Button from '../components/Button/Button'
 import Link from 'next/link'
 import { BoardsWrapper } from '../components/BoardHeader/style'
+import Toast from '../components/Toast/Toast'
 
 const SetPasswordModal = dynamic(() => import('../components/SetPasswordModal/SetPasswordModal'))
 
 export default function Home ({ tilesList }) {
   const [isOpen, setIsOpen] = useState(false)
+  const [isOpenSuccessToast, setIsOpenSuccessToast] = useState(false)
+  const [isOpenErrorToast, setIsOpenErrorToast] = useState(false)
 
   const handleOpen = () => {
     setIsOpen(true)
@@ -21,6 +24,14 @@ export default function Home ({ tilesList }) {
 
   const handleClose = () => {
     setIsOpen(false)
+  }
+
+  const onShowFirstToastHandler = () => {
+    setIsOpenSuccessToast(!isOpenSuccessToast)
+  }
+
+  const onShowSecondToastHandler = () => {
+    setIsOpenErrorToast(!isOpenErrorToast)
   }
 
   return (
@@ -43,6 +54,14 @@ export default function Home ({ tilesList }) {
             </a>
           </Link>
         ))}
+
+        <br />
+        <Button onClick={onShowFirstToastHandler}>Show Success Toast</Button>
+        <br />
+        <Button onClick={onShowSecondToastHandler}>Show Error Toast</Button>
+
+        {isOpenSuccessToast && <Toast isOpen type='success'>Board added successfully</Toast>}
+        {isOpenErrorToast && <Toast isOpen>Failed to add board</Toast>}
       </Layout>
     </div>
   )

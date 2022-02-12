@@ -160,6 +160,18 @@ exports[`Home should render Home page 1`] = `
         mockedName
       </h4>
     </a>
+    <br />
+    <button
+      class="sc-crHmcD lefaQv"
+    >
+      Show Success Toast
+    </button>
+    <br />
+    <button
+      class="sc-crHmcD lefaQv"
+    >
+      Show Error Toast
+    </button>
   </div>
 </div>
 `;

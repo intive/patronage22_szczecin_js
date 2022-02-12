@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast should render Toast with given text 1`] = `
+<body>
+  <div />
+  <div
+    id="toast-portal-toast-test-id"
+  >
+    <div
+      aria-disabled="true"
+      class="sc-bdvvtL kYuxJh"
+      role="alert"
+      type="success"
+    >
+      <span
+        class="material-icons sc-gsDKAQ hHMBic"
+      >
+        done
+      </span>
+      Board added successfully
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Toast should render error Toast 1`] = `
+<body>
+  <div />
+  <div
+    id="toast-portal-toast-test-id"
+  >
+    <div
+      aria-disabled="true"
+      class="sc-bdvvtL jJTopw"
+      role="alert"
+    >
+      <span
+        class="material-icons sc-gsDKAQ hHMBic"
+      >
+        priority_high
+      </span>
+      Failed to add board
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Toast should render success Toast 1`] = `
+<body>
+  <div />
+  <div
+    id="toast-portal-toast-test-id"
+  >
+    <div
+      aria-disabled="true"
+      class="sc-bdvvtL kYuxJh"
+      role="alert"
+      type="success"
+    >
+      <span
+        class="material-icons sc-gsDKAQ hHMBic"
+      >
+        done
+      </span>
+      Board added successfully
+    </div>
+  </div>
+</body>
+`;
