@@ -40,8 +40,12 @@ export const StyledLink = styled.a`
   font-size: .75rem;
   line-height: 1rem;
   color: #626262;
-
   &:hover {
     text-decoration: underline;
   }
+`
+export const BoardsWrapper = styled.h4`
+  width: 100%;
+  height: 1rem; 
+  margin-top: .5rem;
 `

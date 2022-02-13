@@ -10,7 +10,6 @@ export const List = styled.div`
   & > * {
     margin-bottom: 2.5rem;
   }
-
   @media only screen and ${breakpoint.md} {
     flex-direction: row;
     flex-wrap: wrap;
@@ -20,12 +19,10 @@ export const List = styled.div`
       margin: 0 1rem 2.5rem;
     }
   }
-
   @media only screen and ${breakpoint.lg} {
     width: 54rem;
     margin-top: 5rem;
   }
-
   @media only screen and ${breakpoint.xl} {
     width: 72rem;
     margin-top: 6rem;

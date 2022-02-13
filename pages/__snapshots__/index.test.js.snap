@@ -6,13 +6,13 @@ exports[`Home should render Home page 1`] = `
     class="container"
   >
     <header
-      class="sc-kfPuZi dOUklq"
+      class="sc-dlVxhl efaXfH"
     >
       <div
-        class="sc-fKVqWL pdDge"
+        class="sc-kfPuZi jQKnKM"
       >
         <a
-          class="sc-bBHxTw euaJwT"
+          class="sc-fKVqWL eBRIEF"
           href="/"
         >
           <span
@@ -21,158 +21,145 @@ exports[`Home should render Home page 1`] = `
             crop_original
           </span>
           <p
-            class="sc-iwjdpV jESfgE"
+            class="sc-bBHxTw goLkHp"
           >
             headerTitle
           </p>
         </a>
       </div>
     </header>
-    <section
-      class="sc-cxpSdN crjgAU"
+    <div
+      class="sc-hGPBjI jgvijB"
     >
-      <a
-        class="sc-giYglK kINqLW"
-        href="/"
-      >
-        boardHeader.returnLinkText
-      </a>
       <div
-        class="sc-llYSUQ gMKrFN"
+        class="sc-bqiRlB bKrmmx"
+        role="button"
+        tabindex="0"
       >
-        <h1
-          class="sc-iJKOTD fiDoMB"
-        >
-          Board name 1
-        </h1>
         <button
           class="sc-crHmcD lefaQv"
         >
-          boardHeader.buttonText
+          <span
+            class="material-icons sc-egiyK jjEWZz"
+          >
+            crop_original
+          </span>
+          New board
         </button>
       </div>
-    </section>
-    <main
-      class="sc-dlVxhl gmzgUL"
-    >
       <div
-        class="sc-hGPBjI lfMwEn"
+        class="sc-bdvvtL ONcpC"
       >
-        <div
-          class="sc-bqiRlB bKrmmx"
-          role="button"
-          tabindex="0"
+        <h4
+          class="sc-dkPtRN kUDuei"
         >
-          <button
-            class="sc-crHmcD lefaQv"
-          >
-            <span
-              class="material-icons sc-egiyK jjEWZz"
-            >
-              crop_original
-            </span>
-            New board
-          </button>
-        </div>
+          mockedName
+        </h4>
+        <p
+          class="sc-eCImPb sc-jRQBWg gtDioY cTZnQP"
+        />
         <div
-          class="sc-bdvvtL ONcpC"
+          class="sc-hKwDye dodXuz"
         >
-          <h4
-            class="sc-dkPtRN kUDuei"
-          >
-            mockedName
-          </h4>
           <p
-            class="sc-eCImPb sc-jRQBWg gtDioY cTZnQP"
-          />
-          <div
-            class="sc-hKwDye dodXuz"
+            class="sc-eCImPb gtDioY"
           >
-            <p
-              class="sc-eCImPb gtDioY"
+            cardCount
+          </p>
+          <div
+            class="sc-iCfMLu dbydVW"
+          >
+            <button
+              aria-controls="1"
+              aria-expanded="false"
+              aria-haspopup="menu"
+              class="sc-furwcr cTVyte"
             >
-              cardCount
-            </p>
-            <div
-              class="sc-iCfMLu dbydVW"
+              <span
+                class="material-icons"
+              >
+                more_horiz
+              </span>
+            </button>
+            <nav
+              class="sc-pVTFL fGRbIZ"
+              id="1"
             >
-              <button
-                aria-expanded="false"
-                aria-haspopup="menu"
-                class="sc-furwcr cTVyte"
+              <ul
+                class="sc-gKclnd ePohWH"
               >
-                <span
-                  class="material-icons"
+                <li
+                  class="sc-jrQzAO iMapqG"
                 >
-                  more_horiz
-                </span>
-              </button>
-              <nav
-                class="sc-pVTFL fGRbIZ"
-              >
-                <ul
-                  class="sc-gKclnd ePohWH"
+                  <button
+                    class="sc-kDTinF lgLknF"
+                  >
+                    <span
+                      class="material-icons sc-iqseJM dPyznh"
+                    >
+                      lock_outlined
+                    </span>
+                    contextMenu.setPassword
+                  </button>
+                </li>
+                <li
+                  class="sc-jrQzAO iMapqG"
                 >
-                  <li
-                    class="sc-jrQzAO iMapqG"
+                  <button
+                    class="sc-kDTinF lgLknF"
                   >
-                    <button
-                      class="sc-kDTinF lgLknF"
+                    <span
+                      class="material-icons sc-iqseJM dPyznh"
                     >
-                      <span
-                        class="material-icons sc-iqseJM dPyznh"
-                      >
-                        lock_outlined
-                      </span>
-                      contextMenu.setPassword
-                    </button>
-                  </li>
-                  <li
-                    class="sc-jrQzAO iMapqG"
-                  >
-                    <button
-                      class="sc-kDTinF lgLknF"
-                    >
-                      <span
-                        class="material-icons sc-iqseJM dPyznh"
-                      >
-                        delete_outlined
-                      </span>
-                      contextMenu.deleteBoard
-                    </button>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+                      delete_outlined
+                    </span>
+                    contextMenu.deleteBoard
+                  </button>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
+    </div>
+    <div
+      class="sc-iwjdpV kBWWxX"
+    >
       <div
-        class="sc-ezbkAF eAjUMc"
+        class="sc-cxpSdN ffXGOB"
       >
-        <div
-          class="sc-bYoBSM cvsszn"
+        <h4
+          class="sc-llYSUQ KdCKt"
         >
-          <h4
-            class="sc-kLwhqv iZjCkQ"
-          >
-            boardColumn.title
-          </h4>
-          <button
-            class="sc-crHmcD lkNrHj sc-ikJyIC hpvAf"
-          >
-            boardColumn.addCard
-          </button>
-        </div>
-        <div />
+          boardColumn.title
+        </h4>
+        <button
+          class="sc-crHmcD lkNrHj sc-iJKOTD hJflEj"
+        >
+          boardColumn.addCard
+        </button>
       </div>
-      <br />
-      <button
-        class="sc-crHmcD lefaQv"
+      <div />
+    </div>
+    <br />
+    <button
+      class="sc-crHmcD lefaQv"
+    >
+      Click to Open Modal
+    </button>
+    <br />
+    <h2>
+      Boards from db
+    </h2>
+    <a
+      href="/boards/1"
+    >
+      <h4
+        class="sc-cidDSM ervDgV"
       >
-        Click to Open Modal
-      </button>
-    </main>
+        mockedName
+      </h4>
+    </a>
   </div>
 </div>
 `;

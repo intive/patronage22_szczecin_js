@@ -3,13 +3,13 @@
 exports[`Layout should render Layout 1`] = `
 <div>
   <header
-    class="sc-gsDKAQ iAvKGC"
+    class="sc-bdvvtL bdAKOj"
   >
     <div
-      class="sc-dkPtRN bhizMc"
+      class="sc-gsDKAQ jYlgVk"
     >
       <a
-        class="sc-hKwDye eoFuTM"
+        class="sc-dkPtRN ijCfmr"
         href="/"
       >
         <span
@@ -18,39 +18,12 @@ exports[`Layout should render Layout 1`] = `
           crop_original
         </span>
         <p
-          class="sc-eCImPb khQFgy"
+          class="sc-hKwDye bcymKS"
         >
           headerTitle
         </p>
       </a>
     </div>
   </header>
-  <section
-    class="sc-iCfMLu haukXO"
-  >
-    <a
-      class="sc-jrQzAO dXGhEw"
-      href="/"
-    >
-      boardHeader.returnLinkText
-    </a>
-    <div
-      class="sc-furwcr ARNEI"
-    >
-      <h1
-        class="sc-pVTFL jlLGXi"
-      >
-        Board name 1
-      </h1>
-      <button
-        class="sc-jRQBWg cXlHWf"
-      >
-        boardHeader.buttonText
-      </button>
-    </div>
-  </section>
-  <main
-    class="sc-bdvvtL dsUGuX"
-  />
 </div>
 `;

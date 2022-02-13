@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BoardDetails should render BoardDetails 1`] = `
+<div>
+  <header
+    class="sc-iCfMLu sCGfl"
+  >
+    <div
+      class="sc-furwcr iXgyek"
+    >
+      <a
+        class="sc-pVTFL dQRZDQ"
+        href="/"
+      >
+        <span
+          class="material-icons"
+        >
+          crop_original
+        </span>
+        <p
+          class="sc-jrQzAO bnMkOT"
+        >
+          headerTitle
+        </p>
+      </a>
+    </div>
+  </header>
+  <section
+    class="sc-dkPtRN hJxNlN"
+  >
+    <a
+      class="sc-jRQBWg irLjuY"
+      href="/"
+    >
+      boardHeader.returnLinkText
+    </a>
+    <div
+      class="sc-hKwDye AeogP"
+    >
+      <h1
+        class="sc-eCImPb cIClSu"
+      >
+        mockedName
+      </h1>
+      <button
+        class="sc-bdvvtL dRBcfm"
+      >
+        boardHeader.buttonText
+      </button>
+    </div>
+  </section>
+</div>
+`;

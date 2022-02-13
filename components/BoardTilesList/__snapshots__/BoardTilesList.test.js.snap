@@ -3,7 +3,7 @@
 exports[`BoardTilesList should render name, date, no icon when password is not provided or render render icon when password is provided 1`] = `
 <div>
   <div
-    class="sc-hGPBjI lfMwEn"
+    class="sc-hGPBjI jgvijB"
   >
     <div
       class="sc-bqiRlB bKrmmx"
@@ -44,6 +44,7 @@ exports[`BoardTilesList should render name, date, no icon when password is not p
           class="sc-iCfMLu dbydVW"
         >
           <button
+            aria-controls="mockedId1"
             aria-expanded="false"
             aria-haspopup="menu"
             class="sc-furwcr cTVyte"
@@ -56,6 +57,7 @@ exports[`BoardTilesList should render name, date, no icon when password is not p
           </button>
           <nav
             class="sc-pVTFL fGRbIZ"
+            id="mockedId1"
           >
             <ul
               class="sc-gKclnd ePohWH"
@@ -125,6 +127,7 @@ exports[`BoardTilesList should render name, date, no icon when password is not p
           class="sc-iCfMLu dbydVW"
         >
           <button
+            aria-controls="mockedId2"
             aria-expanded="false"
             aria-haspopup="menu"
             class="sc-furwcr cTVyte"
@@ -137,6 +140,7 @@ exports[`BoardTilesList should render name, date, no icon when password is not p
           </button>
           <nav
             class="sc-pVTFL fGRbIZ"
+            id="mockedId2"
           >
             <ul
               class="sc-gKclnd ePohWH"
