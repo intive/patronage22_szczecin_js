@@ -3,8 +3,6 @@
   "cardCount_zero": "{{count}} cards",
   "cardCount_one": "{{count}} card",
   "cardCount_other": "{{count}} cards",
-  "setPassword": "Set Password",
-  "deleteBoard": "Delete board",
   "boardColumn": {
     "title": "Column name",
     "addCard": "Add card",
@@ -14,5 +12,10 @@
   "boardHeader": {
     "returnLinkText": "Return to main board",
     "buttonText": "New Column"
+  },
+  "contextMenu": {
+    "setPassword": "Set password",
+    "removePassword": "Remove password",
+    "deleteBoard": "Delete board"
   }
 }

@@ -71,236 +71,349 @@ exports[`Home should render Home page 1`] = `
           New board
         </button>
       </div>
+      <br />
       <div
-        class="sc-fFeiMQ dNia-de"
+        class="sc-iqseJM iQfFdZ"
       >
-        <div
-          class="sc-bkkeKt LBrMG"
-        >
-          <span
-            class="material-icons"
-          >
-            lock_outlined
-          </span>
-        </div>
         <h4
-          class="sc-ieecCq cUeaeN"
+          class="sc-egiyK evVByg"
         >
           Board name 1
         </h4>
         <p
-          class="sc-dJjYzT sc-hGPBjI hrFqvL jdqmmu"
+          class="sc-ksdxgE sc-hBUSln bpPweS jyJWLq"
         >
           1 Jan 2022
         </p>
-        <p
-          class="sc-dJjYzT hrFqvL"
-        >
-          cardCount
-        </p>
-      </div>
-      <div
-        class="sc-fFeiMQ dNia-de"
-      >
         <div
-          class="sc-bkkeKt LBrMG"
+          class="sc-bqiRlB kbYyGt"
         >
-          <span
-            class="material-icons"
+          <p
+            class="sc-ksdxgE bpPweS"
           >
-            lock_outlined
-          </span>
-        </div>
-        <h4
-          class="sc-ieecCq cUeaeN"
-        >
-          Board name 1
-        </h4>
-        <p
-          class="sc-dJjYzT sc-hGPBjI hrFqvL jdqmmu"
-        >
-          1 Jan 2022
-        </p>
-        <p
-          class="sc-dJjYzT hrFqvL"
-        >
-          cardCount
-        </p>
-      </div>
-      <div
-        class="sc-fFeiMQ dNia-de"
-      >
-        <div
-          class="sc-bkkeKt LBrMG"
-        >
-          <span
-            class="material-icons"
+            cardCount
+          </p>
+          <div
+            class="sc-fFeiMQ gGYODG"
           >
-            lock_outlined
-          </span>
-        </div>
-        <h4
-          class="sc-ieecCq cUeaeN"
-        >
-          Board name 1
-        </h4>
-        <p
-          class="sc-dJjYzT sc-hGPBjI hrFqvL jdqmmu"
-        >
-          1 Jan 2022
-        </p>
-        <p
-          class="sc-dJjYzT hrFqvL"
-        >
-          cardCount
-        </p>
-      </div>
-      <div
-        class="sc-crHmcD dVAprW"
-      >
-        <button
-          aria-controls="5"
-          aria-expanded="false"
-          aria-haspopup="menu"
-          class="sc-egiyK jLvaxE"
-        >
-          <span
-            class="material-icons"
-          >
-            more_horiz
-          </span>
-        </button>
-        <nav
-          class="sc-bqiRlB jpbSMX"
-          id="5"
-        >
-          <ul
-            class="sc-iqseJM gZgkLn"
-          >
-            <li
-              class="sc-ksdxgE eJwAGR"
+            <button
+              aria-controls="1"
+              aria-expanded="false"
+              aria-haspopup="menu"
+              class="sc-bkkeKt ksylVd"
             >
-              <button
-                class="sc-hBUSln gjSsDd"
+              <span
+                class="material-icons"
               >
-                <span
-                  class="material-icons sc-fotOHu bVYBwC"
-                >
-                  lock
-                </span>
-                setPassword
-              </button>
-            </li>
-            <li
-              class="sc-ksdxgE eJwAGR"
+                more_horiz
+              </span>
+            </button>
+            <nav
+              class="sc-ieecCq grwoil"
+              id="1"
             >
-              <button
-                class="sc-hBUSln gjSsDd"
+              <ul
+                class="sc-fotOHu kHazPt"
               >
-                <span
-                  class="material-icons sc-fotOHu bVYBwC"
+                <li
+                  class="sc-dJjYzT SGxaU"
                 >
-                  delete
-                </span>
-                deleteBoard
-              </button>
-            </li>
-          </ul>
-        </nav>
+                  <button
+                    class="sc-hGPBjI jrqxoF"
+                  >
+                    <span
+                      class="material-icons sc-dlVxhl irFiua"
+                    >
+                      lock_outlined
+                    </span>
+                    contextMenu.setPassword
+                  </button>
+                </li>
+                <li
+                  class="sc-dJjYzT SGxaU"
+                >
+                  <button
+                    class="sc-hGPBjI jrqxoF"
+                  >
+                    <span
+                      class="material-icons sc-dlVxhl irFiua"
+                    >
+                      delete_outlined
+                    </span>
+                    contextMenu.deleteBoard
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
+      <br />
       <div
-        class="sc-dlVxhl bTgdtD"
+        class="sc-iqseJM iQfFdZ"
       >
         <div
-          class="sc-kfPuZi inXLbU"
+          class="sc-crHmcD hnEOjp"
+        >
+          <span
+            class="material-icons"
+          >
+            lock_outlined
+          </span>
+        </div>
+        <h4
+          class="sc-egiyK evVByg"
+        >
+          Board name 1
+        </h4>
+        <p
+          class="sc-ksdxgE sc-hBUSln bpPweS jyJWLq"
+        >
+          1 Jan 2022
+        </p>
+        <div
+          class="sc-bqiRlB kbYyGt"
+        >
+          <p
+            class="sc-ksdxgE bpPweS"
+          >
+            cardCount
+          </p>
+          <div
+            class="sc-fFeiMQ gGYODG"
+          >
+            <button
+              aria-controls="2"
+              aria-expanded="false"
+              aria-haspopup="menu"
+              class="sc-bkkeKt ksylVd"
+            >
+              <span
+                class="material-icons"
+              >
+                more_horiz
+              </span>
+            </button>
+            <nav
+              class="sc-ieecCq grwoil"
+              id="2"
+            >
+              <ul
+                class="sc-fotOHu kHazPt"
+              >
+                <li
+                  class="sc-dJjYzT SGxaU"
+                >
+                  <button
+                    class="sc-hGPBjI jrqxoF"
+                  >
+                    <span
+                      class="material-icons sc-dlVxhl irFiua"
+                    >
+                      lock_outlined
+                    </span>
+                    contextMenu.removePassword
+                  </button>
+                </li>
+                <li
+                  class="sc-dJjYzT SGxaU"
+                >
+                  <button
+                    class="sc-hGPBjI jrqxoF"
+                  >
+                    <span
+                      class="material-icons sc-dlVxhl irFiua"
+                    >
+                      delete_outlined
+                    </span>
+                    contextMenu.deleteBoard
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div
+        class="sc-iqseJM iQfFdZ"
+      >
+        <div
+          class="sc-crHmcD hnEOjp"
+        >
+          <span
+            class="material-icons"
+          >
+            lock_outlined
+          </span>
+        </div>
+        <h4
+          class="sc-egiyK evVByg"
+        >
+          Board name 1
+        </h4>
+        <p
+          class="sc-ksdxgE sc-hBUSln bpPweS jyJWLq"
+        >
+          1 Jan 2022
+        </p>
+        <div
+          class="sc-bqiRlB kbYyGt"
+        >
+          <p
+            class="sc-ksdxgE bpPweS"
+          >
+            cardCount
+          </p>
+          <div
+            class="sc-fFeiMQ gGYODG"
+          >
+            <button
+              aria-controls="3"
+              aria-expanded="false"
+              aria-haspopup="menu"
+              class="sc-bkkeKt ksylVd"
+            >
+              <span
+                class="material-icons"
+              >
+                more_horiz
+              </span>
+            </button>
+            <nav
+              class="sc-ieecCq grwoil"
+              id="3"
+            >
+              <ul
+                class="sc-fotOHu kHazPt"
+              >
+                <li
+                  class="sc-dJjYzT SGxaU"
+                >
+                  <button
+                    class="sc-hGPBjI jrqxoF"
+                  >
+                    <span
+                      class="material-icons sc-dlVxhl irFiua"
+                    >
+                      lock_outlined
+                    </span>
+                    contextMenu.removePassword
+                  </button>
+                </li>
+                <li
+                  class="sc-dJjYzT SGxaU"
+                >
+                  <button
+                    class="sc-hGPBjI jrqxoF"
+                  >
+                    <span
+                      class="material-icons sc-dlVxhl irFiua"
+                    >
+                      delete_outlined
+                    </span>
+                    contextMenu.deleteBoard
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div
+        class="sc-kfPuZi cfJDbS"
+      >
+        <div
+          class="sc-fKVqWL bVTDDe"
         >
           <h4
-            class="sc-fKVqWL fhrrNG"
+            class="sc-bBHxTw cXjrLk"
           >
             boardColumn.title
           </h4>
           <button
-            class="sc-bdvvtL boJPqq sc-bBHxTw kxqQUD"
+            class="sc-bdvvtL boJPqq sc-iwjdpV hFWJPS"
           >
             boardColumn.addCard
           </button>
         </div>
         <div />
       </div>
+      <br />
+      <button
+        class="sc-bdvvtL dRBcfm"
+      >
+        Continue
+      </button>
+      <br />
+      <button
+        class="sc-bdvvtL dRBcfm"
+        disabled=""
+      >
+        Continue
+      </button>
+      <br />
+      <button
+        class="sc-bdvvtL dRBcfm"
+      >
+        <span
+          class="material-icons sc-gsDKAQ jUyrhl"
+        >
+          crop_original
+        </span>
+        Continue
+      </button>
+      <br />
+      <button
+        class="sc-bdvvtL dRBcfm"
+        disabled=""
+      >
+        <span
+          class="material-icons sc-gsDKAQ jUyrhl"
+        >
+          crop_original
+        </span>
+        Continue
+      </button>
+      <br />
+      <button
+        class="sc-bdvvtL jVCSJw"
+      >
+        Continue
+      </button>
+      <br />
+      <button
+        class="sc-bdvvtL jVCSJw"
+        disabled=""
+      >
+        Continue
+      </button>
+      <br />
+      <button
+        class="sc-bdvvtL jVCSJw"
+      >
+        <span
+          class="material-icons sc-gsDKAQ jUyrhl"
+        >
+          crop_original
+        </span>
+        Continue
+      </button>
+      <br />
+      <button
+        class="sc-bdvvtL jVCSJw"
+        disabled=""
+      >
+        <span
+          class="material-icons sc-gsDKAQ jUyrhl"
+        >
+          crop_original
+        </span>
+        Continue
+      </button>
+      <br />
     </main>
-    <br />
-    <button
-      class="sc-bdvvtL dRBcfm"
-    >
-      Continue
-    </button>
-    <br />
-    <button
-      class="sc-bdvvtL dRBcfm"
-      disabled=""
-    >
-      Continue
-    </button>
-    <br />
-    <button
-      class="sc-bdvvtL dRBcfm"
-    >
-      <span
-        class="material-icons sc-gsDKAQ jUyrhl"
-      >
-        crop_original
-      </span>
-      Continue
-    </button>
-    <br />
-    <button
-      class="sc-bdvvtL dRBcfm"
-      disabled=""
-    >
-      <span
-        class="material-icons sc-gsDKAQ jUyrhl"
-      >
-        crop_original
-      </span>
-      Continue
-    </button>
-    <br />
-    <button
-      class="sc-bdvvtL jVCSJw"
-    >
-      Continue
-    </button>
-    <br />
-    <button
-      class="sc-bdvvtL jVCSJw"
-      disabled=""
-    >
-      Continue
-    </button>
-    <br />
-    <button
-      class="sc-bdvvtL jVCSJw"
-    >
-      <span
-        class="material-icons sc-gsDKAQ jUyrhl"
-      >
-        crop_original
-      </span>
-      Continue
-    </button>
-    <br />
-    <button
-      class="sc-bdvvtL jVCSJw"
-      disabled=""
-    >
-      <span
-        class="material-icons sc-gsDKAQ jUyrhl"
-      >
-        crop_original
-      </span>
-      Continue
-    </button>
-    <br />
   </div>
 </div>
 `;
