@@ -6,7 +6,6 @@ import ContextMenuItem from '../ContextMenuItem/ContextMenuItem'
 
 export default function BoardTile ({ id, name, date, cardCount, hasPassword }) {
   const { t } = useTranslation('common')
-
   return (
     <Tile>
       {hasPassword ? <IconWrapper><Icon name='lock_outlined' /></IconWrapper> : null}

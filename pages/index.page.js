@@ -7,6 +7,8 @@ import BoardColumn from '../components/BoardColumn/BoardColumn'
 import dynamic from 'next/dynamic'
 import { useState } from 'react'
 import Button from '../components/Button/Button'
+import Link from 'next/link'
+import { BoardsWrapper } from '../components/BoardHeader/style'
 
 const SetPasswordModal = dynamic(() => import('../components/SetPasswordModal/SetPasswordModal'))
 
@@ -32,6 +34,15 @@ export default function Home ({ tilesList }) {
         <br />
         <Button onClick={handleOpen}>Click to Open Modal</Button>
         <SetPasswordModal handleClose={handleClose} isOpen={isOpen} />
+        <br />
+        <h2>Boards from db</h2>
+        {tilesList.map((board) => (
+          <Link href={`/boards/${board.id}`} key={board.id}>
+            <a>
+              <BoardsWrapper>{board.name}</BoardsWrapper>
+            </a>
+          </Link>
+        ))}
       </Layout>
     </div>
   )
