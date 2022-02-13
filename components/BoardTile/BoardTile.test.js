@@ -10,12 +10,12 @@ describe('BoardTile', () => {
   const mockUpdateBoard = jest.spyOn(InternalApi, 'updateBoard')
 
   it('renders correctly without password', () => {
-    const Tile = render(<BoardTile name='Board name 1' date='1 Jan 2022' cardCount={0} />)
+    const Tile = render(<BoardTile id='mockId' name='Board name 1' date='1 Jan 2022' cardCount={0} />)
     expect(Tile.container).toMatchSnapshot()
   })
 
   it('renders correctly with password', () => {
-    const Tile = render(<BoardTile name='Board name 1' date='1 Jan 2022' cardCount={0} hasPassword />)
+    const Tile = render(<BoardTile id='mockId' name='Board name 1' date='1 Jan 2022' cardCount={0} hasPassword />)
     expect(Tile.container).toMatchSnapshot()
   })
 

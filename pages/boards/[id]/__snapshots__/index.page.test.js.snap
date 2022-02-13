@@ -3,13 +3,13 @@
 exports[`BoardDetails should render BoardDetails 1`] = `
 <div>
   <header
-    class="sc-iCfMLu sCGfl"
+    class="sc-gKclnd ipdYrQ"
   >
     <div
-      class="sc-furwcr iXgyek"
+      class="sc-iCfMLu jSHKVz"
     >
       <a
-        class="sc-pVTFL dQRZDQ"
+        class="sc-furwcr jTmKIz"
         href="/"
       >
         <span
@@ -18,7 +18,7 @@ exports[`BoardDetails should render BoardDetails 1`] = `
           crop_original
         </span>
         <p
-          class="sc-jrQzAO bnMkOT"
+          class="sc-pVTFL etiBEa"
         >
           headerTitle
         </p>
@@ -26,7 +26,7 @@ exports[`BoardDetails should render BoardDetails 1`] = `
     </div>
   </header>
   <section
-    class="sc-dkPtRN hJxNlN"
+    class="sc-dkPtRN fQLMUS"
   >
     <a
       class="sc-jRQBWg irLjuY"

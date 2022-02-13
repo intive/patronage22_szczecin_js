@@ -9,7 +9,10 @@ export default function ContextMenu (props) {
 
   useClickOutside(ref, () => setIsActive(false))
 
-  const changeStateHandler = () => setIsActive(!isActive)
+  const changeStateHandler = (e) => {
+    e.preventDefault()
+    setIsActive(!isActive)
+  }
 
   return (
     <StyledContextMenu ref={ref}>

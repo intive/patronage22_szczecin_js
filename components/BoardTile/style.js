@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Tile = styled.div`
+export const Tile = styled.a`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,8 @@ export const Tile = styled.div`
   background-color: #FFFFFF;
   box-shadow: 0 2px 6px rgba(98, 98, 98, 0.21);
   border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
 `
 
 export const IconWrapper = styled.div`

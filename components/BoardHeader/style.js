@@ -10,6 +10,7 @@ export const Container = styled.section`
   padding: 1.5rem 5%;
   background: #E1E1E1;
   gap: 1rem;
+  padding: 0 -5%;
 
   @media only screen and ${breakpoint.xl} {
     padding: 1.5rem 2.5rem;
@@ -43,9 +44,4 @@ export const StyledLink = styled.a`
   &:hover {
     text-decoration: underline;
   }
-`
-export const BoardsWrapper = styled.h4`
-  width: 100%;
-  height: 1rem; 
-  margin-top: .5rem;
 `
