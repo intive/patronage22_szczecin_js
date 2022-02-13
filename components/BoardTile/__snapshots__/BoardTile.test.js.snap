@@ -2,8 +2,9 @@
 
 exports[`BoardTile renders correctly with password 1`] = `
 <div>
-  <div
-    class="sc-bdvvtL ONcpC"
+  <a
+    class="sc-bdvvtL hVgfSH"
+    href="/boards/mockId"
   >
     <div
       class="sc-gsDKAQ bkuMRF"
@@ -36,6 +37,7 @@ exports[`BoardTile renders correctly with password 1`] = `
         class="sc-iCfMLu dbydVW"
       >
         <button
+          aria-controls="mockId"
           aria-expanded="false"
           aria-haspopup="menu"
           class="sc-furwcr cTVyte"
@@ -48,6 +50,7 @@ exports[`BoardTile renders correctly with password 1`] = `
         </button>
         <nav
           class="sc-pVTFL fGRbIZ"
+          id="mockId"
         >
           <ul
             class="sc-gKclnd ePohWH"
@@ -84,14 +87,15 @@ exports[`BoardTile renders correctly with password 1`] = `
         </nav>
       </div>
     </div>
-  </div>
+  </a>
 </div>
 `;
 
 exports[`BoardTile renders correctly without password 1`] = `
 <div>
-  <div
-    class="sc-bdvvtL ONcpC"
+  <a
+    class="sc-bdvvtL hVgfSH"
+    href="/boards/mockId"
   >
     <h4
       class="sc-dkPtRN kUDuei"
@@ -115,6 +119,7 @@ exports[`BoardTile renders correctly without password 1`] = `
         class="sc-iCfMLu dbydVW"
       >
         <button
+          aria-controls="mockId"
           aria-expanded="false"
           aria-haspopup="menu"
           class="sc-furwcr cTVyte"
@@ -127,6 +132,7 @@ exports[`BoardTile renders correctly without password 1`] = `
         </button>
         <nav
           class="sc-pVTFL fGRbIZ"
+          id="mockId"
         >
           <ul
             class="sc-gKclnd ePohWH"
@@ -163,6 +169,6 @@ exports[`BoardTile renders correctly without password 1`] = `
         </nav>
       </div>
     </div>
-  </div>
+  </a>
 </div>
 `;

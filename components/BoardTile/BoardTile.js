@@ -6,6 +6,7 @@ import BoardsContext from '../../store/boards-context'
 import { useTranslation } from 'next-i18next'
 import ContextMenu from '../ContextMenu/ContextMenu'
 import ContextMenuItem from '../ContextMenuItem/ContextMenuItem'
+import Link from 'next/link'
 
 export default function BoardTile ({ id, name, date, cardCount, hasPassword }) {
   const { t } = useTranslation('common')
@@ -15,17 +16,19 @@ export default function BoardTile ({ id, name, date, cardCount, hasPassword }) {
   const updateBoardHandler = async (id, options) => refreshOnSuccess(await updateBoard(id, options))
 
   return (
-    <Tile>
-      {hasPassword ? <IconWrapper><Icon name='lock_outlined' /></IconWrapper> : null}
-      <Header>{name}</Header>
-      <Date>{date}</Date>
-      <TileFooter>
-        <Text>{t('cardCount', { count: cardCount })}</Text>
-        <ContextMenu id={id}>
-          {hasPassword ? <ContextMenuItem name={t('contextMenu.removePassword')} onClick={() => updateBoardHandler(id, { password: null })} icon='lock_outlined' /> : <ContextMenuItem name={t('contextMenu.setPassword')} icon='lock_outlined' />}
-          <ContextMenuItem name={t('contextMenu.deleteBoard')} onClick={() => deleteBoardHandler(id)} icon='delete_outlined' />
-        </ContextMenu>
-      </TileFooter>
-    </Tile>
+    <Link href={`/boards/${id}`} passHref>
+      <Tile>
+        {hasPassword ? <IconWrapper><Icon name='lock_outlined' /></IconWrapper> : null}
+        <Header>{name}</Header>
+        <Date>{date}</Date>
+        <TileFooter>
+          <Text>{t('cardCount', { count: cardCount })}</Text>
+          <ContextMenu id={id}>
+            {hasPassword ? <ContextMenuItem name={t('contextMenu.removePassword')} onClick={() => updateBoardHandler(id, { password: null })} icon='lock_outlined' /> : <ContextMenuItem name={t('contextMenu.setPassword')} icon='lock_outlined' />}
+            <ContextMenuItem name={t('contextMenu.deleteBoard')} onClick={() => deleteBoardHandler(id)} icon='delete_outlined' />
+          </ContextMenu>
+        </TileFooter>
+      </Tile>
+    </Link>
   )
 }

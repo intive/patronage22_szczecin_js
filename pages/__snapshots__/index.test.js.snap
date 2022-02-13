@@ -47,8 +47,9 @@ exports[`Home should render Home page 1`] = `
           New board
         </button>
       </div>
-      <div
-        class="sc-bdvvtL ONcpC"
+      <a
+        class="sc-bdvvtL hVgfSH"
+        href="/boards/1"
       >
         <h4
           class="sc-dkPtRN kUDuei"
@@ -120,7 +121,7 @@ exports[`Home should render Home page 1`] = `
             </nav>
           </div>
         </div>
-      </div>
+      </a>
     </div>
     <div
       class="sc-iwjdpV kBWWxX"
@@ -147,19 +148,6 @@ exports[`Home should render Home page 1`] = `
     >
       Click to Open Modal
     </button>
-    <br />
-    <h2>
-      Boards from db
-    </h2>
-    <a
-      href="/boards/1"
-    >
-      <h4
-        class="sc-jcFjpl iWCboY"
-      >
-        mockedName
-      </h4>
-    </a>
     <br />
     <button
       class="sc-crHmcD lefaQv"
