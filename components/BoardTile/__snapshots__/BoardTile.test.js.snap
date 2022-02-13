@@ -3,7 +3,7 @@
 exports[`BoardTile renders correctly with password 1`] = `
 <div>
   <div
-    class="sc-bdvvtL fbCQOU"
+    class="sc-bdvvtL ONcpC"
   >
     <div
       class="sc-gsDKAQ bkuMRF"
@@ -20,15 +20,70 @@ exports[`BoardTile renders correctly with password 1`] = `
       Board name 1
     </h4>
     <p
-      class="sc-hKwDye sc-eCImPb eRcqw gGNFTw"
+      class="sc-eCImPb sc-jRQBWg gtDioY cTZnQP"
     >
       1 Jan 2022
     </p>
-    <p
-      class="sc-hKwDye eRcqw"
+    <div
+      class="sc-hKwDye dodXuz"
     >
-      cardCount
-    </p>
+      <p
+        class="sc-eCImPb gtDioY"
+      >
+        cardCount
+      </p>
+      <div
+        class="sc-iCfMLu dbydVW"
+      >
+        <button
+          aria-expanded="false"
+          aria-haspopup="menu"
+          class="sc-furwcr cTVyte"
+        >
+          <span
+            class="material-icons"
+          >
+            more_horiz
+          </span>
+        </button>
+        <nav
+          class="sc-pVTFL fGRbIZ"
+        >
+          <ul
+            class="sc-gKclnd ePohWH"
+          >
+            <li
+              class="sc-jrQzAO iMapqG"
+            >
+              <button
+                class="sc-kDTinF lgLknF"
+              >
+                <span
+                  class="material-icons sc-iqseJM dPyznh"
+                >
+                  lock_outlined
+                </span>
+                contextMenu.removePassword
+              </button>
+            </li>
+            <li
+              class="sc-jrQzAO iMapqG"
+            >
+              <button
+                class="sc-kDTinF lgLknF"
+              >
+                <span
+                  class="material-icons sc-iqseJM dPyznh"
+                >
+                  delete_outlined
+                </span>
+                contextMenu.deleteBoard
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -36,7 +91,7 @@ exports[`BoardTile renders correctly with password 1`] = `
 exports[`BoardTile renders correctly without password 1`] = `
 <div>
   <div
-    class="sc-bdvvtL fbCQOU"
+    class="sc-bdvvtL ONcpC"
   >
     <h4
       class="sc-dkPtRN kUDuei"
@@ -44,15 +99,70 @@ exports[`BoardTile renders correctly without password 1`] = `
       Board name 1
     </h4>
     <p
-      class="sc-hKwDye sc-eCImPb eRcqw gGNFTw"
+      class="sc-eCImPb sc-jRQBWg gtDioY cTZnQP"
     >
       1 Jan 2022
     </p>
-    <p
-      class="sc-hKwDye eRcqw"
+    <div
+      class="sc-hKwDye dodXuz"
     >
-      cardCount
-    </p>
+      <p
+        class="sc-eCImPb gtDioY"
+      >
+        cardCount
+      </p>
+      <div
+        class="sc-iCfMLu dbydVW"
+      >
+        <button
+          aria-expanded="false"
+          aria-haspopup="menu"
+          class="sc-furwcr cTVyte"
+        >
+          <span
+            class="material-icons"
+          >
+            more_horiz
+          </span>
+        </button>
+        <nav
+          class="sc-pVTFL fGRbIZ"
+        >
+          <ul
+            class="sc-gKclnd ePohWH"
+          >
+            <li
+              class="sc-jrQzAO iMapqG"
+            >
+              <button
+                class="sc-kDTinF lgLknF"
+              >
+                <span
+                  class="material-icons sc-iqseJM dPyznh"
+                >
+                  lock_outlined
+                </span>
+                contextMenu.setPassword
+              </button>
+            </li>
+            <li
+              class="sc-jrQzAO iMapqG"
+            >
+              <button
+                class="sc-kDTinF lgLknF"
+              >
+                <span
+                  class="material-icons sc-iqseJM dPyznh"
+                >
+                  delete_outlined
+                </span>
+                contextMenu.deleteBoard
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </div>
 </div>
 `;

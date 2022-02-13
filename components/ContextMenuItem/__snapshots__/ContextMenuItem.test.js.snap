@@ -6,10 +6,10 @@ exports[`ContextMenuItem should renders correctly 1`] = `
     class="sc-bdvvtL jZIOSJ"
   >
     <button
-      class="sc-gsDKAQ khpYYA"
+      class="sc-gsDKAQ gxJInU"
     >
       <span
-        class="material-icons sc-dkPtRN eCIlby"
+        class="material-icons sc-dkPtRN lhuhQn"
       >
         lock
       </span>

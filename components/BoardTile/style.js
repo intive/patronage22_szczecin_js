@@ -6,7 +6,7 @@ export const Tile = styled.div`
   flex-direction: column;
   width: 16rem;
   height: 12.5rem;
-  padding: 1rem;
+  padding: 1rem 1rem 0.75rem 1rem;
   background-color: #FFFFFF;
   box-shadow: 0 2px 6px rgba(98, 98, 98, 0.21);
   border-radius: 8px;
@@ -30,6 +30,11 @@ export const Header = styled.h4`
   font-weight: 400;
   line-height: 1.5rem;
   color: #515151;
+`
+export const TileFooter = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `
 
 export const Text = styled.p`

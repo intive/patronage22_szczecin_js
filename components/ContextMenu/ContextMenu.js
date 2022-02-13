@@ -1,28 +1,23 @@
-import { useState, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import Icon from '../Icon/Icon'
 import { StyledContextMenu, Button, Nav, StyledUl } from './style'
+import useClickOutside from '../../hooks/useClickOutside'
 
 export default function ContextMenu (props) {
   const [isActive, setIsActive] = useState(false)
+  const ref = useRef()
+
+  useClickOutside(ref, () => setIsActive(false))
+
   const changeStateHandler = () => setIsActive(!isActive)
 
-  useEffect(() => {
-    if (isActive) {
-      window.addEventListener('click', changeStateHandler)
-    }
-
-    return () => {
-      window.removeEventListener('click', changeStateHandler)
-    }
-  }, [isActive])
-
   return (
-    <StyledContextMenu>
+    <StyledContextMenu ref={ref}>
       <Button onClick={changeStateHandler} aria-haspopup='menu' aria-expanded={isActive} aria-controls={props.id}>
         <Icon name='more_horiz' />
       </Button>
 
-      <Nav id={props.id} className={isActive && 'active'}>
+      <Nav onClick={changeStateHandler} id={props.id} className={isActive && 'active'}>
         <StyledUl>{props.children}</StyledUl>
       </Nav>
     </StyledContextMenu>

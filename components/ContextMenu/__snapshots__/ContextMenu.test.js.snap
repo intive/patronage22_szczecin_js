@@ -3,13 +3,13 @@
 exports[`ContextMenu should renders correctly ContextMenu 1`] = `
 <div>
   <div
-    class="sc-gsDKAQ brkEZq"
+    class="sc-gsDKAQ kabCuV"
   >
     <button
       aria-controls="1"
       aria-expanded="false"
       aria-haspopup="menu"
-      class="sc-dkPtRN kZvNxO"
+      class="sc-dkPtRN fTfaNe"
     >
       <span
         class="material-icons"
@@ -18,20 +18,20 @@ exports[`ContextMenu should renders correctly ContextMenu 1`] = `
       </span>
     </button>
     <nav
-      class="sc-hKwDye bzAwPp"
+      class="sc-hKwDye chYRkN"
       id="1"
     >
       <ul
-        class="sc-bdvvtL hMPcrs"
+        class="sc-bdvvtL bPqLpk"
       >
         <li
           class="sc-eCImPb ihRWfz"
         >
           <button
-            class="sc-jRQBWg kbEDqI"
+            class="sc-jRQBWg IsWJg"
           >
             <span
-              class="material-icons sc-gKclnd bZLfhM"
+              class="material-icons sc-gKclnd ezggst"
             >
               lock
             </span>
@@ -42,10 +42,10 @@ exports[`ContextMenu should renders correctly ContextMenu 1`] = `
           class="sc-eCImPb ihRWfz"
         >
           <button
-            class="sc-jRQBWg kbEDqI"
+            class="sc-jRQBWg IsWJg"
           >
             <span
-              class="material-icons sc-gKclnd bZLfhM"
+              class="material-icons sc-gKclnd ezggst"
             >
               delete
             </span>

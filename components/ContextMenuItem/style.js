@@ -22,12 +22,15 @@ export const ContextMenuButton = styled.button`
   padding: 0.25rem 0.5rem;
   width: 100%;
   font-size: 0.875rem;
+  white-space: nowrap;
 
   &:hover {
     background: #bababa9e;
   }
 `
 export const StyledIcon = styled(Icon)`
-  color: #7e7e7e;
+  width: 24px;
+  height: 24px;
   margin-right: 0.25rem;
+  color: #7e7e7e;
 `
