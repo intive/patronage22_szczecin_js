@@ -9,7 +9,7 @@ exports[`Home should render Home page 1`] = `
       class="sc-fotOHu bhKksq"
     >
       <div
-        class="sc-fFeiMQ kHvSfz"
+        class="sc-fFeiMQ dSTYfP"
       >
         <a
           class="sc-bkkeKt irXwSU"
@@ -29,7 +29,7 @@ exports[`Home should render Home page 1`] = `
       </div>
     </header>
     <section
-      class="sc-dJjYzT cvAEXZ"
+      class="sc-dJjYzT hrCZdl"
     >
       <a
         class="sc-kfPuZi gdZDYG"
@@ -53,10 +53,10 @@ exports[`Home should render Home page 1`] = `
       </div>
     </section>
     <main
-      class="sc-hBUSln eMZOwP"
+      class="sc-hBUSln xbyNf"
     >
       <div
-        class="sc-ksdxgE kzNNSP"
+        class="sc-ksdxgE fHAwCT"
       >
         <div
           class="sc-bqiRlB bKrmmx"

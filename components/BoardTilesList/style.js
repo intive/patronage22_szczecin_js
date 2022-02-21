@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { breakpoint } from '../../config/breakpoints'
+
 export const List = styled.div`
   display: flex;
   flex-direction: column;
@@ -8,8 +10,8 @@ export const List = styled.div`
   & > * {
     margin-bottom: 2.5rem;
   }
-  
-  @media (min-width: 768px) {
+
+  @media only screen and ${breakpoint.md} {
     flex-direction: row;
     flex-wrap: wrap;
     width: 36rem;
@@ -19,12 +21,12 @@ export const List = styled.div`
     }
   }
 
-  @media (min-width: 992px) {
+  @media only screen and ${breakpoint.lg} {
     width: 54rem;
     margin-top: 5rem;
   }
 
-  @media (min-width: 1440px) {
+  @media only screen and ${breakpoint.xl} {
     width: 72rem;
     margin-top: 6rem;
   }

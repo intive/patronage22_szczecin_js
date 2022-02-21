@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { breakpoint } from '../../config/breakpoints'
+
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
@@ -9,7 +11,7 @@ export const Container = styled.section`
   background: #E1E1E1;
   gap: 1rem;
 
-  @media (min-width: 1440px) {
+  @media only screen and ${breakpoint.xl} {
     padding: 1.5rem 2.5rem;
   }
 `

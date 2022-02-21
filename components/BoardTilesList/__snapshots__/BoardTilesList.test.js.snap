@@ -3,7 +3,7 @@
 exports[`BoardTilesList should render name, date, no icon when password is not provided or render render icon when password is provided 1`] = `
 <div>
   <div
-    class="sc-ksdxgE kzNNSP"
+    class="sc-ksdxgE fHAwCT"
   >
     <div
       class="sc-bqiRlB bKrmmx"
