@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { breakpoint } from '../../config/breakpoints'
+
 export const HeaderContainer = styled.header`
   position: sticky;
   left: 0;
@@ -17,7 +19,7 @@ export const HeaderWrapper = styled.div`
   height: 100%;
   padding: 0 5%;
 
-  @media (min-width: 1440px) {
+  @media only screen and ${breakpoint.xl} {
     padding: 0 2.5rem;
   }
 `
