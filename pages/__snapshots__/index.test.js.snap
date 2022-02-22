@@ -126,10 +126,10 @@ exports[`Home should render Home page 1`] = `
       class="sc-iwjdpV kBWWxX"
     >
       <div
-        class="sc-cxpSdN ffXGOB"
+        class="sc-cxpSdN jafYPj"
       >
         <h4
-          class="sc-llYSUQ KdCKt"
+          class="sc-llYSUQ cjtzLl"
         >
           boardColumn.title
         </h4>
@@ -155,7 +155,7 @@ exports[`Home should render Home page 1`] = `
       href="/boards/1"
     >
       <h4
-        class="sc-cidDSM ervDgV"
+        class="sc-jcFjpl iWCboY"
       >
         mockedName
       </h4>

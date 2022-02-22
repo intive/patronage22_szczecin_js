@@ -20,4 +20,10 @@ describe('TextArea', () => {
     expect(screen.getByRole('textbox')).toHaveValue('Hello,\nWorld!')
     expect(mockOnChange).toHaveBeenCalledTimes(13)
   })
+
+  it('should render TextArea component and CharacterCounter with text 0/300', () => {
+    render(<TextArea maxLength='300' />)
+
+    expect(screen.getByText('0/300')).toBeTruthy()
+  })
 })

@@ -4,7 +4,6 @@ import TextareaAutosize from 'react-textarea-autosize'
 export const StyledTextareaAutosize = styled(TextareaAutosize)`
   width: 100%;
   min-height: 80px;
-  margin-bottom: 0.5rem;
   padding: 0.75rem 1rem;
   color: #3B3B3B;
   background: #F7F7F7;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterCounter should render CharacterCounter component 1`] = `
+<div>
+  <span
+    class="sc-bdvvtL eePQfO"
+  >
+    0
+    /
+    30
+  </span>
+</div>
+`;

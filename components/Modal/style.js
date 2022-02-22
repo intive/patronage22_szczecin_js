@@ -84,7 +84,6 @@ export const ModalContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
   flex-grow: 1;
   overflow: auto;
 `
@@ -92,7 +91,7 @@ export const ModalContent = styled.div`
 export const ModalFooter = styled.div`
   display: flex;
   justify-content: space-around;
-  margin-top: 1rem;
+  margin-top: 2rem;
   height: 2.5rem;
   width: 100%;
 

@@ -1,6 +1,6 @@
 /* globals describe, it, expect  */
 
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import Input from './Input'
 
 describe('Input', () => {
@@ -14,5 +14,11 @@ describe('Input', () => {
     const { container } = render(<Input type='password' />)
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('should render Input component and CharacterCounter with text 0/8', () => {
+    render(<Input maxLength='8' />)
+
+    expect(screen.getByText('0/8')).toBeTruthy()
   })
 })

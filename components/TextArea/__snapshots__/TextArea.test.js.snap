@@ -3,7 +3,7 @@
 exports[`TextArea should render TextArea component 1`] = `
 <div>
   <textarea
-    class="sc-bdvvtL cVuBuF"
+    class="sc-bdvvtL dVstcH"
   />
 </div>
 `;
