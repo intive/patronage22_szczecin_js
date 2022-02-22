@@ -10,7 +10,6 @@ export const ColumnCard = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   margin: 1rem 0;
   padding: ${props => props.card ? '1rem' : '1.25rem 1rem 0.75rem 1rem'};
@@ -19,6 +18,7 @@ export const ColumnCard = styled.div`
 `
 
 export const ColumnCardTitle = styled.h4`
+  align-self: center;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -46,7 +46,7 @@ export const ColumnAddCardWrapper = styled.div`
   justify-content: ${props => props.right ? 'flex-end' : 'space-between'};
   align-items: center;
   gap: 12px;
-  margin-top: ${props => props.right ? '0' : '1rem'}
+  margin-top: ${props => props.right ? '0' : '1rem'};
 `
 
 export const ColumnCardName = styled.span`

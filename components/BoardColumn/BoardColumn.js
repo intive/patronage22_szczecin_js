@@ -77,7 +77,7 @@ const BoardColumn = () => {
         {isInCreateCardMode
           ? (
             <>
-              <TextArea value={cardTextValue} name='cardTextValue' onChange={handleOnChange} ref={textAreaRef} />
+              <TextArea value={cardTextValue} name='cardTextValue' onChange={handleOnChange} ref={textAreaRef} maxLength='300' />
               <ColumnAddCardWrapper right>
                 <StyledButton text onClick={handleCancelCard}>{t('buttons.cancel')}</StyledButton>
                 <StyledButton text onClick={handleSaveCard}>{t('buttons.save')}</StyledButton>

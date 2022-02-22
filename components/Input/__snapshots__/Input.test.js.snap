@@ -3,7 +3,7 @@
 exports[`Input should render Input correctly 1`] = `
 <div>
   <input
-    class="sc-bdvvtL sMrCm"
+    class="sc-bdvvtL jwGgZq"
   />
 </div>
 `;
@@ -11,7 +11,7 @@ exports[`Input should render Input correctly 1`] = `
 exports[`Input should render Input with type correctly 1`] = `
 <div>
   <input
-    class="sc-bdvvtL sMrCm"
+    class="sc-bdvvtL jwGgZq"
     type="password"
   />
 </div>

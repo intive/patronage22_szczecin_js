@@ -6,10 +6,10 @@ exports[`BoardColumn should render BoardColumn component 1`] = `
     class="sc-dkPtRN dEbUgK"
   >
     <div
-      class="sc-hKwDye kjxWCv"
+      class="sc-hKwDye iYNrnp"
     >
       <h4
-        class="sc-eCImPb ljTXAf"
+        class="sc-eCImPb gGbVhf"
       >
         boardColumn.title
       </h4>
