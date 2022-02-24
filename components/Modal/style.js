@@ -19,11 +19,13 @@ export const ModalOverlay = styled.div`
 `
 
 export const ModalContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: -webkit-fill-available;
   padding: 2rem;
   background: #FFFFFF;
   z-index: 20;
@@ -35,6 +37,7 @@ export const ModalContainer = styled.div`
     padding: 3.5rem 3rem;
     width: auto;
     height: auto;
+    max-height: 60vh;
     box-shadow: 0px 8px 16px rgba(98, 98, 98, 0.24);
     border-radius: 8px;
   }
@@ -47,19 +50,20 @@ export const ModalHeader = styled.div`
 `
 
 export const StyledIcon = styled(Icon)`
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
   width: 112px;
   height: 112px;
+  margin-top: -7.5rem;
   border-radius: 50%;
   background: #E1E1E1;
   color: #515151;
   font-size: 4rem;
 
   @media (min-width: 768px) {
-    margin-top: -7.5rem;
+    display: flex;
   }
 `
 export const ModalTitle = styled.p`
@@ -79,16 +83,15 @@ export const ModalSubtitle = styled.p`
 export const ModalContent = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-grow: 1;
+  overflow: auto;
 `
 
 export const ModalFooter = styled.div`
   display: flex;
   justify-content: space-around;
-  position: fixed;
-  bottom: 1rem;
-  left: 0;
   margin-top: 1rem;
   height: 2.5rem;
   width: 100%;

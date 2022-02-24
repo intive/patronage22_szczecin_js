@@ -24,7 +24,7 @@ describe('Home', () => {
   // TODO!! all tests that are below must be moved to BoardTile after the modal component will be integrated
 
   it('should open Modal after button click and close it after click on backdrop', () => {
-    render(<Home />)
+    render(<Home tilesList={tilesList} />)
     expect(screen.queryByTestId('backdrop')).not.toBeInTheDocument()
     userEvent.click(screen.getByRole('button', { name: /Click to Open Modal/i }))
     expect(screen.getByTestId('backdrop')).toBeInTheDocument()
@@ -33,7 +33,7 @@ describe('Home', () => {
   })
 
   it('should open Modal after button click and close it after click on cancel button', () => {
-    render(<Home />)
+    render(<Home tilesList={tilesList} />)
     expect(screen.queryByRole('button', { name: /buttons.cancel/i })).not.toBeInTheDocument()
     userEvent.click(screen.getByRole('button', { name: /Click to Open Modal/i }))
     expect(screen.getByRole('button', { name: /buttons.cancel/i })).toBeInTheDocument()
@@ -42,7 +42,7 @@ describe('Home', () => {
   })
 
   it('should open Modal after button click and close it after click on continue button', () => {
-    render(<Home />)
+    render(<Home tilesList={tilesList} />)
     expect(screen.queryByRole('button', { name: /buttons.continue/i })).not.toBeInTheDocument()
     userEvent.click(screen.getByRole('button', { name: /Click to Open Modal/i }))
     expect(screen.getByRole('button', { name: /buttons.continue/i })).toBeInTheDocument()
@@ -51,7 +51,7 @@ describe('Home', () => {
   })
 
   it('should open Modal after button click and close it after click on Esc keyboard button', () => {
-    render(<Home />)
+    render(<Home tilesList={tilesList} />)
     expect(screen.queryByRole('button', { name: /buttons.continue/i })).not.toBeInTheDocument()
     userEvent.click(screen.getByRole('button', { name: /Click to Open Modal/i }))
     expect(screen.getByRole('button', { name: /buttons.continue/i })).toBeInTheDocument()

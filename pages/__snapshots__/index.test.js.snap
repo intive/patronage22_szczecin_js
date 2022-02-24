@@ -166,91 +166,12 @@ exports[`Home should render Home page 1`] = `
         </div>
         <div />
       </div>
-<<<<<<< HEAD
-=======
       <br />
       <button
-        class="sc-bdvvtL dRBcfm"
+        class="sc-crHmcD lefaQv"
       >
-<<<<<<< HEAD
-=======
         Click to Open Modal
       </button>
-      <br />
-      <button
-        class="sc-bdvvtL dRBcfm"
-      >
->>>>>>> 1fe2c04 (feat: P2022-346 Create modal component)
-        Continue
-      </button>
-      <br />
-      <button
-        class="sc-bdvvtL dRBcfm"
-        disabled=""
-      >
-        Continue
-      </button>
-      <br />
-      <button
-        class="sc-bdvvtL dRBcfm"
-      >
-        <span
-          class="material-icons sc-gsDKAQ jUyrhl"
-        >
-          crop_original
-        </span>
-        Continue
-      </button>
-      <br />
-      <button
-        class="sc-bdvvtL dRBcfm"
-        disabled=""
-      >
-        <span
-          class="material-icons sc-gsDKAQ jUyrhl"
-        >
-          crop_original
-        </span>
-        Continue
-      </button>
-      <br />
-      <button
-        class="sc-bdvvtL jVCSJw"
-      >
-        Continue
-      </button>
-      <br />
-      <button
-        class="sc-bdvvtL jVCSJw"
-        disabled=""
-      >
-        Continue
-      </button>
-      <br />
-      <button
-        class="sc-bdvvtL jVCSJw"
-      >
-        <span
-          class="material-icons sc-gsDKAQ jUyrhl"
-        >
-          crop_original
-        </span>
-        Continue
-      </button>
-      <br />
-      <button
-        class="sc-bdvvtL jVCSJw"
-        disabled=""
-      >
-        <span
-          class="material-icons sc-gsDKAQ jUyrhl"
-        >
-          crop_original
-        </span>
-        Continue
-      </button>
-      <br />
->>>>>>> 50f0422 (feat: P2022-346 Create modal component)
     </main>
   </div>
 </div>
