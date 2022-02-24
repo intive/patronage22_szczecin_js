@@ -1,7 +1,7 @@
 /* globals describe, it, expect  */
 /* eslint-env jest */
 
-import { render, screen } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import Home from './index.page'
 
@@ -18,7 +18,7 @@ describe('Home', () => {
 
   it('should render Home page', async () => {
     const { container } = render(<Home tilesList={tilesList} />)
-    expect(container).toMatchSnapshot()
+    await waitFor(() => { expect(container).toMatchSnapshot() })
   })
 
   // TODO!! all tests that are below must be moved to BoardTile after the modal component will be integrated
