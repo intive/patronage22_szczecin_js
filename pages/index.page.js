@@ -43,7 +43,7 @@ export async function getServerSideProps (ctx) {
   return {
     props: {
       tilesList: resData.data,
-      ...(await serverSideTranslations(ctx.locale, ['common']))
+      ...(await serverSideTranslations(ctx.locale, ['common', 'modals']))
     }
   }
 }

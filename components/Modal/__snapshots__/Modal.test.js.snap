@@ -14,7 +14,7 @@ exports[`Modal should render Modal correctly 1`] = `
     />
     <div
       aria-hidden="false"
-      class="sc-hKwDye hkhOSC"
+      class="sc-hKwDye loeQtZ"
       role="dialog"
     >
       <div
@@ -34,10 +34,10 @@ exports[`Modal should render Modal correctly 1`] = `
         </p>
       </div>
       <div
-        class="sc-furwcr faehoW"
+        class="sc-furwcr iQmbtq"
       />
       <div
-        class="sc-pVTFL bkJkxS"
+        class="sc-pVTFL qqbSZ"
       >
         <button
           class="sc-bdvvtL jVCSJw sc-jrQzAO bsfgRs"
