@@ -52,7 +52,7 @@ async function getBoards (req, res, database, dbPrefix) {
       return 0
     } else {
       return Object.keys(columns).reduce((acc, key) => {
-        acc = acc + Object.keys(columns[key].cards).length
+        acc = acc + Object.keys(columns[key]?.cards || {}).length
         return acc
       }, 0)
     }

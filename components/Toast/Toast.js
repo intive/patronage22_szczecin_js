@@ -17,7 +17,7 @@ const Toast = ({ id, type, children, isOpen }) => {
   return isOpenToast
     ? (
       <ReactPortal wrapperId={`toast-portal-${id || portalId}`}>
-        <NotificationToast type={type} role='alert' aria-disabled='true'>
+        <NotificationToast type={type} role='alert'>
           {type === 'success'
             ? <NotificationIcon name='done' />
             : <NotificationIcon name='priority_high' />}

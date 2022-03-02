@@ -32,6 +32,7 @@ describe('api/boards', () => {
     expect(res._getHeaders()).toEqual({ allow: ['GET', 'POST'] })
   })
 })
+
 describe('api/boards get', () => {
   it('should return a board without a password', async () => {
     snapshot.exists.mockReturnValue(true)
@@ -107,7 +108,7 @@ describe('api/boards get', () => {
     snapshot.val.mockReturnValue({
       444: {
         name: 'board 76',
-        columns: { obj: { cards: [1, 2, 3, 4, 6] } },
+        columns: { obj: { cards: [1, 2, 3, 4, 5] } },
         createdAt: '1984-10-16T12:30:00.000Z'
       }
     })

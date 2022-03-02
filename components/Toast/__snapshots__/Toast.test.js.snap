@@ -7,7 +7,6 @@ exports[`Toast should render Toast with given text 1`] = `
     id="toast-portal-toast-test-id"
   >
     <div
-      aria-disabled="true"
       class="sc-bdvvtL kYuxJh"
       role="alert"
       type="success"
@@ -30,7 +29,6 @@ exports[`Toast should render error Toast 1`] = `
     id="toast-portal-toast-test-id"
   >
     <div
-      aria-disabled="true"
       class="sc-bdvvtL jJTopw"
       role="alert"
     >
@@ -52,7 +50,6 @@ exports[`Toast should render success Toast 1`] = `
     id="toast-portal-toast-test-id"
   >
     <div
-      aria-disabled="true"
       class="sc-bdvvtL kYuxJh"
       role="alert"
       type="success"
