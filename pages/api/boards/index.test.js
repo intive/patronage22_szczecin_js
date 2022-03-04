@@ -1,4 +1,3 @@
-
 /* globals describe, it, expect, jest  */
 
 import { createMocks } from 'node-mocks-http'
@@ -67,7 +66,7 @@ describe('api/boards get', () => {
     snapshot.val.mockReturnValue({
       222: {
         name: 'board 2',
-        hasPassword: true,
+        password: 12345678,
         createdAt: '1984-06-22T07:30:00.000Z'
       },
       333: {
