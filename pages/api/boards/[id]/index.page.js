@@ -1,7 +1,10 @@
+import { ref, child, get, update, remove } from 'firebase/database'
 import { dbConnect, dbPrefix } from '../../../../libs/dbClient'
-import { ref, child, get, remove } from 'firebase/database'
+import schemaValidator from '../../../../utils/schemaValidator'
+import { patchBoardSchema } from '../../../../schema/patchBoard.schema'
 
 const handlers = {
+  patch: patchBoard,
   delete: deleteBoard
 }
 
@@ -19,9 +22,10 @@ export default async function handler (req, res) {
   const { method } = req
   const handler = handlers[method.toLowerCase()]
 
-  if (handler) return handler(req, res, database, dbPrefix)
-  else {
-    res.setHeader('Allow', ['DELETE'])
+  if (handler) {
+    return handler(req, res, database, dbPrefix)
+  } else {
+    res.setHeader('Allow', ['PATCH', 'DELETE'])
     res.status(405)
     res.end(`Method ${method} Not Allowed`)
   }
@@ -39,4 +43,28 @@ async function deleteBoard (req, res, database, dbPrefix) {
 
   await remove(child(ref(database), `${dbPrefix}/boards/${id}`))
   res.status(204).end()
+}
+
+async function patchBoard (req, res, database, dbPrefix) {
+  const snapshot = await get(child(ref(database), `${dbPrefix}/boards/${req.query.id}`))
+  if (!snapshot.exists()) return res.status(404).json()
+
+  const data = {
+    id: req.query.id,
+    password: req.body.password
+  }
+
+  const validate = schemaValidator(patchBoardSchema)
+  const valid = validate(data)
+
+  if (!valid) {
+    res.status(400).json({
+      message: 'Bad request',
+      errors: validate.errors
+    })
+    res.end()
+  } else {
+    await update(child(ref(database), `${dbPrefix}/boards/${req.query.id}`), { password: data.password })
+    res.status(204).json()
+  }
 }

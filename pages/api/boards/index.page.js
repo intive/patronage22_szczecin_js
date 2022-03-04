@@ -61,7 +61,7 @@ async function getBoards (req, res, database, dbPrefix) {
   const tilesList = data.map(board => ({
     id: board.id,
     name: board.name,
-    hasPassword: !!board.hasPassword,
+    hasPassword: !!board.password,
     createdAt: getLocalDate(board.createdAt),
     cardCount: getCardCount(board.columns)
   }))
