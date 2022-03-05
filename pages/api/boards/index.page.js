@@ -1,8 +1,12 @@
 import { dbConnect, dbPrefix } from '../../../libs/dbClient'
-import { ref, child, get } from 'firebase/database'
+import { ref, child, get, push } from 'firebase/database'
+import { ulid } from 'ulid'
+import schemaValidator from '../../../utils/schemaValidator'
+import { AddBoardSchema } from '../../../schema/addBoard.schema'
 
 const handlers = {
-  get: getBoards
+  get: getBoards,
+  post: addBoard
 }
 
 export default async function handler (req, res) {
@@ -21,7 +25,7 @@ export default async function handler (req, res) {
 
   if (handler) return handler(req, res, database, dbPrefix)
   else {
-    res.setHeader('Allow', ['GET'])
+    res.setHeader('Allow', ['GET', 'POST'])
     res.status(405)
     res.end(`Method ${method} Not Allowed`)
   }
@@ -63,4 +67,26 @@ async function getBoards (req, res, database, dbPrefix) {
   }))
 
   res.json(tilesList)
+}
+
+async function addBoard (req, res, database, dbPrefix) {
+  const data = {
+    id: ulid(),
+    name: req.body.name.trim(),
+    createdAt: new Date().toISOString()
+  }
+
+  const validate = schemaValidator(AddBoardSchema)
+  const valid = validate(data)
+
+  if (!valid) {
+    res.status(400).json({
+      message: 'Bad request',
+      errors: validate.errors
+    })
+    res.end()
+  } else {
+    await push(child(ref(database), `${dbPrefix}/boards`), data)
+    res.status(204).end()
+  }
 }
