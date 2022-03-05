@@ -11,6 +11,7 @@
     "jest:update": "jest --env=jsdom --roots ./ --updateSnapshot"
   },
   "dependencies": {
+    "ajv": "8.10.0",
     "axios": "0.25.0",
     "firebase": "9.6.5",
     "material-icons": "1.10.7",

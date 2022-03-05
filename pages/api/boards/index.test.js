@@ -30,7 +30,7 @@ describe('api/boards', () => {
     await handler(req, res)
 
     expect(res._getStatusCode()).toEqual(405)
-    expect(res._getHeaders()).toEqual({ allow: ['GET'] })
+    expect(res._getHeaders()).toEqual({ allow: ['GET', 'POST'] })
   })
 })
 describe('api/boards get', () => {
@@ -144,5 +144,82 @@ describe('api/boards get', () => {
 
     expect(res._getStatusCode()).toEqual(200)
     expect(res._getJSONData()).toEqual([])
+  })
+})
+
+describe('api/boards post', () => {
+  describe('should return status code 204', () => {
+    it('when valid name is provided', async () => {
+      const { req, res } = createMocks({
+        method: 'POST',
+        url: '/api/boards',
+        body: {
+          name: 'my board'
+        }
+      })
+
+      await handler(req, res)
+
+      expect(res._getStatusCode()).toEqual(204)
+      expect(res._getData()).toEqual('')
+    })
+
+    describe('should return validation error', () => {
+      it('for name length too short', async () => {
+        const { req, res } = createMocks({
+          method: 'POST',
+          url: '/api/boards',
+          body: {
+            name: '123'
+          }
+        })
+
+        await handler(req, res)
+
+        expect(res._getStatusCode()).toEqual(400)
+        expect(res._getJSONData()).toEqual({
+          message: 'Bad request',
+          errors: [
+            {
+              instancePath: '/name',
+              schemaPath: '#/properties/name/minLength',
+              keyword: 'minLength',
+              params: {
+                limit: 5
+              },
+              message: 'must NOT have fewer than 5 characters'
+            }
+          ]
+        })
+      })
+
+      it('for name length too long', async () => {
+        const { req, res } = createMocks({
+          method: 'POST',
+          url: '/api/boards',
+          body: {
+            name: 'Praesent consequat eu velit in rutrum. Sed egestas.'
+          }
+        })
+
+        await handler(req, res)
+
+        expect(res._getStatusCode()).toEqual(400)
+        expect(res._getJSONData()).toEqual({
+          message: 'Bad request',
+          errors: [
+            {
+              instancePath: '/name',
+              schemaPath: '#/properties/name/maxLength',
+              keyword: 'maxLength',
+              params: {
+                limit: 50
+              },
+              message: 'must NOT have more than 50 characters'
+            }
+          ]
+        })
+      })
+    })
   })
 })
