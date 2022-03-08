@@ -1,9 +1,15 @@
+import { useContext } from 'react'
+
 import BoardTile from '../BoardTile/BoardTile'
+import BoardsContext from '../../store/boards-context'
 import CreateBoardTile from '../CreateBoardTile/CreateBoardTile'
 import { List } from './style'
 
-export default function BoardTilesList ({ tilesList }) {
-  const generateBoardList = tilesList.map(board =>
+export default function BoardTilesList () {
+  const boardsCtx = useContext(BoardsContext)
+  const boards = boardsCtx.boards
+
+  const generateBoardList = boards.map(board =>
     <BoardTile
       id={board.id}
       key={board.id}

@@ -9,3 +9,7 @@ const axiosInstance = axios.create({
 export const getBoards = async (...args) => {
   return axiosInstance.get('/api/boards', { params: Object.assign({}, ...args) })
 }
+
+export const deleteBoard = async (id) => {
+  return axiosInstance.delete(`/api/boards/${id}`)
+}

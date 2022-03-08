@@ -1,3 +1,4 @@
+import { BoardsContextProvider } from '../store/boards-context'
 import BoardTilesList from '../components/BoardTilesList/BoardTilesList'
 import Head from 'next/head'
 import Layout from '../components/Layout/Layout'
@@ -40,28 +41,30 @@ export default function Home ({ tilesList }) {
         <title>Retro Board - Szczecin JS</title>
       </Head>
       <Layout>
-        <BoardTilesList tilesList={tilesList} />
-        <BoardColumn />
-        <br />
-        <Button onClick={handleOpen}>Click to Open Modal</Button>
-        <SetPasswordModal handleClose={handleClose} isOpen={isOpen} />
-        <br />
-        <h2>Boards from db</h2>
-        {tilesList.map((board) => (
-          <Link href={`/boards/${board.id}`} key={board.id}>
-            <a>
-              <BoardsWrapper>{board.name}</BoardsWrapper>
-            </a>
-          </Link>
-        ))}
+        <BoardsContextProvider boards={tilesList}>
+          <BoardTilesList tilesList={tilesList} />
+          <BoardColumn />
+          <br />
+          <Button onClick={handleOpen}>Click to Open Modal</Button>
+          <SetPasswordModal handleClose={handleClose} isOpen={isOpen} />
+          <br />
+          <h2>Boards from db</h2>
+          {tilesList.map((board) => (
+            <Link href={`/boards/${board.id}`} key={board.id}>
+              <a>
+                <BoardsWrapper>{board.name}</BoardsWrapper>
+              </a>
+            </Link>
+          ))}
 
-        <br />
-        <Button onClick={onShowFirstToastHandler}>Show Success Toast</Button>
-        <br />
-        <Button onClick={onShowSecondToastHandler}>Show Error Toast</Button>
+          <br />
+          <Button onClick={onShowFirstToastHandler}>Show Success Toast</Button>
+          <br />
+          <Button onClick={onShowSecondToastHandler}>Show Error Toast</Button>
 
-        {isOpenSuccessToast && <Toast isOpen type='success'>Board added successfully</Toast>}
-        {isOpenErrorToast && <Toast isOpen>Failed to add board</Toast>}
+          {isOpenSuccessToast && <Toast isOpen type='success'>Board added successfully</Toast>}
+          {isOpenErrorToast && <Toast isOpen>Failed to add board</Toast>}
+        </BoardsContextProvider>
       </Layout>
     </div>
   )
