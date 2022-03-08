@@ -3,21 +3,23 @@ import { useTranslation } from 'next-i18next'
 import BoardCreatorWizard from '../BoardCreatorWizard/BoardCreatorWizard'
 import ReactPortal from '../ReactPortal/ReactPortal'
 
-const BoardCreator = (props) => {
+const BoardCreator = ({ onClose, handleOnClickContinue, isOpen }) => {
   const { t } = useTranslation('common')
 
-  return (
-    <ReactPortal wrapperId='modal-portal'>
-      <Modal aria-hidden='false' role='dialog'>
-        <CloseButton onClick={props.onClose} icon='close' />
-        <BoardContent>
-          <Title>{t('createNewBoard.createNewBoardTitle')}</Title>
-          <BoardCreatorWizard />
-          <StyledButton onClick={props.handleOnClickContinue}>{t('buttons.continue')}</StyledButton>
-        </BoardContent>
-      </Modal>
-    </ReactPortal>
-  )
+  return isOpen
+    ? (
+      <ReactPortal wrapperId='modal-portal'>
+        <Modal aria-hidden='false' role='dialog'>
+          <CloseButton onClick={onClose} icon='close' />
+          <BoardContent>
+            <Title>{t('createNewBoard.createNewBoardTitle')}</Title>
+            <BoardCreatorWizard />
+            <StyledButton onClick={handleOnClickContinue}>{t('buttons.continue')}</StyledButton>
+          </BoardContent>
+        </Modal>
+      </ReactPortal>
+      )
+    : null
 }
 
 export default BoardCreator
