@@ -8,7 +8,7 @@ import BoardCreator from './BoardCreator'
 describe('BoardCreator', () => {
   it('renders modal BoardCreator', () => {
     const { baseElement } = render(
-      <BoardCreator />
+      <BoardCreator isOpen />
     )
 
     expect(baseElement).toMatchSnapshot()
@@ -17,7 +17,7 @@ describe('BoardCreator', () => {
   it('should close modal after click on cross button', () => {
     const mockOnClick = jest.fn()
     const { baseElement } = render(
-      <BoardCreator onClose={mockOnClick} />
+      <BoardCreator isOpen onClose={mockOnClick} />
     )
     userEvent.click(screen.getByRole('button', { name: /close/ }))
 
@@ -28,7 +28,7 @@ describe('BoardCreator', () => {
   it('should close modal after click on continue button', () => {
     const mockOnClick = jest.fn()
     const { baseElement } = render(
-      <BoardCreator handleOnClickContinue={mockOnClick} />
+      <BoardCreator isOpen handleOnClickContinue={mockOnClick} />
     )
     userEvent.click(screen.getByRole('button', { name: /buttons.continue/ }))
 
@@ -39,7 +39,7 @@ describe('BoardCreator', () => {
   it('should filled input field correctly', () => {
     const inputData = { boardname: 'My new board' }
     const { baseElement } = render(
-      <BoardCreator />
+      <BoardCreator isOpen />
     )
     const boardnameInput = screen.getByRole('textbox')
     boardnameInput.value = inputData.boardname

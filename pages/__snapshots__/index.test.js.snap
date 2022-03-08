@@ -6,13 +6,13 @@ exports[`Home should render Home page 1`] = `
     class="container"
   >
     <header
-      class="sc-fotOHu bhKksq"
+      class="sc-kfPuZi dOUklq"
     >
       <div
-        class="sc-fFeiMQ dSTYfP"
+        class="sc-fKVqWL pdDge"
       >
         <a
-          class="sc-bkkeKt irXwSU"
+          class="sc-bBHxTw euaJwT"
           href="/"
         >
           <span
@@ -21,7 +21,7 @@ exports[`Home should render Home page 1`] = `
             crop_original
           </span>
           <p
-            class="sc-ieecCq ghAune"
+            class="sc-iwjdpV jESfgE"
           >
             headerTitle
           </p>
@@ -29,19 +29,19 @@ exports[`Home should render Home page 1`] = `
       </div>
     </header>
     <section
-      class="sc-dJjYzT hrCZdl"
+      class="sc-cxpSdN crjgAU"
     >
       <a
-        class="sc-kfPuZi gdZDYG"
+        class="sc-giYglK kINqLW"
         href="/"
       >
         boardHeader.returnLinkText
       </a>
       <div
-        class="sc-hGPBjI kbHMCd"
+        class="sc-llYSUQ gMKrFN"
       >
         <h1
-          class="sc-dlVxhl dJQyQE"
+          class="sc-iJKOTD fiDoMB"
         >
           Board name 1
         </h1>
@@ -53,10 +53,10 @@ exports[`Home should render Home page 1`] = `
       </div>
     </section>
     <main
-      class="sc-hBUSln xbyNf"
+      class="sc-dlVxhl gmzgUL"
     >
       <div
-        class="sc-ksdxgE fHAwCT"
+        class="sc-hGPBjI lfMwEn"
       >
         <div
           class="sc-bqiRlB bKrmmx"
@@ -148,18 +148,18 @@ exports[`Home should render Home page 1`] = `
         </div>
       </div>
       <div
-        class="sc-fKVqWL bOXxiQ"
+        class="sc-ezbkAF eAjUMc"
       >
         <div
-          class="sc-bBHxTw BZynw"
+          class="sc-bYoBSM cvsszn"
         >
           <h4
-            class="sc-iwjdpV jMXbEt"
+            class="sc-kLwhqv iZjCkQ"
           >
             boardColumn.title
           </h4>
           <button
-            class="sc-crHmcD lkNrHj sc-cxpSdN bJAtvG"
+            class="sc-crHmcD lkNrHj sc-ikJyIC hpvAf"
           >
             boardColumn.addCard
           </button>
@@ -171,17 +171,6 @@ exports[`Home should render Home page 1`] = `
         class="sc-crHmcD lefaQv"
       >
         Click to Open Modal
-      </button>
-      <br />
-      <button
-        class="sc-crHmcD lefaQv"
-      >
-        <span
-          class="material-icons sc-egiyK jjEWZz"
-        >
-          crop_original
-        </span>
-        New Board
       </button>
     </main>
   </div>
