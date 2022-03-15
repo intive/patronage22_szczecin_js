@@ -29,112 +29,25 @@ exports[`BoardCreator renders modal BoardCreator 1`] = `
           createNewBoard.createNewBoardTitle
         </div>
         <div
-          class="sc-iCfMLu ftPdqH"
+          class="sc-furwcr kwUPmU"
         >
           createNewBoard.createNewBoardSubtitle
         </div>
         <input
-          class="sc-furwcr jnaAwp"
+          class="sc-pVTFL QCglC"
+          maxlength="50"
           type="text"
         />
-        <button
-          class="sc-bdvvtL dRBcfm sc-gKclnd eWCgBz"
-        >
-          buttons.continue
-        </button>
-      </div>
-    </div>
-  </div>
-</body>
-`;
-
-exports[`BoardCreator should close modal after click on continue button 1`] = `
-<body>
-  <div />
-  <div
-    id="modal-portal"
-  >
-    <div
-      aria-hidden="false"
-      class="sc-dkPtRN jzSsRw"
-      role="dialog"
-    >
-      <button
-        class="sc-bdvvtL dRBcfm sc-hKwDye kMksWp"
-      >
         <span
-          class="material-icons sc-gsDKAQ jUyrhl"
+          class="sc-iCfMLu cokwAc sc-jrQzAO eNGvOJ"
         >
-          close
+          0
+          /
+          50
         </span>
-      </button>
-      <div
-        class="sc-eCImPb brrNer"
-      >
-        <div
-          class="sc-jRQBWg tHMPR"
-        >
-          createNewBoard.createNewBoardTitle
-        </div>
-        <div
-          class="sc-iCfMLu ftPdqH"
-        >
-          createNewBoard.createNewBoardSubtitle
-        </div>
-        <input
-          class="sc-furwcr jnaAwp"
-          type="text"
-        />
         <button
           class="sc-bdvvtL dRBcfm sc-gKclnd eWCgBz"
-        >
-          buttons.continue
-        </button>
-      </div>
-    </div>
-  </div>
-</body>
-`;
-
-exports[`BoardCreator should close modal after click on cross button 1`] = `
-<body>
-  <div />
-  <div
-    id="modal-portal"
-  >
-    <div
-      aria-hidden="false"
-      class="sc-dkPtRN jzSsRw"
-      role="dialog"
-    >
-      <button
-        class="sc-bdvvtL dRBcfm sc-hKwDye kMksWp"
-      >
-        <span
-          class="material-icons sc-gsDKAQ jUyrhl"
-        >
-          close
-        </span>
-      </button>
-      <div
-        class="sc-eCImPb brrNer"
-      >
-        <div
-          class="sc-jRQBWg tHMPR"
-        >
-          createNewBoard.createNewBoardTitle
-        </div>
-        <div
-          class="sc-iCfMLu ftPdqH"
-        >
-          createNewBoard.createNewBoardSubtitle
-        </div>
-        <input
-          class="sc-furwcr jnaAwp"
-          type="text"
-        />
-        <button
-          class="sc-bdvvtL dRBcfm sc-gKclnd eWCgBz"
+          disabled=""
         >
           buttons.continue
         </button>
@@ -173,16 +86,25 @@ exports[`BoardCreator should filled input field correctly 1`] = `
           createNewBoard.createNewBoardTitle
         </div>
         <div
-          class="sc-iCfMLu ftPdqH"
+          class="sc-furwcr kwUPmU"
         >
           createNewBoard.createNewBoardSubtitle
         </div>
         <input
-          class="sc-furwcr jnaAwp"
+          class="sc-pVTFL QCglC"
+          maxlength="50"
           type="text"
         />
+        <span
+          class="sc-iCfMLu cokwAc sc-jrQzAO eNGvOJ"
+        >
+          0
+          /
+          50
+        </span>
         <button
           class="sc-bdvvtL dRBcfm sc-gKclnd eWCgBz"
+          disabled=""
         >
           buttons.continue
         </button>

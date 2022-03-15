@@ -3,12 +3,12 @@
 exports[`BoardCreatorWizard renders boardCreatorWizard 1`] = `
 <div>
   <div
-    class="sc-bdvvtL lgusKh"
+    class="sc-gsDKAQ djDkmY"
   >
     createNewBoard.createNewBoardSubtitle
   </div>
   <input
-    class="sc-gsDKAQ eZwtwJ"
+    class="sc-dkPtRN eReKjJ"
     type="text"
   />
 </div>
@@ -17,12 +17,12 @@ exports[`BoardCreatorWizard renders boardCreatorWizard 1`] = `
 exports[`BoardCreatorWizard should filled input field correctly 1`] = `
 <div>
   <div
-    class="sc-bdvvtL lgusKh"
+    class="sc-gsDKAQ djDkmY"
   >
     createNewBoard.createNewBoardSubtitle
   </div>
   <input
-    class="sc-gsDKAQ eZwtwJ"
+    class="sc-dkPtRN eReKjJ"
     type="text"
   />
 </div>

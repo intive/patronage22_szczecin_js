@@ -21,3 +21,7 @@ export const updateBoard = async (id, options) => {
 export const getBoard = async (id) => {
   return axiosInstance.get(`/api/boards/${id}`)
 }
+
+export const addBoard = async (name) => {
+  return axiosInstance.post('/api/boards/', { name: name })
+}

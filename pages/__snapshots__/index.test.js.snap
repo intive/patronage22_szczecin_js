@@ -6,13 +6,13 @@ exports[`Home should render Home page 1`] = `
     class="container"
   >
     <header
-      class="sc-dlVxhl efaXfH"
+      class="sc-fKVqWL jCTfCM"
     >
       <div
-        class="sc-kfPuZi jQKnKM"
+        class="sc-bBHxTw eDizYw"
       >
         <a
-          class="sc-fKVqWL eBRIEF"
+          class="sc-iwjdpV hgEDaa"
           href="/"
         >
           <span
@@ -21,7 +21,7 @@ exports[`Home should render Home page 1`] = `
             crop_original
           </span>
           <p
-            class="sc-bBHxTw goLkHp"
+            class="sc-cxpSdN jvyxTU"
           >
             headerTitle
           </p>
@@ -29,7 +29,7 @@ exports[`Home should render Home page 1`] = `
       </div>
     </header>
     <div
-      class="sc-hGPBjI jgvijB"
+      class="sc-kfPuZi ebNvPM"
     >
       <div
         class="sc-bqiRlB bKrmmx"
@@ -124,18 +124,18 @@ exports[`Home should render Home page 1`] = `
       </a>
     </div>
     <div
-      class="sc-iwjdpV kBWWxX"
+      class="sc-llYSUQ eLIRDX"
     >
       <div
-        class="sc-cxpSdN jafYPj"
+        class="sc-iJKOTD ewcQeO"
       >
         <h4
-          class="sc-llYSUQ cjtzLl"
+          class="sc-giYglK eUftqw"
         >
           boardColumn.title
         </h4>
         <button
-          class="sc-crHmcD lkNrHj sc-iJKOTD hJflEj"
+          class="sc-crHmcD lkNrHj sc-ezbkAF bOhdnJ"
         >
           boardColumn.addCard
         </button>
