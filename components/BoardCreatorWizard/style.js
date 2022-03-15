@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import CharacterCounter from '../CharacterCounter/CharacterCounter'
 
 export const Subtitle = styled.div`
   margin-top: 0.75rem;
@@ -19,4 +20,8 @@ export const TextInput = styled.input`
   caret-color: #515151;
   color: #515151;
 }
+`
+
+export const CharacterCounterStyled = styled(CharacterCounter)`
+  width:100%;
 `

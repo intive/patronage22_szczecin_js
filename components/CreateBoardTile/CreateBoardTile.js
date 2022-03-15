@@ -5,12 +5,13 @@ import useModal from '../../hooks/useModal'
 
 export default function CreateBoardTile () {
   const { isOpen, toggle } = useModal()
+
   return (
     <>
       <Tile role='button' tabIndex='0' onClick={toggle}>
         <Button icon='crop_original'>New board</Button>
       </Tile>
-      <BoardCreator onClose={toggle} handleOnClickContinue={toggle} isOpen={isOpen} />
+      <BoardCreator onClose={toggle} isOpen={isOpen} />
     </>
   )
 }

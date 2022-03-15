@@ -1,6 +1,6 @@
 /* globals describe, expect, it */
 
-import { render, screen } from '@testing-library/react'
+import { act, render, screen } from '@testing-library/react'
 import Toast from './Toast'
 import { jest } from '@jest/globals'
 
@@ -35,7 +35,9 @@ describe('Toast', () => {
     const toast = screen.getByText('Failed to add board')
 
     expect(toast).toBeInTheDocument()
-    jest.advanceTimersByTime(4000)
+    act(() => {
+      jest.advanceTimersByTime(4000)
+    })
     expect(toast).not.toBeInTheDocument()
 
     jest.clearAllTimers()
@@ -47,7 +49,9 @@ describe('Toast', () => {
     const toast = screen.getByText('Failed to add board')
 
     expect(toast).toBeInTheDocument()
-    jest.advanceTimersByTime(3000)
+    act(() => {
+      jest.advanceTimersByTime(3000)
+    })
     expect(toast).toBeInTheDocument()
 
     jest.clearAllTimers()
