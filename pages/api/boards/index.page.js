@@ -33,9 +33,11 @@ export default async function handler (req, res) {
 
 async function getBoards (req, res, database, dbPrefix) {
   const snapshot = await get(child(ref(database), `${dbPrefix}/boards`))
+
   if (!snapshot.exists()) return res.json([])
 
   const snapshotValue = snapshot.val()
+
   const data = Object.keys(snapshot.val()).map(key => ({
     ...snapshotValue[key],
     id: key
