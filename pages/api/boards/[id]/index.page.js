@@ -4,6 +4,7 @@ import schemaValidator from '../../../../utils/schemaValidator'
 import { patchBoardSchema } from '../../../../schema/patchBoard.schema'
 
 const handlers = {
+  get: getBoard,
   patch: patchBoard,
   delete: deleteBoard
 }
@@ -22,10 +23,9 @@ export default async function handler (req, res) {
   const { method } = req
   const handler = handlers[method.toLowerCase()]
 
-  if (handler) {
-    return handler(req, res, database, dbPrefix)
-  } else {
-    res.setHeader('Allow', ['PATCH', 'DELETE'])
+  if (handler) return handler(req, res, database, dbPrefix)
+  else {
+    res.setHeader('Allow', ['GET', 'PATCH', 'DELETE'])
     res.status(405)
     res.end(`Method ${method} Not Allowed`)
   }
@@ -67,4 +67,47 @@ async function patchBoard (req, res, database, dbPrefix) {
     await update(child(ref(database), `${dbPrefix}/boards/${req.query.id}`), { password: data.password })
     res.status(204).json()
   }
+}
+
+async function getBoard (req, res, database, dbPrefix) {
+  const { id } = req.query
+  const lookupId = await get(child(ref(database), `${dbPrefix}/boards/${id}`))
+
+  if (!lookupId.val()) {
+    return res.status(404).json({
+      message: `Board with id ${id} was not found`
+    })
+  }
+
+  const board = await lookupId.val()
+
+  const columnCards = (cards) => {
+    return Object.entries(cards).map(([id, val]) => {
+      return ({
+        id,
+        text: val.text
+      })
+    })
+  }
+
+  const boardColumns = (columns) => {
+    return Object.entries(columns).map(([id, val]) => {
+      return ({
+        id,
+        name: val.name,
+        cards: val.cards && columnCards(val.cards)
+      })
+    })
+  }
+
+  const { createdAt, password, ...modifyBoard } = board
+
+  const boardDetails = {
+    ...modifyBoard,
+    id,
+    columns: board.columns && boardColumns(board.columns),
+    hasPassword: !!board.password
+  }
+
+  res.status(200).json(boardDetails)
 }
