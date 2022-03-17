@@ -28,14 +28,14 @@ describe('api/boards/[id]', () => {
   it('should return 405 if the method is not allowed', async () => {
     const id = 222
     const { req, res } = createMocks({
-      method: 'GET',
+      method: 'PUT',
       url: `/api/boards/${id}`
     })
 
     await handler(req, res)
 
     expect(res._getStatusCode()).toEqual(405)
-    expect(res._getHeaders()).toEqual({ allow: ['PATCH', 'DELETE'] })
+    expect(res._getHeaders()).toEqual({ allow: ['GET', 'PATCH', 'DELETE'] })
   })
 
   describe('PATCH method', () => {
@@ -199,10 +199,6 @@ describe('api/boards/[id]', () => {
 
   describe('DELETE method', () => {
     it('should return status code 204 upon board deletion', async () => {
-      get.mockResolvedValue(snapshot)
-
-      snapshot.exists.mockResolvedValue(true)
-
       snapshot.val.mockResolvedValue({
         111: {
           name: 'board 1',
@@ -231,7 +227,6 @@ describe('api/boards/[id]', () => {
       }
 
       get.mockResolvedValue(snapshot)
-
       snapshot.exists.mockResolvedValue(false)
 
       const id = 222
@@ -247,6 +242,195 @@ describe('api/boards/[id]', () => {
 
       expect(res._getStatusCode()).toEqual(404)
       expect(res._getJSONData()).toEqual({ message: `Board with id ${id} was not found` })
+    })
+  })
+})
+describe('api/boards/[id] getBoard', () => {
+  it('should return status code 404 and message when board does not exist', async () => {
+    const snapshot = {
+      exists: jest.fn(),
+      val: jest.fn()
+    }
+
+    get.mockResolvedValue(snapshot)
+    snapshot.exists.mockResolvedValue(false)
+
+    const id = '01FV757GXRK6A9MMFA1EMA2V7D'
+    const { req, res } = createMocks({
+      method: 'GET',
+      url: `api/boards/${id}`,
+      query: {
+        id: '01FV757GXRK6A9MMFA1EMA2V7D'
+      }
+    })
+
+    await handler(req, res)
+
+    expect(res._getStatusCode()).toEqual(404)
+    expect(res._getJSONData()).toEqual({ message: `Board with id ${id} was not found` })
+  })
+
+  it('should return a board with a password, no columns and status code 200', async () => {
+    const snapshot = {
+      exists: jest.fn(),
+      val: jest.fn()
+    }
+
+    get.mockResolvedValue(snapshot)
+    snapshot.exists.mockResolvedValue(true)
+
+    snapshot.val.mockResolvedValue({
+      name: 'board 1',
+      password: '12345678'
+    })
+
+    const id = '01FV757GXRK6A9MMFA1EMA2V7D'
+    const { req, res } = createMocks({
+      method: 'GET',
+      url: `/api/boards/${id}`,
+      query: {
+        id: '01FV757GXRK6A9MMFA1EMA2V7D'
+      }
+    })
+
+    await handler(req, res)
+
+    expect(res._getStatusCode()).toEqual(200)
+    expect(res._getJSONData()).toEqual({
+      id: '01FV757GXRK6A9MMFA1EMA2V7D',
+      name: 'board 1',
+      hasPassword: true
+    })
+  })
+
+  it('should return a board without a password, with one column, no cards and status code 200', async () => {
+    const snapshot = {
+      exists: jest.fn(),
+      val: jest.fn()
+    }
+
+    get.mockResolvedValue(snapshot)
+    snapshot.exists.mockResolvedValue(true)
+
+    snapshot.val.mockResolvedValue({
+      name: 'board 2',
+      password: false,
+      columns: {
+        '01FV73XQTDV2Q6YWMGG8Z4A0NE': {
+          name: 'column 1'
+        }
+      }
+    })
+
+    const id = '01FV75A884ZHZE347P83K0SXRR'
+    const { req, res } = createMocks({
+      method: 'GET',
+      url: `/api/boards/${id}`,
+      query: {
+        id: '01FV75A884ZHZE347P83K0SXRR'
+      }
+    })
+
+    await handler(req, res)
+
+    expect(res._getStatusCode()).toEqual(200)
+    expect(res._getJSONData()).toEqual({
+      columns: [
+        {
+          id: '01FV73XQTDV2Q6YWMGG8Z4A0NE',
+          name: 'column 1'
+        }
+      ],
+      name: 'board 2',
+      id: '01FV75A884ZHZE347P83K0SXRR',
+      hasPassword: false
+    })
+  })
+
+  it('should return a board with a password, three columns - one without cards, two with cards and status code 200', async () => {
+    const snapshot = {
+      exists: jest.fn(),
+      val: jest.fn()
+    }
+
+    get.mockResolvedValue(snapshot)
+    snapshot.exists.mockResolvedValue(true)
+
+    snapshot.val.mockResolvedValue({
+      name: 'board 3',
+      password: '12345678',
+      columns: {
+        '01FV73XQTDV2Q6YWMGG8Z4A0NE': {
+          name: 'column 1'
+        },
+        '02FV73XQTDV2Q6YWMGG8Z4ATWO': {
+          name: 'column two',
+          cards: {
+            '01FV75BM8W3ZDZHSQE36AART7B': {
+              text: 'card 1'
+            }
+          }
+        },
+        '03FV73XQTDV2Q6YWMGG8Z4ATRE': {
+          name: 'column thr33',
+          cards: {
+            '01FV75BQYD91NGEGE9V2Q1ZTMY': {
+              text: 'next card'
+            },
+            '02FV75BTSWEZYV8786KJTY3KSS': {
+              text: 'mimic'
+            }
+          }
+        }
+      }
+    })
+
+    const id = '01FV75A884ZHZE347P83K0SXYY'
+    const { req, res } = createMocks({
+      method: 'GET',
+      url: `api/boards/${id}`,
+      query: {
+        id: '01FV75A884ZHZE347P83K0SXYY'
+      }
+    })
+
+    await handler(req, res)
+
+    expect(res._getStatusCode()).toEqual(200)
+    expect(res._getJSONData()).toEqual({
+      id: '01FV75A884ZHZE347P83K0SXYY',
+      name: 'board 3',
+      hasPassword: true,
+      columns: [
+        {
+          id: '01FV73XQTDV2Q6YWMGG8Z4A0NE',
+          name: 'column 1'
+        },
+        {
+          id: '02FV73XQTDV2Q6YWMGG8Z4ATWO',
+          name: 'column two',
+          cards: [
+            {
+              id: '01FV75BM8W3ZDZHSQE36AART7B',
+              text: 'card 1'
+            }
+          ]
+        },
+        {
+          id: '03FV73XQTDV2Q6YWMGG8Z4ATRE',
+          name: 'column thr33',
+          cards: [
+            {
+              id: '01FV75BQYD91NGEGE9V2Q1ZTMY',
+              text: 'next card'
+            },
+            {
+              id: '02FV75BTSWEZYV8786KJTY3KSS',
+              text: 'mimic'
+            }
+          ]
+        }
+      ]
     })
   })
 })

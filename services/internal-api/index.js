@@ -17,3 +17,7 @@ export const deleteBoard = async (id) => {
 export const updateBoard = async (id, options) => {
   return axiosInstance.patch(`/api/boards/${id}`, options)
 }
+
+export const getBoard = async (id) => {
+  return axiosInstance.get(`/api/boards/${id}`)
+}
