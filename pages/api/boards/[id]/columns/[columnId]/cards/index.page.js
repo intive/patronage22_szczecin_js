@@ -5,7 +5,7 @@ import schemaValidator from '../../../../../../../utils/schemaValidator'
 import { AddCardSchema } from '../../../../../../../schema/addCard.schema'
 
 const handlers = {
-  patch: addCard
+  post: addCard
 }
 
 export default async function handler (req, res) {
@@ -24,34 +24,25 @@ export default async function handler (req, res) {
 
   if (handler) return handler(req, res, database, dbPrefix)
   else {
-    res.setHeader('Allow', ['PATCH'])
+    res.setHeader('Allow', ['POST'])
     res.status(405)
     res.end(`Method ${method} Not Allowed`)
   }
 }
 
 async function addCard (req, res, database, dbPrefix) {
-  const { id, idColumn } = req.query
-  const columnLookupId = await get(child(ref(database), `${dbPrefix}/boards/${id}/columns`))
-  const columnData = await columnLookupId.val()
+  const { id, columnId } = req.query
+  const currentColumn = await get(child(ref(database), `${dbPrefix}/boards/${id}/columns/${columnId}`))
 
-  if (!columnData || columnData.findIndex(column => column.id === idColumn) === -1) {
+  if (!currentColumn.val()) {
     return res.status(404).json({
-      message: `Column with id ${idColumn} was not found`
+      message: `Column with id ${columnId} was not found`
     })
   }
 
-  const columnIndex = columnData.findIndex(column => column.id === idColumn)
-
   const newCard = {
-    id: ulid(),
-    text: req.body.text.trim()
+    text: req.body.text?.trim()
   }
-
-  if (!columnData[columnIndex]?.cards?.length) {
-    columnData[columnIndex].cards = []
-  }
-  columnData[columnIndex].cards.push(newCard)
 
   const validate = schemaValidator(AddCardSchema)
   const valid = validate(newCard)
@@ -63,7 +54,8 @@ async function addCard (req, res, database, dbPrefix) {
     })
     res.end()
   } else {
-    await update(child(ref(database), `${dbPrefix}/boards/${id}/columns/${columnIndex}`), { cards: columnData[columnIndex].cards })
+    const cardId = ulid()
+    await update(child(ref(database), `${dbPrefix}/boards/${id}/columns/${columnId}/cards/${cardId}`), newCard)
     res.status(204).end()
   }
 }

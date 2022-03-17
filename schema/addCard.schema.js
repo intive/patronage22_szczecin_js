@@ -6,5 +6,6 @@ export const AddCardSchema = {
       minLength: 5,
       maxLength: 300
     }
-  }
+  },
+  required: ['text']
 }
