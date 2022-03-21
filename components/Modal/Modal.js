@@ -1,15 +1,18 @@
-import { ModalOverlay, ModalContainer, ModalHeader, StyledIcon, ModalTitle, ModalSubtitle, ModalContent, ModalFooter, StyledCancelButton, StyledContinueButton } from './style'
+import { ModalOverlay, ModalContainer, ModalHeader, StyledIcon, ModalTitle, ModalSubtitle, ModalContent, ModalFooter, StyledCancelButton, StyledSaveButton } from './style'
 import { useTranslation } from 'next-i18next'
-import { useEffect } from 'react'
+import { useContext, useEffect } from 'react'
 import ReactPortal from '../ReactPortal/ReactPortal'
+import ModalContext from '../../store/modal-context.js'
 
-export default function Modal ({ children, isOpen, handleClose, icon, title, subtitle }) {
+export default function Modal ({ children }) {
   const { t } = useTranslation(['common'])
+
+  const { isModalOpen, icon, handleClose, handleSaveClick, title, subtitle, disabled } = useContext(ModalContext)
 
   useEffect(() => {
     const closeOnEscapeKey = e => e.key === 'Escape' ? handleClose() : null
 
-    if (isOpen) {
+    if (isModalOpen) {
       document.body.style.overflow = 'hidden'
       window.addEventListener('keydown', closeOnEscapeKey)
     }
@@ -18,9 +21,9 @@ export default function Modal ({ children, isOpen, handleClose, icon, title, sub
       document.body.style.overflow = ''
       window.removeEventListener('keydown', closeOnEscapeKey)
     }
-  }, [isOpen, handleClose])
+  }, [isModalOpen, handleClose])
 
-  if (!isOpen) return null
+  if (!isModalOpen) return null
 
   return (
     <ReactPortal wrapperId='modal-portal'>
@@ -34,7 +37,7 @@ export default function Modal ({ children, isOpen, handleClose, icon, title, sub
         <ModalContent>{children}</ModalContent>
         <ModalFooter>
           <StyledCancelButton text onClick={handleClose}>{t('buttons.cancel')}</StyledCancelButton>
-          <StyledContinueButton onClick={handleClose}>{t('buttons.continue')}</StyledContinueButton>
+          <StyledSaveButton onClick={handleSaveClick} disabled={disabled}>{t('buttons.save')}</StyledSaveButton>
         </ModalFooter>
       </ModalContainer>
     </ReactPortal>
