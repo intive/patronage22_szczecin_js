@@ -1,5 +1,4 @@
 import { useContext } from 'react'
-
 import BoardTile from '../BoardTile/BoardTile'
 import BoardsContext from '../../store/boards-context'
 import CreateBoardTile from '../CreateBoardTile/CreateBoardTile'

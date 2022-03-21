@@ -21,6 +21,7 @@ export const ModalOverlay = styled.div`
 export const ModalContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -85,7 +86,11 @@ export const ModalContent = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   flex-grow: 1;
-  overflow: auto;
+  width: 100%;
+  
+  @media (min-width: 576px) {
+    width: 448px;
+  }
 `
 
 export const ModalFooter = styled.div`
@@ -94,7 +99,6 @@ export const ModalFooter = styled.div`
   margin-top: 2rem;
   height: 2.5rem;
   width: 100%;
-
 
   @media (min-width: 768px) {
     position: static;
@@ -112,7 +116,7 @@ export const StyledCancelButton = styled(Button)`
   }
 `
 
-export const StyledContinueButton = styled(Button)`
+export const StyledSaveButton = styled(Button)`
   display: flex;
   justify-content: center;
   width: 45%;

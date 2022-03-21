@@ -5,7 +5,7 @@ export default function Input (props) {
   return (
     <>
       <InputComponent {...props} />
-      {props.maxLength ? <CharacterCounter inputValue={props.value} maxCharacters={props.maxLength} /> : null}
+      {props.maxLength ? <CharacterCounter inputValue={props.value} maxCharacters={props.maxLength} placeHolder={props.placeholder} /> : null}
     </>
   )
 }
