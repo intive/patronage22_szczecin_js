@@ -3,20 +3,20 @@
 exports[`BoardTilesList should render name, date, no icon when password is not provided or render render icon when password is provided 1`] = `
 <div>
   <div
-    class="sc-kfPuZi ebNvPM"
+    class="sc-bBHxTw jtJnKI"
     data-testid="board-tiles-list"
   >
     <div
-      class="sc-bqiRlB bKrmmx"
+      class="sc-hBUSln inUYiV"
       data-testid="create-board-tile"
       role="button"
       tabindex="0"
     >
       <button
-        class="sc-crHmcD lefaQv"
+        class="sc-bqiRlB jEYJwa"
       >
         <span
-          class="material-icons sc-egiyK jjEWZz"
+          class="material-icons sc-ksdxgE gqsCXw"
         >
           crop_original
         </span>

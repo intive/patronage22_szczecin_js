@@ -3,6 +3,7 @@ import { updateBoard, deleteBoard } from '../../services/internal-api'
 import Icon from '../Icon/Icon'
 import { Date, Header, IconWrapper, Text, Tile, TileFooter } from './style'
 import BoardsContext from '../../store/boards-context'
+import ToastsContext from '../../store/toasts-context'
 import { useTranslation } from 'next-i18next'
 import ContextMenu from '../ContextMenu/ContextMenu'
 import ContextMenuItem from '../ContextMenuItem/ContextMenuItem'
@@ -18,9 +19,35 @@ export default function BoardTile ({ id, name, date, cardCount, hasPassword }) {
   const { isOpen, toggle } = useModal()
 
   const boardsCtx = useContext(BoardsContext)
+  const toastsCtx = useContext(ToastsContext)
   const refreshOnSuccess = data => data.status === 204 && boardsCtx.reload()
-  const deleteBoardHandler = async id => refreshOnSuccess(await deleteBoard(id))
-  const updateBoardHandler = async (id, options) => refreshOnSuccess(await updateBoard(id, options))
+
+  const toastMessage = {
+    success: t('toastMessage.board.successToast'),
+    error: t('toastMessage.errorToast')
+  }
+
+  const updateBoardHandler = async (id, options) => {
+    try {
+      refreshOnSuccess(await updateBoard(id, options))
+    } catch (error) { console.error(error) }
+  }
+
+  const deleteBoardHandler = async (id) => {
+    try {
+      const data = await deleteBoard(id)
+
+      if (data.status === 204) {
+        await refreshOnSuccess(data)
+        toastsCtx.showSuccessToast(toastMessage.success)
+      } else {
+        toastsCtx.showErrorToast(toastMessage.error)
+      }
+    } catch (error) {
+      toastsCtx.showErrorToast(toastMessage.error)
+      console.error(error)
+    }
+  }
 
   return (
     <>

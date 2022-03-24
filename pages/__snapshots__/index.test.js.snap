@@ -6,14 +6,14 @@ exports[`Home should render Home page 1`] = `
     class="container"
   >
     <header
-      class="sc-fKVqWL eLKqfJ"
+      class="sc-iwjdpV iGkDpK"
       data-testid="header"
     >
       <div
-        class="sc-bBHxTw eDizYw"
+        class="sc-cxpSdN jyeMqV"
       >
         <a
-          class="sc-iwjdpV hgEDaa"
+          class="sc-llYSUQ cFsmhC"
           href="/"
         >
           <span
@@ -22,7 +22,7 @@ exports[`Home should render Home page 1`] = `
             crop_original
           </span>
           <p
-            class="sc-cxpSdN jvyxTU"
+            class="sc-iJKOTD gdqVfZ"
           >
             headerTitle
           </p>
@@ -30,20 +30,20 @@ exports[`Home should render Home page 1`] = `
       </div>
     </header>
     <div
-      class="sc-kfPuZi ebNvPM"
+      class="sc-bBHxTw jtJnKI"
       data-testid="board-tiles-list"
     >
       <div
-        class="sc-bqiRlB bKrmmx"
+        class="sc-hBUSln inUYiV"
         data-testid="create-board-tile"
         role="button"
         tabindex="0"
       >
         <button
-          class="sc-crHmcD lefaQv"
+          class="sc-bqiRlB jEYJwa"
         >
           <span
-            class="material-icons sc-egiyK jjEWZz"
+            class="material-icons sc-ksdxgE gqsCXw"
           >
             crop_original
           </span>
@@ -72,14 +72,14 @@ exports[`Home should render Home page 1`] = `
             cardCount
           </p>
           <div
-            class="sc-iCfMLu dbydVW"
+            class="sc-pVTFL gcUIUu"
             data-testid="context-menu"
           >
             <button
               aria-controls="1"
               aria-expanded="false"
               aria-haspopup="menu"
-              class="sc-furwcr cTVyte"
+              class="sc-jrQzAO iofoks"
             >
               <span
                 class="material-icons"
@@ -88,21 +88,21 @@ exports[`Home should render Home page 1`] = `
               </span>
             </button>
             <nav
-              class="sc-pVTFL fGRbIZ"
+              class="sc-kDTinF kRnAor"
               id="1"
             >
               <ul
-                class="sc-gKclnd ePohWH"
+                class="sc-furwcr bzAVEx"
               >
                 <li
-                  class="sc-jrQzAO iMapqG"
+                  class="sc-iqseJM ezIeti"
                   data-testid="context-menu-item"
                 >
                   <button
-                    class="sc-kDTinF lgLknF"
+                    class="sc-crHmcD hwlSgY"
                   >
                     <span
-                      class="material-icons sc-iqseJM dPyznh"
+                      class="material-icons sc-egiyK kZTZNV"
                     >
                       lock_outlined
                     </span>
@@ -110,14 +110,14 @@ exports[`Home should render Home page 1`] = `
                   </button>
                 </li>
                 <li
-                  class="sc-jrQzAO iMapqG"
+                  class="sc-iqseJM ezIeti"
                   data-testid="context-menu-item"
                 >
                   <button
-                    class="sc-kDTinF lgLknF"
+                    class="sc-crHmcD hwlSgY"
                   >
                     <span
-                      class="material-icons sc-iqseJM dPyznh"
+                      class="material-icons sc-egiyK kZTZNV"
                     >
                       delete_outlined
                     </span>
@@ -130,18 +130,6 @@ exports[`Home should render Home page 1`] = `
         </div>
       </a>
     </div>
-    <br />
-    <button
-      class="sc-crHmcD lefaQv"
-    >
-      Show Success Toast
-    </button>
-    <br />
-    <button
-      class="sc-crHmcD lefaQv"
-    >
-      Show Error Toast
-    </button>
   </div>
 </div>
 `;
