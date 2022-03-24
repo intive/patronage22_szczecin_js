@@ -35,14 +35,14 @@ exports[`BoardTile renders correctly with password 1`] = `
         cardCount
       </p>
       <div
-        class="sc-iCfMLu dbydVW"
+        class="sc-pVTFL gcUIUu"
         data-testid="context-menu"
       >
         <button
           aria-controls="mockId"
           aria-expanded="false"
           aria-haspopup="menu"
-          class="sc-furwcr cTVyte"
+          class="sc-jrQzAO iofoks"
         >
           <span
             class="material-icons"
@@ -51,21 +51,21 @@ exports[`BoardTile renders correctly with password 1`] = `
           </span>
         </button>
         <nav
-          class="sc-pVTFL fGRbIZ"
+          class="sc-kDTinF kRnAor"
           id="mockId"
         >
           <ul
-            class="sc-gKclnd ePohWH"
+            class="sc-furwcr bzAVEx"
           >
             <li
-              class="sc-jrQzAO iMapqG"
+              class="sc-iqseJM ezIeti"
               data-testid="context-menu-item"
             >
               <button
-                class="sc-kDTinF lgLknF"
+                class="sc-crHmcD hwlSgY"
               >
                 <span
-                  class="material-icons sc-iqseJM dPyznh"
+                  class="material-icons sc-egiyK kZTZNV"
                 >
                   lock_outlined
                 </span>
@@ -73,14 +73,14 @@ exports[`BoardTile renders correctly with password 1`] = `
               </button>
             </li>
             <li
-              class="sc-jrQzAO iMapqG"
+              class="sc-iqseJM ezIeti"
               data-testid="context-menu-item"
             >
               <button
-                class="sc-kDTinF lgLknF"
+                class="sc-crHmcD hwlSgY"
               >
                 <span
-                  class="material-icons sc-iqseJM dPyznh"
+                  class="material-icons sc-egiyK kZTZNV"
                 >
                   delete_outlined
                 </span>
@@ -121,14 +121,14 @@ exports[`BoardTile renders correctly without password 1`] = `
         cardCount
       </p>
       <div
-        class="sc-iCfMLu dbydVW"
+        class="sc-pVTFL gcUIUu"
         data-testid="context-menu"
       >
         <button
           aria-controls="mockId"
           aria-expanded="false"
           aria-haspopup="menu"
-          class="sc-furwcr cTVyte"
+          class="sc-jrQzAO iofoks"
         >
           <span
             class="material-icons"
@@ -137,21 +137,21 @@ exports[`BoardTile renders correctly without password 1`] = `
           </span>
         </button>
         <nav
-          class="sc-pVTFL fGRbIZ"
+          class="sc-kDTinF kRnAor"
           id="mockId"
         >
           <ul
-            class="sc-gKclnd ePohWH"
+            class="sc-furwcr bzAVEx"
           >
             <li
-              class="sc-jrQzAO iMapqG"
+              class="sc-iqseJM ezIeti"
               data-testid="context-menu-item"
             >
               <button
-                class="sc-kDTinF lgLknF"
+                class="sc-crHmcD hwlSgY"
               >
                 <span
-                  class="material-icons sc-iqseJM dPyznh"
+                  class="material-icons sc-egiyK kZTZNV"
                 >
                   lock_outlined
                 </span>
@@ -159,14 +159,14 @@ exports[`BoardTile renders correctly without password 1`] = `
               </button>
             </li>
             <li
-              class="sc-jrQzAO iMapqG"
+              class="sc-iqseJM ezIeti"
               data-testid="context-menu-item"
             >
               <button
-                class="sc-kDTinF lgLknF"
+                class="sc-crHmcD hwlSgY"
               >
                 <span
-                  class="material-icons sc-iqseJM dPyznh"
+                  class="material-icons sc-egiyK kZTZNV"
                 >
                   delete_outlined
                 </span>
