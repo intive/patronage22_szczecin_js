@@ -1,5 +1,5 @@
 import { dbConnect, dbPrefix } from '../../../libs/dbClient'
-import { ref, child, get, push } from 'firebase/database'
+import { ref, child, get, update } from 'firebase/database'
 import { ulid } from 'ulid'
 import schemaValidator from '../../../utils/schemaValidator'
 import { AddBoardSchema } from '../../../schema/addBoard.schema'
@@ -71,7 +71,6 @@ async function getBoards (req, res, database, dbPrefix) {
 
 async function addBoard (req, res, database, dbPrefix) {
   const data = {
-    id: ulid(),
     name: req.body.name.trim(),
     createdAt: new Date().toISOString()
   }
@@ -86,7 +85,7 @@ async function addBoard (req, res, database, dbPrefix) {
     })
     res.end()
   } else {
-    await push(child(ref(database), `${dbPrefix}/boards`), data)
+    await update(child(ref(database), `${dbPrefix}/boards/${ulid()}`), data)
     res.status(204).end()
   }
 }
