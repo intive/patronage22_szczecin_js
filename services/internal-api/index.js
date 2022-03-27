@@ -23,5 +23,5 @@ export const getBoard = async (id) => {
 }
 
 export const addBoard = async (name) => {
-  return axiosInstance.post('/api/boards/', { name: name })
+  return axiosInstance.post('/api/boards', { name })
 }

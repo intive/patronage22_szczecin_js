@@ -10,7 +10,12 @@ export const BoardsContextProvider = (props) => {
   const [updateBoards, setUpdateBoards] = useState(props.boards)
 
   const reloadHandler = async () => {
-    setUpdateBoards((await getBoards()).data)
+    try {
+      const { data } = await getBoards()
+      setUpdateBoards(data)
+    } catch (err) {
+      console.log(err)
+    }
   }
 
   const context = {
