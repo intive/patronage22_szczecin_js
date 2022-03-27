@@ -1,7 +1,7 @@
 /* globals describe, it, expect  */
 /* eslint-env jest */
 
-import { render, screen } from '@testing-library/react'
+import { render, screen, waitForElementToBeRemoved } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import BoardCreator from './BoardCreator'
 import * as InternalApi from '../../services/internal-api'
@@ -15,20 +15,19 @@ describe('BoardCreator', () => {
     expect(baseElement).toMatchSnapshot()
   })
 
-  it('should close modal after click on continue button', () => {
+  it('should close modal after click on continue button', async () => {
     render(<BoardCreator isOpen />)
     userEvent.type(screen.getByRole('textbox'), 'Test5')
     const button = screen.getByRole('button', { name: /buttons.continue/ })
     userEvent.click(button)
 
-    expect(button).not.toBeInTheDocument()
+    waitForElementToBeRemoved(button).then(() => expect(button).not.toBeInTheDocument())
   })
 
   it('should close modal after click on cross button', () => {
     render(<BoardCreator isOpen />)
     const button = screen.getByRole('button', { name: /close/ })
     userEvent.click(button)
-
     expect(button).not.toBeInTheDocument()
   })
 

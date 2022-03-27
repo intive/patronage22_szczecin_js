@@ -25,12 +25,10 @@ const BoardCreator = ({ isOpen, onClose }) => {
   }
 
   const addBoardHandler = async (boardName) => {
-    closeModal()
     try {
-      const data = await addBoard(boardName)
-      if (data.status === 204) {
-        boardsCtx.reload()
-      }
+      await addBoard(boardName)
+      boardsCtx.reload()
+      closeModal()
     } catch (err) {}
   }
 
