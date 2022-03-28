@@ -1,9 +1,10 @@
+
 /* globals describe, it, expect */
 
 import { render } from '@testing-library/react'
-import BoardDetails from './index.page'
+import BoardColumnsList from './BoardColumnsList'
 
-describe('BoardDetails', () => {
+describe('BoardColumnList', () => {
   const tileDetails = {
     columns: [
       {
@@ -36,11 +37,11 @@ describe('BoardDetails', () => {
       }
     ],
     name: 'board 3',
-    id: '01FV75A884ZHZE347P83K0SXRR',
-    password: false
+    id: '01FV75A884ZHZE347P83K0SXRR'
   }
-  it('should render BoardDetails', () => {
-    const { container } = render(<BoardDetails tileDetails={tileDetails} />)
+
+  it('should render a board with its name, two columns: one with three cards and one with single card', () => {
+    const { container } = render(<BoardColumnsList tileDetails={tileDetails} />)
     expect(container).toMatchSnapshot()
   })
 })

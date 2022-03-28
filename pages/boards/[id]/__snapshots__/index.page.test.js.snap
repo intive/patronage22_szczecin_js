@@ -42,7 +42,7 @@ exports[`BoardDetails should render BoardDetails 1`] = `
       <h1
         class="sc-eCImPb cIClSu"
       >
-        mockedName
+        board 3
       </h1>
       <button
         class="sc-bdvvtL dRBcfm"
@@ -51,5 +51,139 @@ exports[`BoardDetails should render BoardDetails 1`] = `
       </button>
     </div>
   </section>
+  <div
+    class="sc-ieecCq txdat"
+  >
+    <div
+      class="sc-bkkeKt eILODw"
+    >
+      <div
+        class="sc-jrQzAO KVAeT"
+        data-testid="board-column"
+      >
+        <div
+          class="sc-kDTinF iVEKsT"
+        >
+          <h4
+            class="sc-iqseJM ccOzWi"
+          >
+            column 1
+          </h4>
+          <button
+            class="sc-bdvvtL boJPqq sc-crHmcD LLhID"
+          >
+            boardColumn.addCard
+          </button>
+        </div>
+        <div>
+          <div
+            class="sc-kDTinF jvUXPw"
+          >
+            <div
+              class="sc-egiyK fqbiYA"
+            >
+              card 1
+            </div>
+            <div
+              class="sc-bqiRlB ifTmuW"
+            >
+              <span
+                class="sc-ksdxgE eeBAhX"
+              />
+              <span
+                class="material-icons sc-hBUSln eKBvuv"
+              >
+                favorite_border
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-kDTinF jvUXPw"
+          >
+            <div
+              class="sc-egiyK fqbiYA"
+            >
+              card 2
+            </div>
+            <div
+              class="sc-bqiRlB ifTmuW"
+            >
+              <span
+                class="sc-ksdxgE eeBAhX"
+              />
+              <span
+                class="material-icons sc-hBUSln eKBvuv"
+              >
+                favorite_border
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-kDTinF jvUXPw"
+          >
+            <div
+              class="sc-egiyK fqbiYA"
+            >
+              card 3
+            </div>
+            <div
+              class="sc-bqiRlB ifTmuW"
+            >
+              <span
+                class="sc-ksdxgE eeBAhX"
+              />
+              <span
+                class="material-icons sc-hBUSln eKBvuv"
+              >
+                favorite_border
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-jrQzAO KVAeT"
+        data-testid="board-column"
+      >
+        <div
+          class="sc-kDTinF iVEKsT"
+        >
+          <h4
+            class="sc-iqseJM ccOzWi"
+          >
+            column 2
+          </h4>
+          <button
+            class="sc-bdvvtL boJPqq sc-crHmcD LLhID"
+          >
+            boardColumn.addCard
+          </button>
+        </div>
+        <div>
+          <div
+            class="sc-kDTinF jvUXPw"
+          >
+            <div
+              class="sc-egiyK fqbiYA"
+            >
+              card 1
+            </div>
+            <div
+              class="sc-bqiRlB ifTmuW"
+            >
+              <span
+                class="sc-ksdxgE eeBAhX"
+              />
+              <span
+                class="material-icons sc-hBUSln eKBvuv"
+              >
+                favorite_border
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

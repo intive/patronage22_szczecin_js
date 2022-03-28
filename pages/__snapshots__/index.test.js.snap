@@ -130,26 +130,6 @@ exports[`Home should render Home page 1`] = `
         </div>
       </a>
     </div>
-    <div
-      class="sc-llYSUQ eLIRDX"
-      data-testid="board-column"
-    >
-      <div
-        class="sc-iJKOTD ewcQeO"
-      >
-        <h4
-          class="sc-giYglK eUftqw"
-        >
-          boardColumn.title
-        </h4>
-        <button
-          class="sc-crHmcD lkNrHj sc-ezbkAF bOhdnJ"
-        >
-          boardColumn.addCard
-        </button>
-      </div>
-      <div />
-    </div>
     <br />
     <button
       class="sc-crHmcD lefaQv"
