@@ -32,6 +32,7 @@ export const Header = styled.h4`
   font-weight: 400;
   line-height: 1.5rem;
   color: #515151;
+  word-break: break-word;
 `
 export const TileFooter = styled.div`
   display: flex;

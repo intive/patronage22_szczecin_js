@@ -17,7 +17,7 @@ exports[`BoardTile renders correctly with password 1`] = `
       </span>
     </div>
     <h4
-      class="sc-dkPtRN kUDuei"
+      class="sc-dkPtRN gwlfTF"
     >
       Board name 1
     </h4>
@@ -103,7 +103,7 @@ exports[`BoardTile renders correctly without password 1`] = `
     href="/boards/mockId"
   >
     <h4
-      class="sc-dkPtRN kUDuei"
+      class="sc-dkPtRN gwlfTF"
     >
       Board name 1
     </h4>
