@@ -56,7 +56,7 @@ exports[`Home should render Home page 1`] = `
         href="/boards/1"
       >
         <h4
-          class="sc-dkPtRN gwlfTF"
+          class="sc-dkPtRN jbOLNK"
         >
           mockedName
         </h4>
