@@ -11,13 +11,13 @@ const BoardDetails = ({ tileDetails }) => {
 
   return (
     <Layout>
-      <ColumnsContextProvider>
+      <ColumnsContextProvider columns={tileDetails}>
         <BoardHeader
           returnLinkText={t('boardHeader.returnLinkText')}
           buttonText={t('boardHeader.buttonText')}
           title={tileDetails.name}
         />
-        <BoardColumnsList tileDetails={tileDetails} />
+        <BoardColumnsList />
       </ColumnsContextProvider>
     </Layout>
   )
