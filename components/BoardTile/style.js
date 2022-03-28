@@ -27,6 +27,7 @@ export const IconWrapper = styled.div`
 `
 
 export const Header = styled.h4`
+  z-index: 1;
   margin-bottom: 0.25rem;
   font-size: 1rem;
   font-weight: 400;
