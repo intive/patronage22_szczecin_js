@@ -6,7 +6,7 @@ import BoardColumn from './BoardColumn'
 
 describe('BoardColumn', () => {
   it('should render BoardColumn component', () => {
-    const { container } = render(<BoardColumn />)
+    const { container } = render(<BoardColumn name='Kolumna 1' />)
 
     expect(container).toMatchSnapshot()
   })

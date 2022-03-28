@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next'
 import { ulid } from 'ulid'
 import TextArea from '../TextArea/TextArea'
 
-const BoardColumn = () => {
+const BoardColumn = (props) => {
   const { t } = useTranslation('common')
 
   function init (initialText) {
@@ -25,7 +25,7 @@ const BoardColumn = () => {
   }
 
   const [isInCreateCardMode, setIsInCreateCardMode] = useState(false)
-  const [cards, setCards] = useState([])
+  const [cards, setCards] = useState(props.cards || [])
 
   const [state, dispatch] = useReducer(reducer, init)
   const { cardTextValue } = state
@@ -73,7 +73,7 @@ const BoardColumn = () => {
   return (
     <Column data-testid='board-column'>
       <ColumnCard>
-        <ColumnCardTitle>{t('boardColumn.title')}</ColumnCardTitle>
+        <ColumnCardTitle>{props.name}</ColumnCardTitle>
         {isInCreateCardMode
           ? (
             <>

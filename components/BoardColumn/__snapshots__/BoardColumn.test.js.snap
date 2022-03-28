@@ -3,7 +3,7 @@
 exports[`BoardColumn should render BoardColumn component 1`] = `
 <div>
   <div
-    class="sc-dkPtRN dEbUgK"
+    class="sc-dkPtRN gUlzXt"
     data-testid="board-column"
   >
     <div
@@ -12,7 +12,7 @@ exports[`BoardColumn should render BoardColumn component 1`] = `
       <h4
         class="sc-eCImPb gGbVhf"
       >
-        boardColumn.title
+        Kolumna 1
       </h4>
       <button
         class="sc-bdvvtL boJPqq sc-jRQBWg ishcL"

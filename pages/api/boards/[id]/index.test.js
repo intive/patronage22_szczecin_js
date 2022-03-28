@@ -299,7 +299,8 @@ describe('api/boards/[id] getBoard', () => {
     expect(res._getJSONData()).toEqual({
       id: '01FV757GXRK6A9MMFA1EMA2V7D',
       name: 'board 1',
-      hasPassword: true
+      hasPassword: true,
+      columns: []
     })
   })
 

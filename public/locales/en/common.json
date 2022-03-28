@@ -4,7 +4,6 @@
   "cardCount_one": "{{count}} card",
   "cardCount_other": "{{count}} cards",
   "boardColumn": {
-    "title": "Column name",
     "addCard": "Add card"
   },
   "buttons": {
