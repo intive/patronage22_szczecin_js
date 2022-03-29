@@ -24,7 +24,7 @@ export const TitleWrapper = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  height: fit-content; 
+  height: fit-content;
 `
 export const Title = styled.h1`
   font-style: normal;

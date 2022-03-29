@@ -3,14 +3,14 @@
 exports[`BoardDetails should render BoardDetails 1`] = `
 <div>
   <header
-    class="sc-gKclnd dxViUN"
+    class="sc-furwcr gznTzn"
     data-testid="header"
   >
     <div
-      class="sc-iCfMLu jSHKVz"
+      class="sc-pVTFL doYdbH"
     >
       <a
-        class="sc-furwcr jTmKIz"
+        class="sc-jrQzAO HnibN"
         href="/"
       >
         <span
@@ -19,7 +19,7 @@ exports[`BoardDetails should render BoardDetails 1`] = `
           crop_original
         </span>
         <p
-          class="sc-pVTFL etiBEa"
+          class="sc-kDTinF lpfmpE"
         >
           headerTitle
         </p>
@@ -37,7 +37,7 @@ exports[`BoardDetails should render BoardDetails 1`] = `
       boardHeader.returnLinkText
     </a>
     <div
-      class="sc-hKwDye AeogP"
+      class="sc-hKwDye hETRbD"
     >
       <h1
         class="sc-eCImPb cIClSu"
@@ -52,88 +52,88 @@ exports[`BoardDetails should render BoardDetails 1`] = `
     </div>
   </section>
   <div
-    class="sc-ieecCq txdat"
+    class="sc-hGPBjI eIsNRz"
   >
     <div
-      class="sc-bkkeKt eILODw"
+      class="sc-dJjYzT fMzkQP"
     >
       <div
-        class="sc-jrQzAO KVAeT"
+        class="sc-iqseJM fsyZAX"
         data-testid="board-column"
       >
         <div
-          class="sc-kDTinF iVEKsT"
+          class="sc-crHmcD fUwZby"
         >
           <h4
-            class="sc-iqseJM ccOzWi"
+            class="sc-egiyK cEBQIG"
           >
             column 1
           </h4>
           <button
-            class="sc-bdvvtL boJPqq sc-crHmcD LLhID"
+            class="sc-bdvvtL boJPqq sc-bqiRlB dRlpIO"
           >
             boardColumn.addCard
           </button>
         </div>
         <div>
           <div
-            class="sc-kDTinF jvUXPw"
+            class="sc-crHmcD czukwB"
           >
             <div
-              class="sc-egiyK fqbiYA"
+              class="sc-ksdxgE emXTuD"
             >
               card 1
             </div>
             <div
-              class="sc-bqiRlB ifTmuW"
+              class="sc-hBUSln lkdYcG"
             >
               <span
-                class="sc-ksdxgE eeBAhX"
+                class="sc-fotOHu jKaTeu"
               />
               <span
-                class="material-icons sc-hBUSln eKBvuv"
+                class="material-icons sc-fFeiMQ fedWoZ"
               >
                 favorite_border
               </span>
             </div>
           </div>
           <div
-            class="sc-kDTinF jvUXPw"
+            class="sc-crHmcD czukwB"
           >
             <div
-              class="sc-egiyK fqbiYA"
+              class="sc-ksdxgE emXTuD"
             >
               card 2
             </div>
             <div
-              class="sc-bqiRlB ifTmuW"
+              class="sc-hBUSln lkdYcG"
             >
               <span
-                class="sc-ksdxgE eeBAhX"
+                class="sc-fotOHu jKaTeu"
               />
               <span
-                class="material-icons sc-hBUSln eKBvuv"
+                class="material-icons sc-fFeiMQ fedWoZ"
               >
                 favorite_border
               </span>
             </div>
           </div>
           <div
-            class="sc-kDTinF jvUXPw"
+            class="sc-crHmcD czukwB"
           >
             <div
-              class="sc-egiyK fqbiYA"
+              class="sc-ksdxgE emXTuD"
             >
               card 3
             </div>
             <div
-              class="sc-bqiRlB ifTmuW"
+              class="sc-hBUSln lkdYcG"
             >
               <span
-                class="sc-ksdxgE eeBAhX"
+                class="sc-fotOHu jKaTeu"
               />
               <span
-                class="material-icons sc-hBUSln eKBvuv"
+                class="material-icons sc-fFeiMQ fedWoZ"
               >
                 favorite_border
               </span>
@@ -142,40 +142,40 @@ exports[`BoardDetails should render BoardDetails 1`] = `
         </div>
       </div>
       <div
-        class="sc-jrQzAO KVAeT"
+        class="sc-iqseJM fsyZAX"
         data-testid="board-column"
       >
         <div
-          class="sc-kDTinF iVEKsT"
+          class="sc-crHmcD fUwZby"
         >
           <h4
-            class="sc-iqseJM ccOzWi"
+            class="sc-egiyK cEBQIG"
           >
             column 2
           </h4>
           <button
-            class="sc-bdvvtL boJPqq sc-crHmcD LLhID"
+            class="sc-bdvvtL boJPqq sc-bqiRlB dRlpIO"
           >
             boardColumn.addCard
           </button>
         </div>
         <div>
           <div
-            class="sc-kDTinF jvUXPw"
+            class="sc-crHmcD czukwB"
           >
             <div
-              class="sc-egiyK fqbiYA"
+              class="sc-ksdxgE emXTuD"
             >
               card 1
             </div>
             <div
-              class="sc-bqiRlB ifTmuW"
+              class="sc-hBUSln lkdYcG"
             >
               <span
-                class="sc-ksdxgE eeBAhX"
+                class="sc-fotOHu jKaTeu"
               />
               <span
-                class="material-icons sc-hBUSln eKBvuv"
+                class="material-icons sc-fFeiMQ fedWoZ"
               >
                 favorite_border
               </span>

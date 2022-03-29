@@ -25,5 +25,11 @@
     "createNewBoardSubtitle": "Board name",
     "createNewBoardVotes": "Assign maximum number of votes",
     "createNewBoardTemplates": "Select template"
-    }
+  },
+  "toastMessage": {
+    "column": {
+      "successToast": "column has been created"
+    },
+    "errorToast": "something went wrong"
+  }
 }

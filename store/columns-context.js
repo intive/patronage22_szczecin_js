@@ -7,10 +7,15 @@ const ColumnsContext = createContext({
 })
 
 export const ColumnsContextProvider = (props) => {
-  const [updateColumns, setUpdateColumns] = useState(props.columns)
+  const [updateColumns, setUpdateColumns] = useState(props.columns || [])
 
-  const reloadHandler = async () => {
-    setUpdateColumns((await getBoard(props.id)).data.columns)
+  const reloadHandler = async (id) => {
+    try {
+      const { data } = await getBoard(id)
+      setUpdateColumns(data.columns)
+    } catch (err) {
+      console.log(err)
+    }
   }
 
   const context = {

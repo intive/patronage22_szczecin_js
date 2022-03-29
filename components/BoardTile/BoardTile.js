@@ -15,7 +15,7 @@ const SetPasswordModal = dynamic(() => import('../SetPasswordModal/SetPasswordMo
 export default function BoardTile ({ id, name, date, cardCount, hasPassword }) {
   const { t } = useTranslation('common')
 
-  const { isOpen, toggle } = useModal()
+  const { isModalOpen, toggleModalOpening } = useModal()
 
   const boardsCtx = useContext(BoardsContext)
   const refreshOnSuccess = data => data.status === 204 && boardsCtx.reload()
@@ -34,13 +34,13 @@ export default function BoardTile ({ id, name, date, cardCount, hasPassword }) {
             <ContextMenu id={id}>
               {hasPassword
                 ? <ContextMenuItem name={t('contextMenu.removePassword')} icon='lock_outlined' onClick={() => updateBoardHandler(id, { password: null })} />
-                : <ContextMenuItem name={t('contextMenu.setPassword')} icon='lock_outlined' onClick={toggle} />}
+                : <ContextMenuItem name={t('contextMenu.setPassword')} icon='lock_outlined' onClick={toggleModalOpening} />}
               <ContextMenuItem name={t('contextMenu.deleteBoard')} onClick={() => deleteBoardHandler(id)} icon='delete_outlined' />
             </ContextMenu>
           </TileFooter>
         </Tile>
       </Link>
-      <SetPasswordModal boardId={id} handleClose={toggle} isModalOpen={isOpen} />
+      <SetPasswordModal boardId={id} handleClose={toggleModalOpening} isModalOpen={isModalOpen} />
     </>
   )
 }

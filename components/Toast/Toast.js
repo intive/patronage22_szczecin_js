@@ -9,9 +9,13 @@ const Toast = ({ id, type, children, isOpen }) => {
   const autoCloseTime = 3900
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setIsOpenToast(false)
     }, autoCloseTime)
+
+    return () => {
+      clearTimeout(timer)
+    }
   }, [])
 
   return isOpenToast

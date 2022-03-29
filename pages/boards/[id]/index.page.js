@@ -3,22 +3,27 @@ import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { getBoard } from '../../../services/internal-api'
 import { ColumnsContextProvider } from '../../../store/columns-context'
+import { ToastsContextProvider } from '../../../store/toasts-context'
 import Layout from '../../../components/Layout/Layout'
+import dynamic from 'next/dynamic'
+import useModal from '../../../hooks/useModal'
 import BoardColumnsList from '../../../components/BoardColumnsList/BoardColumnsList'
 
+const AddColumnModal = dynamic(() => import('../../../components/AddColumModal/AddColumnModal'))
+
 const BoardDetails = ({ tileDetails }) => {
-  const { t } = useTranslation('common')
+  const { t } = useTranslation(['common', 'modals'])
+  const { isModalOpen, toggleModalOpening } = useModal()
 
   return (
     <Layout>
-      <ColumnsContextProvider>
-        <BoardHeader
-          returnLinkText={t('boardHeader.returnLinkText')}
-          buttonText={t('boardHeader.buttonText')}
-          title={tileDetails.name}
-        />
-        <BoardColumnsList tileDetails={tileDetails} />
-      </ColumnsContextProvider>
+      <ToastsContextProvider>
+        <ColumnsContextProvider columns={tileDetails.columns}>
+          <BoardHeader returnLinkText={t('boardHeader.returnLinkText')} buttonText={t('boardHeader.buttonText')} title={tileDetails.name} handleAddColumn={toggleModalOpening} />
+          <AddColumnModal handleClose={toggleModalOpening} isModalOpen={isModalOpen} boardId={tileDetails.id} />
+          <BoardColumnsList />
+        </ColumnsContextProvider>
+      </ToastsContextProvider>
     </Layout>
   )
 }
@@ -34,7 +39,7 @@ export async function getServerSideProps (ctx) {
   return {
     props: {
       tileDetails: board,
-      ...(await serverSideTranslations(ctx.locale, ['common']))
+      ...(await serverSideTranslations(ctx.locale, ['common', 'modals']))
     }
   }
 }

@@ -87,7 +87,7 @@ export const ModalContent = styled.div`
   justify-content: flex-start;
   flex-grow: 1;
   width: 100%;
-  
+
   @media (min-width: 576px) {
     width: 448px;
   }

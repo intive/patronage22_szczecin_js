@@ -32,7 +32,6 @@ export default function Home ({ tilesList }) {
           <Button onClick={onShowFirstToastHandler}>Show Success Toast</Button>
           <br />
           <Button onClick={onShowSecondToastHandler}>Show Error Toast</Button>
-
           {isOpenSuccessToast && <Toast isOpen type='success'>Board added successfully</Toast>}
           {isOpenErrorToast && <Toast isOpen>Failed to add board</Toast>}
         </BoardsContextProvider>
