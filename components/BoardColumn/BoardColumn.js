@@ -71,7 +71,7 @@ const BoardColumn = () => {
   }
 
   return (
-    <Column>
+    <Column data-testid='board-column'>
       <ColumnCard>
         <ColumnCardTitle>{t('boardColumn.title')}</ColumnCardTitle>
         {isInCreateCardMode

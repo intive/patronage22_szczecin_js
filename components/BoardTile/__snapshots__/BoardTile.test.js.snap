@@ -4,6 +4,7 @@ exports[`BoardTile renders correctly with password 1`] = `
 <div>
   <a
     class="sc-bdvvtL hVgfSH"
+    data-testid="board-tile"
     href="/boards/mockId"
   >
     <div
@@ -35,6 +36,7 @@ exports[`BoardTile renders correctly with password 1`] = `
       </p>
       <div
         class="sc-iCfMLu dbydVW"
+        data-testid="context-menu"
       >
         <button
           aria-controls="mockId"
@@ -57,6 +59,7 @@ exports[`BoardTile renders correctly with password 1`] = `
           >
             <li
               class="sc-jrQzAO iMapqG"
+              data-testid="context-menu-item"
             >
               <button
                 class="sc-kDTinF lgLknF"
@@ -71,6 +74,7 @@ exports[`BoardTile renders correctly with password 1`] = `
             </li>
             <li
               class="sc-jrQzAO iMapqG"
+              data-testid="context-menu-item"
             >
               <button
                 class="sc-kDTinF lgLknF"
@@ -95,6 +99,7 @@ exports[`BoardTile renders correctly without password 1`] = `
 <div>
   <a
     class="sc-bdvvtL hVgfSH"
+    data-testid="board-tile"
     href="/boards/mockId"
   >
     <h4
@@ -117,6 +122,7 @@ exports[`BoardTile renders correctly without password 1`] = `
       </p>
       <div
         class="sc-iCfMLu dbydVW"
+        data-testid="context-menu"
       >
         <button
           aria-controls="mockId"
@@ -139,6 +145,7 @@ exports[`BoardTile renders correctly without password 1`] = `
           >
             <li
               class="sc-jrQzAO iMapqG"
+              data-testid="context-menu-item"
             >
               <button
                 class="sc-kDTinF lgLknF"
@@ -153,6 +160,7 @@ exports[`BoardTile renders correctly without password 1`] = `
             </li>
             <li
               class="sc-jrQzAO iMapqG"
+              data-testid="context-menu-item"
             >
               <button
                 class="sc-kDTinF lgLknF"

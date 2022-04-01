@@ -15,7 +15,7 @@ export default function ContextMenu (props) {
   }
 
   return (
-    <StyledContextMenu ref={ref}>
+    <StyledContextMenu ref={ref} data-testid='context-menu'>
       <Button onClick={changeStateHandler} aria-haspopup='menu' aria-expanded={isActive} aria-controls={props.id}>
         <Icon name='more_horiz' />
       </Button>

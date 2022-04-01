@@ -25,7 +25,7 @@ export default function Modal ({ children, isOpen, handleClose, icon, title, sub
   return (
     <ReactPortal wrapperId='modal-portal'>
       <ModalOverlay data-testid='backdrop' onClick={handleClose} />
-      <ModalContainer aria-hidden='false' role='dialog'>
+      <ModalContainer aria-hidden='false' role='dialog' data-testid='modal'>
         <ModalHeader>
           {icon && <StyledIcon name={icon} />}
           <ModalTitle id='modalTitle'>{title}</ModalTitle>

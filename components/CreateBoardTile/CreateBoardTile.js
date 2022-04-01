@@ -8,7 +8,7 @@ export default function CreateBoardTile () {
 
   return (
     <>
-      <Tile role='button' tabIndex='0' onClick={toggle}>
+      <Tile role='button' tabIndex='0' onClick={toggle} data-testid='create-board-tile'>
         <Button icon='crop_original'>New board</Button>
       </Tile>
       <BoardCreator onClose={toggle} isOpen={isOpen} />

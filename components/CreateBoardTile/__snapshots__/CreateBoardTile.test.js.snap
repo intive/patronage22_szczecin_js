@@ -4,6 +4,7 @@ exports[`CreateBoardTile renders correctly 1`] = `
 <div>
   <div
     class="sc-dkPtRN hzCcxk"
+    data-testid="create-board-tile"
     role="button"
     tabindex="0"
   >

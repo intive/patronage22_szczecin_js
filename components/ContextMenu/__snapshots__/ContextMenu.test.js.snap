@@ -4,6 +4,7 @@ exports[`ContextMenu should renders correctly ContextMenu 1`] = `
 <div>
   <div
     class="sc-gsDKAQ kabCuV"
+    data-testid="context-menu"
   >
     <button
       aria-controls="1"
@@ -26,6 +27,7 @@ exports[`ContextMenu should renders correctly ContextMenu 1`] = `
       >
         <li
           class="sc-eCImPb ihRWfz"
+          data-testid="context-menu-item"
         >
           <button
             class="sc-jRQBWg IsWJg"
@@ -40,6 +42,7 @@ exports[`ContextMenu should renders correctly ContextMenu 1`] = `
         </li>
         <li
           class="sc-eCImPb ihRWfz"
+          data-testid="context-menu-item"
         >
           <button
             class="sc-jRQBWg IsWJg"

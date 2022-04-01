@@ -8,6 +8,7 @@ exports[`Toast should render Toast with given text 1`] = `
   >
     <div
       class="sc-bdvvtL kYuxJh"
+      data-testid="toast"
       role="alert"
       type="success"
     >
@@ -30,6 +31,7 @@ exports[`Toast should render error Toast 1`] = `
   >
     <div
       class="sc-bdvvtL jJTopw"
+      data-testid="toast"
       role="alert"
     >
       <span
@@ -51,6 +53,7 @@ exports[`Toast should render success Toast 1`] = `
   >
     <div
       class="sc-bdvvtL kYuxJh"
+      data-testid="toast"
       role="alert"
       type="success"
     >

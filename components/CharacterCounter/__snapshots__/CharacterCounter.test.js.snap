@@ -4,6 +4,7 @@ exports[`CharacterCounter should render CharacterCounter component 1`] = `
 <div>
   <span
     class="sc-bdvvtL eePQfO"
+    data-testid="character-counter"
   >
     0
     /

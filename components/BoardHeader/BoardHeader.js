@@ -8,7 +8,7 @@ const createNewColumn = () => {
 
 const BoardHeader = (props) => {
   return (
-    <Container>
+    <Container data-testid='board-header'>
       <Link href='/' passHref><StyledLink>{props.returnLinkText}</StyledLink></Link>
       <TitleWrapper>
         <Title>{props.title}</Title>

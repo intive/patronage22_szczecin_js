@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Header (props) {
   return (
-    <HeaderContainer>
+    <HeaderContainer data-testid='header'>
       <HeaderWrapper>
         <Link href='/' passHref>
           <HeaderTitle>

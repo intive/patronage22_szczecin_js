@@ -20,7 +20,7 @@ export default function BoardTilesList () {
     />)
 
   return (
-    <List>
+    <List data-testid='board-tiles-list'>
       <CreateBoardTile />
       {generateBoardList}
     </List>

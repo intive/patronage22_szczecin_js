@@ -4,6 +4,7 @@ exports[`BoardDetails should render BoardDetails 1`] = `
 <div>
   <header
     class="sc-gKclnd ipdYrQ"
+    data-testid="header"
   >
     <div
       class="sc-iCfMLu jSHKVz"
@@ -27,6 +28,7 @@ exports[`BoardDetails should render BoardDetails 1`] = `
   </header>
   <section
     class="sc-dkPtRN fQLMUS"
+    data-testid="board-header"
   >
     <a
       class="sc-jRQBWg irLjuY"
