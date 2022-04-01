@@ -4,6 +4,7 @@ exports[`BoardColumn should render BoardColumn component 1`] = `
 <div>
   <div
     class="sc-dkPtRN dEbUgK"
+    data-testid="board-column"
   >
     <div
       class="sc-hKwDye iYNrnp"

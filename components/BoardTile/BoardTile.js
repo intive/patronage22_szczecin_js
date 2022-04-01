@@ -17,7 +17,7 @@ export default function BoardTile ({ id, name, date, cardCount, hasPassword }) {
 
   return (
     <Link href={`/boards/${id}`} passHref>
-      <Tile>
+      <Tile data-testid='board-tile'>
         {hasPassword ? <IconWrapper><Icon name='lock_outlined' /></IconWrapper> : null}
         <Header>{name}</Header>
         <Date>{date}</Date>

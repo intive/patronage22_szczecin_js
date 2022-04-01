@@ -4,9 +4,11 @@ exports[`BoardTilesList should render name, date, no icon when password is not p
 <div>
   <div
     class="sc-kfPuZi ebNvPM"
+    data-testid="board-tiles-list"
   >
     <div
       class="sc-bqiRlB bKrmmx"
+      data-testid="create-board-tile"
       role="button"
       tabindex="0"
     >

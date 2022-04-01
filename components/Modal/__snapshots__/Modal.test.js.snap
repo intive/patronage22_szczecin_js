@@ -15,6 +15,7 @@ exports[`Modal should render Modal correctly 1`] = `
     <div
       aria-hidden="false"
       class="sc-hKwDye loeQtZ"
+      data-testid="modal"
       role="dialog"
     >
       <div

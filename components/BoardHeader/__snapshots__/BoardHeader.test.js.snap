@@ -4,6 +4,7 @@ exports[`BoardHeader should render BoardHeader 1`] = `
 <div>
   <section
     class="sc-dkPtRN fQLMUS"
+    data-testid="board-header"
   >
     <a
       class="sc-jRQBWg irLjuY"

@@ -4,6 +4,7 @@ exports[`ContextMenuItem should renders correctly 1`] = `
 <div>
   <li
     class="sc-bdvvtL jZIOSJ"
+    data-testid="context-menu-item"
   >
     <button
       class="sc-gsDKAQ gxJInU"

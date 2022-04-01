@@ -4,6 +4,7 @@ exports[`Layout should render Layout 1`] = `
 <div>
   <header
     class="sc-bdvvtL bdAKOj"
+    data-testid="header"
   >
     <div
       class="sc-gsDKAQ jYlgVk"

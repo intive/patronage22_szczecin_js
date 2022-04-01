@@ -40,7 +40,7 @@ const BoardCreator = ({ isOpen, onClose }) => {
   return isModalOpen
     ? (
       <ReactPortal wrapperId='modal-portal'>
-        <Modal aria-hidden='false' role='dialog'>
+        <Modal aria-hidden='false' role='dialog' data-testid='board-creator'>
           <CloseButton onClick={closeModal} icon='close' />
           <BoardContent>
             <Title>{t('createNewBoard.createNewBoardTitle')}</Title>
