@@ -1,10 +1,11 @@
 import { dbConnect, dbPrefix } from '../../../../../../../../libs/dbClient'
-import { ref, child, get, update } from 'firebase/database'
+import { ref, child, get, update, remove } from 'firebase/database'
 import schemaValidator from '../../../../../../../../utils/schemaValidator'
 import { PatchCardSchema } from '../../../../../../../../schema/patchCard.schema'
 
 const handlers = {
-  patch: patchCard
+  patch: patchCard,
+  delete: deleteCard
 }
 
 export default async function handler (req, res) {
@@ -23,7 +24,7 @@ export default async function handler (req, res) {
 
   if (handler) return handler(req, res, database, dbPrefix)
   else {
-    res.setHeader('Allow', ['PATCH'])
+    res.setHeader('Allow', ['PATCH', 'DELETE'])
     res.status(405)
     res.end(`Method ${method} Not Allowed`)
   }
@@ -57,4 +58,19 @@ async function patchCard (req, res, database, dbPrefix) {
     await update(child(ref(database), `${dbPrefix}/boards/${id}/columns/${columnId}/cards/${cardId}`), data)
     res.status(200).end()
   }
+}
+
+async function deleteCard (req, res, database, dbPrefix) {
+  const { id, columnId, cardId } = req.query
+  const cardLookupId = await get(child(ref(database), `${dbPrefix}/boards/${id}/columns/${columnId}/cards/${cardId}`))
+  const cardData = await cardLookupId.val()
+
+  if (!cardData) {
+    return res.status(404).json({
+      message: `Card with id ${cardId} was not found`
+    })
+  }
+
+  await remove(child(ref(database), `${dbPrefix}/boards/${id}/columns/${columnId}/cards/${cardId}`))
+  res.status(204).end()
 }
