@@ -4,19 +4,21 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { getBoard } from '../../../services/internal-api'
 import { ColumnsContextProvider } from '../../../store/columns-context'
 import Layout from '../../../components/Layout/Layout'
+import BoardColumnsList
+  from '../../../components/BoardColumnsList/BoardColumnsList'
 
-const BoardDetails = (props) => {
+const BoardDetails = ({ tileDetails }) => {
   const { t } = useTranslation('common')
-  const { tileDetails } = props
 
   return (
     <Layout>
-      <ColumnsContextProvider>
+      <ColumnsContextProvider columns={tileDetails}>
         <BoardHeader
           returnLinkText={t('boardHeader.returnLinkText')}
           buttonText={t('boardHeader.buttonText')}
           title={tileDetails.name}
         />
+        <BoardColumnsList />
       </ColumnsContextProvider>
     </Layout>
   )

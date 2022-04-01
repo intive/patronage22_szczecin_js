@@ -49,5 +49,72 @@ exports[`BoardDetails should render BoardDetails 1`] = `
       </button>
     </div>
   </section>
+  <div
+    class="sc-ieecCq txdat"
+  >
+    <div
+      class="sc-bkkeKt eILODw"
+    >
+      <div
+        class="sc-jrQzAO KVAeT"
+      >
+        <div
+          class="sc-kDTinF iVEKsT"
+        >
+          <h4
+            class="sc-iqseJM ccOzWi"
+          >
+            Quasicolumn
+          </h4>
+          <button
+            class="sc-bdvvtL boJPqq sc-crHmcD LLhID"
+          >
+            boardColumn.addCard
+          </button>
+        </div>
+        <div>
+          <div
+            class="sc-kDTinF jvUXPw"
+          >
+            <div
+              class="sc-egiyK fqbiYA"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div
+              class="sc-bqiRlB ifTmuW"
+            >
+              <span
+                class="sc-ksdxgE eeBAhX"
+              />
+              <span
+                class="material-icons sc-hBUSln eKBvuv"
+              >
+                delete_forever
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-jrQzAO KVAeT"
+      >
+        <div
+          class="sc-kDTinF iVEKsT"
+        >
+          <h4
+            class="sc-iqseJM ccOzWi"
+          >
+            Another column
+          </h4>
+          <button
+            class="sc-bdvvtL boJPqq sc-crHmcD LLhID"
+          >
+            boardColumn.addCard
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

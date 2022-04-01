@@ -1,10 +1,11 @@
 import { StyledButton, Column, ColumnCardTitle, ColumnAddCardWrapper, ColumnCard, ColumnCardText, ColumnCardName, StyledIcon } from './style'
-import { useState, useReducer, useRef, useEffect } from 'react'
+import { useState, useReducer, useRef, useEffect, useContext } from 'react'
+import { deleteCard } from '../../services/internal-api'
 import { useTranslation } from 'next-i18next'
-import { ulid } from 'ulid'
 import TextArea from '../TextArea/TextArea'
+import ColumnsContext from '../../store/columns-context'
 
-const BoardColumn = () => {
+const BoardColumn = (props) => {
   const { t } = useTranslation('common')
 
   function init (initialText) {
@@ -25,7 +26,6 @@ const BoardColumn = () => {
   }
 
   const [isInCreateCardMode, setIsInCreateCardMode] = useState(false)
-  const [cards, setCards] = useState([])
 
   const [state, dispatch] = useReducer(reducer, init)
   const { cardTextValue } = state
@@ -45,7 +45,6 @@ const BoardColumn = () => {
   const handleSaveCard = (event) => {
     event.preventDefault()
     dispatch({ type: 'save' })
-    addCard(event)
     setIsInCreateCardMode(false)
   }
 
@@ -55,25 +54,18 @@ const BoardColumn = () => {
     setIsInCreateCardMode(false)
   }
 
+  const columnsCtx = useContext(ColumnsContext)
+  const refreshOnSuccess = data => data.status === 204 && columnsCtx.reload()
+  const handleDeleteCard = async (boardId, columnId, cardId) => refreshOnSuccess(await deleteCard(boardId, columnId, cardId))
+
   const switchToCreateCardMode = () => {
     setIsInCreateCardMode(true)
-  }
-
-  const addCard = () => {
-    setCards([
-      ...cards,
-      {
-        id: ulid(),
-        text: cardTextValue,
-        author: 'Isaak Newton'
-      }
-    ])
   }
 
   return (
     <Column>
       <ColumnCard>
-        <ColumnCardTitle>{t('boardColumn.title')}</ColumnCardTitle>
+        <ColumnCardTitle>{props.name}</ColumnCardTitle>
         {isInCreateCardMode
           ? (
             <>
@@ -86,15 +78,15 @@ const BoardColumn = () => {
             )
           : <StyledButton text outline onClick={switchToCreateCardMode}>{t('boardColumn.addCard')}</StyledButton>}
       </ColumnCard>
-      {cards
+      {props.cards
         ? (
           <div>
-            {cards.map((card) => (
+            {props.cards.map((card) => (
               <ColumnCard key={card.id} card>
                 <ColumnCardText>{card.text}</ColumnCardText>
                 <ColumnAddCardWrapper>
                   <ColumnCardName>{card.author}</ColumnCardName>
-                  <StyledIcon name='favorite_border' />
+                  <StyledIcon name='delete_forever' onClick={() => handleDeleteCard(props.boardId, props.columnId, card.id)} />
                 </ColumnAddCardWrapper>
               </ColumnCard>
             ))}

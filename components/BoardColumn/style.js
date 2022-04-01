@@ -2,8 +2,13 @@ import styled from 'styled-components'
 import Button from '../Button/Button'
 import Icon from '../Icon/Icon'
 
+import { breakpoint } from '../../config/breakpoints'
+
 export const Column = styled.div`
-  width: 328px;
+  @media only screen and ${breakpoint.lg} {
+    width: 20.5rem;
+    padding: 0 .5rem;
+  }
 `
 
 export const ColumnCard = styled.div`

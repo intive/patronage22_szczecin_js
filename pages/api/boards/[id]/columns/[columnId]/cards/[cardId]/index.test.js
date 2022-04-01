@@ -32,7 +32,7 @@ describe('api/boards/[id]/columns/[columnId]/cards/[cardId]', () => {
     await handler(req, res)
 
     expect(res._getStatusCode()).toEqual(405)
-    expect(res._getHeaders()).toEqual({ allow: ['PATCH'] })
+    expect(res._getHeaders()).toEqual({ allow: ['PATCH', 'DELETE'] })
   })
 })
 
@@ -212,5 +212,29 @@ describe('api/boards/[id]/columns/[columnId]/cards/[cardId] patch', () => {
         }
       ]
     })
+  })
+})
+describe('api/boards/[id]/columns/[columnId]/cards/[cardId] delete method', () => {
+  it('should return status 404 when cade does not exist', async () => {
+    snapshot.exists.mockReturnValue(false)
+    snapshot.val.mockResolvedValue()
+
+    const id = 111
+    const columnId = 222
+    const cardId = 333
+    const { req, res } = createMocks({
+      method: 'DELETE',
+      url: `/api/boards/${id}/columns/${columnId}/cards/${cardId}`,
+      query: {
+        id,
+        columnId,
+        cardId
+      }
+    })
+
+    await handler(req, res)
+
+    expect(res._getStatusCode()).toEqual(404)
+    expect(res._getJSONData()).toEqual({ message: `Card with id ${cardId} was not found` })
   })
 })

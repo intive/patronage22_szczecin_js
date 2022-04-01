@@ -1,12 +1,13 @@
-/* globals describe, expect, it */
+/* globals describe, expect, it, jest */
 
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import BoardColumn from './BoardColumn'
+import * as InternalApi from '../../services/internal-api'
 
 describe('BoardColumn', () => {
   it('should render BoardColumn component', () => {
-    const { container } = render(<BoardColumn />)
+    const { container } = render(<BoardColumn name='Kolumna 1' />)
 
     expect(container).toMatchSnapshot()
   })
@@ -77,5 +78,26 @@ describe('BoardColumn', () => {
     userEvent.type(screen.getByRole('textbox'), '  1234  ')
 
     expect(screen.getByText('buttons.save')).toHaveAttribute('disabled')
+  })
+
+  it('should call delete method when delete card button is clicked', () => {
+    const mockDeleteCard = jest.spyOn(InternalApi, 'deleteCard')
+    const mockedCards = [
+      {
+        id: 'mockedCardId1',
+        text: 'Mocked text'
+      },
+      {
+        id: 'mockedCardId2',
+        text: 'Mocked other text'
+      }
+    ]
+
+    render(<BoardColumn boardId='mockedBoardId' columnId='mockedColumnId' cards={mockedCards} />)
+
+    userEvent.click(screen.getAllByText('delete_forever')[1])
+
+    expect(mockDeleteCard).toHaveBeenCalledTimes(1)
+    expect(mockDeleteCard).toHaveBeenCalledWith('mockedBoardId', 'mockedColumnId', 'mockedCardId2')
   })
 })

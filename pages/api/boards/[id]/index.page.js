@@ -105,7 +105,7 @@ async function getBoard (req, res, database, dbPrefix) {
   const boardDetails = {
     ...modifyBoard,
     id,
-    columns: board.columns && boardColumns(board.columns),
+    columns: board.columns ? boardColumns(board.columns) : [],
     hasPassword: !!board.password
   }
 
