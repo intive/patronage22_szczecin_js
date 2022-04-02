@@ -1,7 +1,7 @@
 /* globals describe, it, expect  */
 /* eslint-env jest */
 
-import { render, screen, waitForElementToBeRemoved } from '@testing-library/react'
+import { render, screen, waitForElementToBeRemoved, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import BoardCreator from './BoardCreator'
 import * as InternalApi from '../../services/internal-api'
@@ -50,8 +50,10 @@ describe('BoardCreator', () => {
     expect(screen.getByText('buttons.continue')).toHaveAttribute('disabled')
   })
 
-  it('should remove disbaled atribute on continue button after type 5 characters in text area', () => {
-    render(<BoardCreator isOpen />)
+  it('should remove disbaled atribute on continue button after type 5 characters in text area', async () => {
+    await waitFor(() => {
+      render(<BoardCreator isOpen />)
+    })
 
     expect(screen.getByText('buttons.continue')).toHaveAttribute('disabled')
 
@@ -61,12 +63,11 @@ describe('BoardCreator', () => {
     expect(screen.queryByText('buttons.continue')).not.toHaveAttribute('disabled')
   })
 
-  it('should call add option', () => {
+  it('should call add option', async () => {
     const mockAddBoard = jest.spyOn(InternalApi, 'addBoard')
     render(<BoardCreator isOpen />)
     userEvent.type(screen.getByRole('textbox'), 'Test5')
     userEvent.click(screen.queryByText('buttons.continue'))
-
     expect(mockAddBoard).toHaveBeenCalledTimes(1)
   })
 })

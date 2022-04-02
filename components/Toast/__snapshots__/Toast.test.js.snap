@@ -8,7 +8,7 @@ exports[`Toast should render Toast with given text 1`] = `
   >
     <div
       aria-hidden="true"
-      class="sc-bdvvtL kYuxJh"
+      class="sc-bdvvtL jqkVFg"
       data-testid="toast"
       role="alert"
       type="success"
@@ -32,7 +32,7 @@ exports[`Toast should render error Toast 1`] = `
   >
     <div
       aria-hidden="true"
-      class="sc-bdvvtL jJTopw"
+      class="sc-bdvvtL gCXpEl"
       data-testid="toast"
       role="alert"
     >
@@ -55,7 +55,7 @@ exports[`Toast should render success Toast 1`] = `
   >
     <div
       aria-hidden="true"
-      class="sc-bdvvtL kYuxJh"
+      class="sc-bdvvtL jqkVFg"
       data-testid="toast"
       role="alert"
       type="success"

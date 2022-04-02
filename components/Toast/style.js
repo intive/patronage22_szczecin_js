@@ -4,7 +4,7 @@ import { breakpoint } from '../../config/breakpoints'
 
 export const NotificationToast = styled.div`
   position: fixed;
-  z-index: 11;
+  z-index: 100;
   bottom: 2rem;
   right: 2rem;
   animation: fadein 0.5s, fadeout 0.5s 3.5s;
