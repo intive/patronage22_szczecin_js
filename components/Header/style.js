@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
   width: 100%;
   height: 4.5rem;
   background: #FFFFFF;
-  z-index: 10;
+  z-index: 11;
   `
 
 export const HeaderWrapper = styled.div`

@@ -8,7 +8,7 @@ exports[`BoardCreator renders modal BoardCreator 1`] = `
   >
     <div
       aria-hidden="false"
-      class="sc-dkPtRN jzSsRw"
+      class="sc-dkPtRN gVYaq"
       data-testid="board-creator"
       role="dialog"
     >
@@ -67,7 +67,7 @@ exports[`BoardCreator should filled input field correctly 1`] = `
   >
     <div
       aria-hidden="false"
-      class="sc-dkPtRN jzSsRw"
+      class="sc-dkPtRN gVYaq"
       data-testid="board-creator"
       role="dialog"
     >

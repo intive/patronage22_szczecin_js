@@ -6,7 +6,7 @@ exports[`Home should render Home page 1`] = `
     class="container"
   >
     <header
-      class="sc-fKVqWL jCTfCM"
+      class="sc-fKVqWL eLKqfJ"
       data-testid="header"
     >
       <div

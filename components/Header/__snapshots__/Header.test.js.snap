@@ -3,7 +3,7 @@
 exports[`Header should render Header 1`] = `
 <div>
   <header
-    class="sc-bdvvtL bdAKOj"
+    class="sc-bdvvtL fJsLPe"
     data-testid="header"
   >
     <div
