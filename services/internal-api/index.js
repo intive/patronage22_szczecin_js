@@ -31,3 +31,7 @@ export const getBoard = async (id) => {
 export const addBoard = async (name) => {
   return axiosInstance.post('/api/boards', { name })
 }
+
+export const deleteCard = async (id, columnId, cardId) => {
+  return axiosInstance.delete(`/api/boards/${id}/columns/${columnId}/cards/${cardId}`)
+}

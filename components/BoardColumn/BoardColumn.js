@@ -1,10 +1,11 @@
 import { StyledButton, Column, ColumnCardTitle, ColumnAddCardWrapper, ColumnCard, ColumnCardText, ColumnCardName, StyledIcon } from './style'
 import { useState, useReducer, useRef, useEffect } from 'react'
+import { deleteCard } from '../../services/internal-api'
 import { useTranslation } from 'next-i18next'
 import { ulid } from 'ulid'
 import TextArea from '../TextArea/TextArea'
 
-const BoardColumn = () => {
+const BoardColumn = (props) => {
   const { t } = useTranslation('common')
 
   function init (initialText) {
@@ -25,7 +26,7 @@ const BoardColumn = () => {
   }
 
   const [isInCreateCardMode, setIsInCreateCardMode] = useState(false)
-  const [cards, setCards] = useState([])
+  const [cards, setCards] = useState(props.cards || [])
 
   const [state, dispatch] = useReducer(reducer, init)
   const { cardTextValue } = state
@@ -55,6 +56,10 @@ const BoardColumn = () => {
     setIsInCreateCardMode(false)
   }
 
+  async function handleDeleteCard (boardId, columnId, cardId) {
+    await deleteCard(boardId, columnId, cardId)
+  }
+
   const switchToCreateCardMode = () => {
     setIsInCreateCardMode(true)
   }
@@ -73,7 +78,7 @@ const BoardColumn = () => {
   return (
     <Column data-testid='board-column'>
       <ColumnCard>
-        <ColumnCardTitle>{t('boardColumn.title')}</ColumnCardTitle>
+        <ColumnCardTitle>{props.name}</ColumnCardTitle>
         {isInCreateCardMode
           ? (
             <>
@@ -94,7 +99,7 @@ const BoardColumn = () => {
                 <ColumnCardText>{card.text}</ColumnCardText>
                 <ColumnAddCardWrapper>
                   <ColumnCardName>{card.author}</ColumnCardName>
-                  <StyledIcon name='favorite_border' />
+                  <StyledIcon name='delete_forever' onClick={() => handleDeleteCard(props.boardId, props.columnId, card.id)} />
                 </ColumnAddCardWrapper>
               </ColumnCard>
             ))}
