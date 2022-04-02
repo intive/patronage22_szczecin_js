@@ -3,7 +3,7 @@
 exports[`BoardDetails should render BoardDetails 1`] = `
 <div>
   <header
-    class="sc-gKclnd ipdYrQ"
+    class="sc-gKclnd dxViUN"
     data-testid="header"
   >
     <div

@@ -4,7 +4,7 @@ import { breakpoint } from '../../config/breakpoints'
 
 export const Modal = styled.div`
   position: fixed;
-  z-index: 10;
+  z-index: 12;
   top: 0;
   bottom: 0;
   left: 0;
