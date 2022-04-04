@@ -6,14 +6,14 @@ exports[`Home should render Home page 1`] = `
     class="container"
   >
     <header
-      class="sc-fKVqWL eLKqfJ"
+      class="sc-iwjdpV iGkDpK"
       data-testid="header"
     >
       <div
-        class="sc-bBHxTw eDizYw"
+        class="sc-cxpSdN jyeMqV"
       >
         <a
-          class="sc-iwjdpV hgEDaa"
+          class="sc-llYSUQ cFsmhC"
           href="/"
         >
           <span
@@ -22,7 +22,7 @@ exports[`Home should render Home page 1`] = `
             crop_original
           </span>
           <p
-            class="sc-cxpSdN jvyxTU"
+            class="sc-iJKOTD gdqVfZ"
           >
             headerTitle
           </p>
@@ -30,20 +30,20 @@ exports[`Home should render Home page 1`] = `
       </div>
     </header>
     <div
-      class="sc-kfPuZi ebNvPM"
+      class="sc-bBHxTw jtJnKI"
       data-testid="board-tiles-list"
     >
       <div
-        class="sc-bqiRlB bKrmmx"
+        class="sc-hBUSln inUYiV"
         data-testid="create-board-tile"
         role="button"
         tabindex="0"
       >
         <button
-          class="sc-crHmcD lefaQv"
+          class="sc-bqiRlB jEYJwa"
         >
           <span
-            class="material-icons sc-egiyK jjEWZz"
+            class="material-icons sc-ksdxgE gqsCXw"
           >
             crop_original
           </span>
@@ -131,19 +131,19 @@ exports[`Home should render Home page 1`] = `
       </a>
     </div>
     <div
-      class="sc-llYSUQ eLIRDX"
+      class="sc-giYglK dJgJQK"
       data-testid="board-column"
     >
       <div
-        class="sc-iJKOTD ewcQeO"
+        class="sc-ezbkAF jeSOnA"
       >
         <h4
-          class="sc-giYglK eUftqw"
+          class="sc-bYoBSM izkfUX"
         >
           boardColumn.title
         </h4>
         <button
-          class="sc-crHmcD lkNrHj sc-ezbkAF bOhdnJ"
+          class="sc-bqiRlB eHZdru sc-kLwhqv bvGZCz"
         >
           boardColumn.addCard
         </button>
@@ -152,19 +152,19 @@ exports[`Home should render Home page 1`] = `
     </div>
     <br />
     <button
-      class="sc-crHmcD lefaQv"
+      class="sc-bqiRlB jEYJwa"
     >
       Click to Open Modal
     </button>
     <br />
     <button
-      class="sc-crHmcD lefaQv"
+      class="sc-bqiRlB jEYJwa"
     >
       Show Success Toast
     </button>
     <br />
     <button
-      class="sc-crHmcD lefaQv"
+      class="sc-bqiRlB jEYJwa"
     >
       Show Error Toast
     </button>

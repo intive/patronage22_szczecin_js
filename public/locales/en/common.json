@@ -26,5 +26,15 @@
     "createNewBoardSubtitle": "Board name",
     "createNewBoardVotes": "Assign maximum number of votes",
     "createNewBoardTemplates": "Select template"
-    }
+  },
+  "apiActions": {
+   "deleteBoard": {
+     "success": "Board: {{name}} has been removed",
+     "error": "Error occured when trying to remove board: {{name}}"
+   },
+   "removeBoardPassword": {
+    "success": "Password for board: {{name}} has been removed",
+    "error": "Error occured when trying to remove password for board: {{name}}"
+   }
+  }
 }
