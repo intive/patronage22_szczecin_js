@@ -2,6 +2,7 @@
 /* globals describe, it, expect */
 
 import { render } from '@testing-library/react'
+import { ColumnsContextProvider } from '../../store/columns-context'
 import BoardColumnsList from './BoardColumnsList'
 
 describe('BoardColumnList', () => {
@@ -41,7 +42,11 @@ describe('BoardColumnList', () => {
   }
 
   it('should render a board with its name, two columns: one with three cards and one with single card', () => {
-    const { container } = render(<BoardColumnsList tileDetails={tileDetails} />)
+    const { container } = render(
+      <ColumnsContextProvider columns={tileDetails}>
+        <BoardColumnsList />
+      </ColumnsContextProvider>
+    )
     expect(container).toMatchSnapshot()
   })
 })

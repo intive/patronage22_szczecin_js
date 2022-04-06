@@ -1,8 +1,9 @@
 import { StyledButton, Column, ColumnCardTitle, ColumnAddCardWrapper, ColumnCard, ColumnCardText, ColumnCardName, StyledIcon } from './style'
-import { useState, useReducer, useRef, useEffect } from 'react'
+import { useState, useReducer, useRef, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
-import { ulid } from 'ulid'
 import TextArea from '../TextArea/TextArea'
+import ColumnsContext from '../../store/columns-context'
+import { addCard } from '../../services/internal-api'
 
 const BoardColumn = (props) => {
   const { t } = useTranslation('common')
@@ -25,7 +26,6 @@ const BoardColumn = (props) => {
   }
 
   const [isInCreateCardMode, setIsInCreateCardMode] = useState(false)
-  const [cards, setCards] = useState(props.cards || [])
 
   const [state, dispatch] = useReducer(reducer, init)
   const { cardTextValue } = state
@@ -42,10 +42,20 @@ const BoardColumn = (props) => {
     dispatch({ type: 'change', payload: event.target.value })
   }
 
+  const columnsCtx = useContext(ColumnsContext)
+  const refreshOnSuccess = data => data.status === 204 && columnsCtx.reload()
+  const addCardHandler = async (boardId, columnId, text) => {
+    try {
+      refreshOnSuccess(await addCard(boardId, columnId, text))
+    } catch (error) {
+
+    }
+  }
+
   const handleSaveCard = (event) => {
     event.preventDefault()
     dispatch({ type: 'save' })
-    addCard(event)
+    addCardHandler(props.boardId, props.id, { text: cardTextValue })
     setIsInCreateCardMode(false)
   }
 
@@ -57,17 +67,6 @@ const BoardColumn = (props) => {
 
   const switchToCreateCardMode = () => {
     setIsInCreateCardMode(true)
-  }
-
-  const addCard = () => {
-    setCards([
-      ...cards,
-      {
-        id: ulid(),
-        text: cardTextValue,
-        author: 'Isaak Newton'
-      }
-    ])
   }
 
   return (
@@ -86,10 +85,10 @@ const BoardColumn = (props) => {
             )
           : <StyledButton text outline onClick={switchToCreateCardMode}>{t('boardColumn.addCard')}</StyledButton>}
       </ColumnCard>
-      {cards
+      {props.cards
         ? (
           <div>
-            {cards.map((card) => (
+            {props.cards.map((card) => (
               <ColumnCard key={card.id} card>
                 <ColumnCardText>{card.text}</ColumnCardText>
                 <ColumnAddCardWrapper>

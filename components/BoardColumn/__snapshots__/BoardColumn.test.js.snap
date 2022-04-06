@@ -20,7 +20,6 @@ exports[`BoardColumn should render BoardColumn component 1`] = `
         boardColumn.addCard
       </button>
     </div>
-    <div />
   </div>
 </div>
 `;

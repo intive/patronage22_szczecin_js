@@ -1,8 +1,9 @@
-/* globals describe, expect, it */
+/* globals describe, expect, it, jest */
 
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import BoardColumn from './BoardColumn'
+import * as InternalApi from '../../services/internal-api'
 
 describe('BoardColumn', () => {
   it('should render BoardColumn component', () => {
@@ -77,5 +78,20 @@ describe('BoardColumn', () => {
     userEvent.type(screen.getByRole('textbox'), '  1234  ')
 
     expect(screen.getByText('buttons.save')).toHaveAttribute('disabled')
+  })
+
+  it('should call post request when save button is clicked', () => {
+    const mockAddCard = jest.spyOn(InternalApi, 'addCard')
+    render(<BoardColumn id='mockedId' boardId='mockedBoardId' />)
+
+    userEvent.click(screen.getByText('boardColumn.addCard'))
+    userEvent.type(screen.getByRole('textbox'), 'New Card')
+
+    expect(screen.getByRole('textbox')).toHaveValue('New Card')
+
+    userEvent.click(screen.getByText('buttons.save'))
+
+    expect(mockAddCard).toHaveBeenCalledTimes(1)
+    expect(mockAddCard).toHaveBeenCalledWith('mockedBoardId', 'mockedId', { text: 'New Card' })
   })
 })
