@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SetPasswordModal should render SetPasswordModal correctly 1`] = `
+exports[`AddColumnModal should render AddColumnModal correctly 1`] = `
 <body
   style="overflow: hidden;"
 >
@@ -21,32 +21,25 @@ exports[`SetPasswordModal should render SetPasswordModal correctly 1`] = `
       <div
         class="sc-eCImPb jdRPcx"
       >
-        <span
-          class="material-icons sc-jRQBWg jPDVsh"
-        >
-          lock_outline
-        </span>
         <p
           class="sc-gKclnd eVXqrc"
           id="modalTitle"
         >
-          setPasswordModal.title
+          addColumnModal.title
         </p>
         <p
           class="sc-iCfMLu hKohOx"
           id="modalSubtitle"
         >
-          setPasswordModal.subtitle
+          addColumnModal.subtitle
         </p>
       </div>
       <div
         class="sc-furwcr coHOBm"
       >
         <input
-          class="sc-iqseJM hgSgod sc-egiyK cVttfJ"
-          maxlength="8"
-          placeholder="Enter password"
-          type="password"
+          class="sc-iqseJM hgSgod sc-egiyK cJcWzW"
+          maxlength="30"
           value=""
         />
         <span
@@ -55,7 +48,7 @@ exports[`SetPasswordModal should render SetPasswordModal correctly 1`] = `
         >
           0
           /
-          8
+          30
         </span>
       </div>
       <div

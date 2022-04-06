@@ -25,11 +25,6 @@ export default function SetPasswordModal ({ boardId, handleClose, isModalOpen })
 
   const handleSaveClick = () => {
     updateBoardHandler(boardId, { password: password })
-    try {
-      handleClose()
-    } catch (error) {
-
-    }
   }
 
   useEffect(() => {

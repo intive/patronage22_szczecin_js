@@ -2,5 +2,10 @@
   "setPasswordModal": {
     "title": "Set password",
     "subtitle": "Protect your board with a unique 8-digit password"
+  },
+  "addColumnModal": {
+    "title": "Add column",
+    "subtitle": "Enter a new column name (5-30 characters)"
   }
+
 }

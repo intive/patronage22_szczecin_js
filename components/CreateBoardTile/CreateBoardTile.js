@@ -4,14 +4,14 @@ import BoardCreator from '../BoardCreator/BoardCreator'
 import useModal from '../../hooks/useModal'
 
 export default function CreateBoardTile () {
-  const { isOpen, toggle } = useModal()
+  const { isModalOpen, toggleModalOpening } = useModal()
 
   return (
     <>
-      <Tile role='button' tabIndex='0' onClick={toggle} data-testid='create-board-tile'>
+      <Tile role='button' tabIndex='0' onClick={toggleModalOpening} data-testid='create-board-tile'>
         <Button icon='crop_original'>New board</Button>
       </Tile>
-      <BoardCreator onClose={toggle} isOpen={isOpen} />
+      <BoardCreator onClose={toggleModalOpening} isOpen={isModalOpen} />
     </>
   )
 }
