@@ -64,8 +64,7 @@ const BoardColumn = () => {
       ...cards,
       {
         id: ulid(),
-        text: cardTextValue,
-        author: 'Isaak Newton'
+        text: cardTextValue
       }
     ])
   }
