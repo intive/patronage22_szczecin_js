@@ -9,6 +9,11 @@ export default function Modal ({ children }) {
 
   const { isModalOpen, icon, handleClose, handleSaveClick, title, subtitle, disabled } = useContext(ModalContext)
 
+  const handleSave = () => {
+    handleSaveClick()
+    handleClose()
+  }
+
   useEffect(() => {
     const closeOnEscapeKey = e => e.key === 'Escape' ? handleClose() : null
 
@@ -37,7 +42,7 @@ export default function Modal ({ children }) {
         <ModalContent>{children}</ModalContent>
         <ModalFooter>
           <StyledCancelButton text onClick={handleClose}>{t('buttons.cancel')}</StyledCancelButton>
-          <StyledSaveButton onClick={handleSaveClick} disabled={disabled}>{t('buttons.save')}</StyledSaveButton>
+          <StyledSaveButton onClick={handleSave} disabled={disabled}>{t('buttons.save')}</StyledSaveButton>
         </ModalFooter>
       </ModalContainer>
     </ReactPortal>

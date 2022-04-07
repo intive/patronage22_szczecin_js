@@ -27,8 +27,11 @@
     "createNewBoardTemplates": "Select template"
   },
   "toastMessage": {
-    "board" : {
+    "board": {
       "successToast": "board has been removed"
+    },
+    "setPasswordOnBoard": {
+      "successToast": "password has been set"
     },
     "errorToast": "something went wrong"
   }

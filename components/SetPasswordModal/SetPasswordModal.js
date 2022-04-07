@@ -5,16 +5,36 @@ import { StyledInput } from './style'
 import { useState, useContext, useEffect } from 'react'
 import { updateBoard } from '../../services/internal-api'
 import { ModalProvider } from '../../store/modal-context.js'
+import ToastsContext from '../../store/toasts-context'
 
 export default function SetPasswordModal ({ boardId, handleClose, isModalOpen }) {
-  const { t } = useTranslation(['modals'])
+  const { t } = useTranslation(['modals', 'common'])
 
   const [password, setPassword] = useState('')
 
   const boardsCtx = useContext(BoardsContext)
+  const toastsCtx = useContext(ToastsContext)
+
+  const toastMessage = {
+    success: t('common:toastMessage.setPasswordOnBoard.successToast'),
+    error: t('common:toastMessage.errorToast')
+  }
 
   const refreshOnSuccess = data => data.status === 204 && boardsCtx.reload()
-  const updateBoardHandler = async (id, options) => refreshOnSuccess(await updateBoard(id, options))
+
+  const updateBoardHandler = async (id, options) => {
+    try {
+      const data = await updateBoard(id, options)
+
+      if (data.status === 204) {
+        refreshOnSuccess(data)
+        toastsCtx.showSuccessToast(toastMessage.success)
+      }
+    } catch (error) {
+      toastsCtx.showErrorToast(toastMessage.error)
+      console.error(error)
+    }
+  }
 
   const handleOnChange = (event) => {
     const onlyDigitsRegex = /^[0-9\b]+$/
@@ -25,11 +45,6 @@ export default function SetPasswordModal ({ boardId, handleClose, isModalOpen })
 
   const handleSaveClick = () => {
     updateBoardHandler(boardId, { password: password })
-    try {
-      handleClose()
-    } catch (error) {
-
-    }
   }
 
   useEffect(() => {
