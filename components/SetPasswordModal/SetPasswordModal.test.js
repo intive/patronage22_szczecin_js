@@ -15,7 +15,8 @@ describe('SetPasswordModal', () => {
   })
 
   it('should call patch option when save button is clicked', () => {
-    render(<SetPasswordModal boardId='mockedId' isModalOpen />)
+    const mockOnClick = jest.fn()
+    render(<SetPasswordModal boardId='mockedId' isModalOpen handleClose={mockOnClick} />)
     expect(screen.getByRole('button', { name: /buttons.save/i })).toBeInTheDocument()
     userEvent.type(screen.getByPlaceholderText('Enter password'), '12345678')
     expect(screen.getByPlaceholderText('Enter password')).toHaveValue('12345678')
