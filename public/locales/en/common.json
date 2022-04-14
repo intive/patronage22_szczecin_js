@@ -25,10 +25,11 @@
     "createNewBoardSubtitle": "Board name",
     "createNewBoardVotes": "Assign maximum number of votes",
     "createNewBoardTemplates": "Select template"
-  },
+    },
   "toastMessage": {
     "board" : {
-      "successToast": "board has been removed"
+      "successToast": "board has been removed",
+      "addBoard": "board has been created"
     },
     "errorToast": "something went wrong"
   }

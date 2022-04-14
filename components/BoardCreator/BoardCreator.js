@@ -5,13 +5,22 @@ import ReactPortal from '../ReactPortal/ReactPortal'
 import { useEffect, useState, useContext } from 'react'
 import { addBoard } from '../../services/internal-api'
 import BoardsContext from '../../store/boards-context'
+import ToastsContext from '../../store/toasts-context'
 
 const BoardCreator = ({ isOpen, onClose }) => {
   const { t } = useTranslation('common')
   const [boardName, setBoardName] = useState('')
   const [isModalOpen, setIsModalOpen] = useState(isOpen)
+  const [showCloseButton, setShowCloseButton] = useState(true)
+
   const boardsCtx = useContext(BoardsContext)
   const properties = { minLength: 5, maxLength: 50 }
+  const toastsCtx = useContext(ToastsContext)
+
+  const toastMessage = {
+    success: t('toastMessage.board.addBoard'),
+    error: t('toastMessage.errorToast')
+  }
 
   const handleOnChange = (event) => {
     setBoardName(event.target.value)
@@ -25,11 +34,23 @@ const BoardCreator = ({ isOpen, onClose }) => {
   }
 
   const addBoardHandler = async (boardName) => {
+    setShowCloseButton(false)
     try {
-      await addBoard(boardName)
-      boardsCtx.reload()
-      closeModal()
-    } catch (err) {}
+      const data = await addBoard(boardName)
+      if (data.status === 204) {
+        boardsCtx.reload()
+        toastsCtx.showSuccessToast(toastMessage.success)
+      } else {
+        toastsCtx.showErrorToast(toastMessage.error)
+      }
+      setTimeout(() => {
+        setShowCloseButton(true)
+        closeModal()
+      }, 3900)
+    } catch (err) {
+      console.error(err.response)
+      toastsCtx.showErrorToast(toastMessage.error)
+    }
   }
 
   useEffect(() => {
@@ -41,7 +62,7 @@ const BoardCreator = ({ isOpen, onClose }) => {
     ? (
       <ReactPortal wrapperId='modal-portal'>
         <Modal aria-hidden='false' role='dialog' data-testid='board-creator'>
-          <CloseButton onClick={closeModal} icon='close' />
+          {showCloseButton && <CloseButton onClick={closeModal} icon='close' />}
           <BoardContent>
             <Title>{t('createNewBoard.createNewBoardTitle')}</Title>
             <BoardCreatorWizard onChange={handleOnChange} value={boardName} maxLength={properties.maxLength} />
